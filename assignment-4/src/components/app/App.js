@@ -1,8 +1,9 @@
+import MainForm from "../mainForm/MainForm";
 
 function App() {
   return (
     <div className="App">
-Test
+<MainForm />
     </div>
   );
 }
