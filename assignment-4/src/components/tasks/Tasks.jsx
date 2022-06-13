@@ -3,10 +3,15 @@ import React from 'react';
 const Tasks = () => {
     return (
         <div className='task'>
-            A single task here
-            <form action="">
-                <button>Edit</button>
-                <button>Delete</button>
+        <p> A single task here</p>
+
+
+        {/* <span>#Monday </span> */}
+
+            <form className='form-buttons' action="">
+                <button className='btn edit'>Edit</button>
+                <button className='btn delete'>Delete</button>
+                <button className='btn tag'>Add / Edit tags</button>
             </form>
         </div>
     );

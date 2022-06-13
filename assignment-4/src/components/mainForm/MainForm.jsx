@@ -6,8 +6,10 @@ const MainForm = () => {
 <>
     <form className='main-form' action="">
         <input type="text" placeholder='Enter task' />
-        <button>Add task</button>
+        <button className='btn-add'>Add task</button>
     </form>
+    <Tasks />
+    <Tasks />
     <Tasks />
 </>
     );

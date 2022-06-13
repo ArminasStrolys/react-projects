@@ -1,5 +1,37 @@
 @import "_var.scss";
 
-.task{
-    border: 1px solid orange;
+.task {
+//   border: 1px solid orange;
+  background-color: white;
+  position: relative;
+  width: 60%;
+  left: -60px;
+  margin: 20px auto;
+  padding: 20px;
+  .form-buttons {
+    // border: 1px solid rgb(0, 168, 0);
+    right: -122px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    .btn {
+      display: block;
+      width: 100px;
+      border: none;
+      padding: 5px 0;
+      margin: 5px 0;
+    }
+    .edit {
+      background-color: rgb(255, 255, 101);
+      top: 0%;
+    }
+    .delete {
+      background-color: rgb(255, 97, 97);
+      top: 40%;
+    }
+    .tag {
+      background-color: rgb(255, 198, 93);
+      top: 85%;
+    }
+  }
 }

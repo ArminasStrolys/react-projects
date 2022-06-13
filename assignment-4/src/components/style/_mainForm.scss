@@ -1,6 +1,10 @@
 @import "_var.scss";
 
-.main-form{
-    margin-top: 100px;
-    text-align: center;
+.main-form {
+  margin: 100px 0;
+  text-align: center;
+  .btn-add {
+    background-color: rgb(112, 216, 112);
+    margin-left: 15px;
+  }
 }
