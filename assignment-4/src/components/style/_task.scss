@@ -1,7 +1,6 @@
 @import "_var.scss";
 
 .task {
-//   border: 1px solid orange;
   background-color: white;
   position: relative;
   width: 60%;
@@ -9,7 +8,6 @@
   margin: 20px auto;
   padding: 20px;
   .form-buttons {
-    // border: 1px solid rgb(0, 168, 0);
     right: -122px;
     position: absolute;
     top: 50%;
@@ -23,18 +21,27 @@
       transition: 0.3s;
       border-radius: 4px;
     }
-    .btn:hover{
-        cursor: pointer;
-        background-color: white;
+    .btn:hover {
+      cursor: pointer;
+      background-color: white;
     }
     .edit {
       background-color: rgb(255, 255, 101);
     }
+    .edit:hover {
+      background-color: rgb(218, 218, 103);
+    }
     .delete {
-      background-color: rgb(255, 97, 97);
+      background-color: rgb(255, 118, 118);
+    }
+    .delete:hover {
+      background-color: rgb(228, 96, 96);
     }
     .tag {
       background-color: rgb(255, 198, 93);
+    }
+    .tag:hover {
+      background-color: rgb(199, 146, 47);
     }
   }
 }
