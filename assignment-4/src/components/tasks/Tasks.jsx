@@ -1,11 +1,11 @@
 import React from "react";
 
-const Tasks = () => {
+const Tasks = (props) => {
   return (
     <div className="task">
-      <p> A single task here</p>
+      <p>{props.title}</p>
 
-      <span>#Monday </span>
+      <span>{props.tags}</span>
 
       <form className="form-buttons" action="">
         <button className="btn edit">Edit</button>
