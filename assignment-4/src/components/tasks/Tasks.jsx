@@ -6,7 +6,7 @@ const Tasks = () => {
         <p> A single task here</p>
 
 
-        {/* <span>#Monday </span> */}
+        <span>#Monday </span>
 
             <form className='form-buttons' action="">
                 <button className='btn edit'>Edit</button>

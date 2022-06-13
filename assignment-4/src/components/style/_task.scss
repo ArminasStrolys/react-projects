@@ -20,18 +20,21 @@
       border: none;
       padding: 5px 0;
       margin: 5px 0;
+      transition: 0.3s;
+      border-radius: 4px;
+    }
+    .btn:hover{
+        cursor: pointer;
+        background-color: white;
     }
     .edit {
       background-color: rgb(255, 255, 101);
-      top: 0%;
     }
     .delete {
       background-color: rgb(255, 97, 97);
-      top: 40%;
     }
     .tag {
       background-color: rgb(255, 198, 93);
-      top: 85%;
     }
   }
 }

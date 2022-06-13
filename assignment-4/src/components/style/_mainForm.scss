@@ -1,10 +1,37 @@
 @import "_var.scss";
 
 .main-form {
-  margin: 100px 0;
+  margin: 100px 0 50px 0;
   text-align: center;
+  .task-input{
+    height: 35px;
+    border: none;
+    margin-right: 15px;
+    padding-left: 10px;
+    width: 200px;
+  }
+  .tag-input{
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+    width: 115px;
+  }
   .btn-add {
-    background-color: rgb(112, 216, 112);
+    background-color: rgb(151, 255, 151);
     margin-left: 15px;
+    border: none;
+    height: 35px;
+    width: 80px;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  .btn-add:hover{
+    cursor: pointer;
+    background-color: rgb(74, 202, 74);
   }
 }
+.task-collection-title{
+    text-align: center;
+    margin: 50px;
+  }
