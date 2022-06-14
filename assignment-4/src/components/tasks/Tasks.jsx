@@ -5,7 +5,7 @@ const Tasks = (props) => {
     <div className="task">
       <p>{props.title}</p>
 
-      <span>{props.tags}</span>
+      <span>Tags: {props.tags}</span>
 
       <form className="form-buttons" action="">
         <button className="btn edit">Edit</button>
