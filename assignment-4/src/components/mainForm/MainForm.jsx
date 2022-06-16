@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Tasks from '../tasks/Tasks';
-// import Data from "../data/data.json"
+import Data from "../data/data.json"
 
 const MainForm = () => {
 
@@ -51,19 +51,17 @@ const createEntry = () => {
       })
     );
   }
-
-      console.log('task', addTask)
       
     return (
 
 <>
     <form onSubmit={handleTasks} className='main-form' action="">
-        <input className='task-input' type="text" placeholder='Enter task' onChange={(e) => setAddTask({ ...addTask, title: e.target.value, id:randomId(0,999999) })} required/>
+        <input className='task-input' type="text" placeholder='Enter task' onChange={(e) => setAddTask({ ...addTask, title: e.target.value, id:randomId(0,999999999) })} required/>
         <input className='tag-input' type="text" placeholder='Optional: add tags' onChange={(e) => setAddTask({ ...addTask, tags: e.target.value })} />
         <button type='submit' className='btn-add'>Add task</button>
     </form>
     <h1 className='task-collection-title'>Task collection</h1>
-<button onClick={handleTry}>TRY</button>
+
     {toDoData.map((data)=><Tasks
         key={data.id}
         title={data.title}
