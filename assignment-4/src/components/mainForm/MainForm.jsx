@@ -88,7 +88,7 @@ const MainForm = () => {
     })
   };
   
-  const hand = (e) => {
+  const handleCloseModal = (e) => {
     e.preventDefault()
     setTitleChange({...titleChange, state: false})
   }
@@ -138,7 +138,7 @@ const MainForm = () => {
             <input type="text" placeholder={titleChange.title} />
             <div className="title-buttons">
             <button className="approve">Approve</button>
-            <button onClick={hand} className="decline">Cancel</button>
+            <button onClick={handleCloseModal} className="decline">Cancel</button>
             </div>
         </form>
       </div>

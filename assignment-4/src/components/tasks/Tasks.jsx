@@ -13,8 +13,6 @@ const Tasks = (props) => {
   const handleTitleEdit = (e) => {
     e.preventDefault();
     showTitleEdit === false && setShowTitleEdit(true);
-    // console.log(props.title);
-    // console.log(showTitleEdit);
     props.getTitleState(showTitleEdit, props.title);
   };
   const handleTagEdit = (e) => {
