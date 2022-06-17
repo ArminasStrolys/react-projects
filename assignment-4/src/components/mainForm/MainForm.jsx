@@ -10,7 +10,9 @@ const MainForm = () => {
 
   const [titleChange, setTitleChange] = useState({
     state: false,
-    title: ''
+    title: '',
+    tags: '',
+    id: ''
   })
   const [toDoData, setToDoData] = useState([]);
   const [addTask, setAddTask] = useState({
@@ -23,8 +25,10 @@ const MainForm = () => {
     deleteEntry(data);
   };
 
-  const getTitleState = (titleState, title) => {
-    setTitleChange({...titleChange, state: titleState, title: title})
+
+
+  const getTitleState = (titleState, title, tags, id) => {
+    setTitleChange({...titleChange, state: titleState, title: title, tags: tags, id: id})
   }
 
 
@@ -56,27 +60,24 @@ const MainForm = () => {
       setAddTask({
         id: addTask.id,
         title: addTask.title,
-        tags: addTask.tags,
+        tags: addTask.tags
       })
     );
   };
 
-  // Edit entry in json file
-//   const editTitle = () => {
-//     fetch("http://localhost:3001/tasks", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(addTask),
-//     }).then(
-//       setAddTask({
-//         id: addTask.id,
-//         title: addTask.title,
-//         tags: addTask.tags,
-//       })
-//     );
-//   };
+  const editEntry = () => {
+    fetch("http://localhost:3001/tasks/" + titleChange.id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(addTask),
+    }).then(
+      setAddTask({
+        title: addTask.title,
+      })
+    );
+  };
 
     // Deletes entry in json file
   const deleteEntry = (data) => {
@@ -93,8 +94,18 @@ const MainForm = () => {
     setTitleChange({...titleChange, state: false})
   }
 
+
+
+
+
+
+
+
+
+
   return (
     <>
+
       <form onSubmit={handleTasks} className="main-form" action="">
         <input
           className="task-input"
@@ -109,6 +120,7 @@ const MainForm = () => {
           }
           required
         />
+
         <input
           className="tag-input"
           type="text"
@@ -119,7 +131,10 @@ const MainForm = () => {
           Add task
         </button>
       </form>
+
       <h1 className="task-collection-title">Task collection</h1>
+
+
 
       {toDoData.map((data, index) => (
         <Tasks
@@ -132,20 +147,28 @@ const MainForm = () => {
           getTitleState={getTitleState}
         />
       ))}
+
+
+
       <div style={{display: titleChange.state === true ? "block" : "none"}} className="hidden-title">
-        <form className="title-form" action="">
+
+        <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
         <label>Title change: </label>
-            <input type="text" placeholder={titleChange.title} />
+            <input type="text" placeholder={titleChange.title} defaultValue={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
+
             <div className="title-buttons">
-            <button className="approve">Approve</button>
+            <button onClick={editEntry} className="approve">Approve</button>
             <button onClick={handleCloseModal} className="decline">Cancel</button>
             </div>
         </form>
+
+
       </div>
       <div className="hidden-tags">
         <form action="">
             <input type="text" placeholder="Tags"/>
         </form>
+
       </div>
     </>
   );

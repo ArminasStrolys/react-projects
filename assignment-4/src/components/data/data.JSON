@@ -1,24 +1,19 @@
 {
   "tasks": [
     {
-      "id": 403659545,
-      "title": "New test task",
-      "tags": "Optional"
+      "title": "Go for a jog",
+      "id": 984431815,
+      "tags": "Active"
     },
     {
-      "id": 995743281,
-      "title": "Tester",
-      "tags": "Something here"
+      "id": 964093739,
+      "title": "Make a smoothie",
+      "tags": "Healthy"
     },
     {
-      "id": 257861150,
-      "title": "Go shopping",
-      "tags": "12:30"
-    },
-    {
-      "id": 1131552,
-      "title": "Lunch time",
-      "tags": "#friday"
+      "id": 544802885,
+      "title": "Create an app with react",
+      "tags": "IT"
     }
   ]
 }

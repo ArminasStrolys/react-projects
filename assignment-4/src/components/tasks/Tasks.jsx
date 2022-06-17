@@ -13,7 +13,7 @@ const Tasks = (props) => {
   const handleTitleEdit = (e) => {
     e.preventDefault();
     showTitleEdit === false && setShowTitleEdit(true);
-    props.getTitleState(showTitleEdit, props.title);
+    props.getTitleState(showTitleEdit, props.title, props.tags, props.id);
   };
   const handleTagEdit = (e) => {
     e.preventDefault();
@@ -28,7 +28,6 @@ const Tasks = (props) => {
       </span>
       <div className="task">
         <p>{props.title}</p>
-
         <span>Tags: {props.tags}</span>
 
         <form className="form-buttons" action="">
