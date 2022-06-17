@@ -8,15 +8,25 @@ const MainForm = () => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
+  const [titleChange, setTitleChange] = useState({
+    state: false,
+    title: ''
+  })
   const [toDoData, setToDoData] = useState([]);
   const [addTask, setAddTask] = useState({
     id: 0,
     title: "",
     tags: "",
   });
+
   const getIdFromChild = (data) => {
     deleteEntry(data);
   };
+
+  const getTitleState = (titleState, title) => {
+    setTitleChange({...titleChange, state: titleState, title: title})
+  }
+
 
   const handleTasks = (e, data) => {
     e.preventDefault();
@@ -51,6 +61,24 @@ const MainForm = () => {
     );
   };
 
+  // Edit entry in json file
+//   const editTitle = () => {
+//     fetch("http://localhost:3001/tasks", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(addTask),
+//     }).then(
+//       setAddTask({
+//         id: addTask.id,
+//         title: addTask.title,
+//         tags: addTask.tags,
+//       })
+//     );
+//   };
+
+    // Deletes entry in json file
   const deleteEntry = (data) => {
     fetch("http://localhost:3001/tasks/" + data, {
       method: "DELETE",
@@ -59,6 +87,11 @@ const MainForm = () => {
       }
     })
   };
+  
+  const hand = (e) => {
+    e.preventDefault()
+    setTitleChange({...titleChange, state: false})
+  }
 
   return (
     <>
@@ -95,9 +128,25 @@ const MainForm = () => {
           title={data.title}
           tags={data.tags}
           index={index}
-          data={getIdFromChild}
+          getIdFromChild={getIdFromChild}
+          getTitleState={getTitleState}
         />
       ))}
+      <div style={{display: titleChange.state === true ? "block" : "none"}} className="hidden-title">
+        <form className="title-form" action="">
+        <label>Title change: </label>
+            <input type="text" placeholder={titleChange.title} />
+            <div className="title-buttons">
+            <button className="approve">Approve</button>
+            <button onClick={hand} className="decline">Cancel</button>
+            </div>
+        </form>
+      </div>
+      <div className="hidden-tags">
+        <form action="">
+            <input type="text" placeholder="Tags"/>
+        </form>
+      </div>
     </>
   );
 };
