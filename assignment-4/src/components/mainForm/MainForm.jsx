@@ -13,10 +13,11 @@ const randomId = (min, max) => {
     const [addTask, setAddTask] = useState({
         id: 0,
         title: '',
-        tags: '',
-        index: ''
+        tags: ''
     })
-
+    const getIdFromChild = (data) => {
+        deleteEntry(data)
+    }
 
     const handleTasks = (e, data) => {
         e.preventDefault()
@@ -50,9 +51,24 @@ const createEntry = () => {
       })
     );
   }
-      const totalEntries = toDoData.length
 
-console.log(totalEntries)
+const deleteEntry = (data) => {
+    fetch("http://localhost:3001/tasks/" + data, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(addTask)
+      }).then(
+        setAddTask({
+            id: "",
+            title: "",
+            tags: ""
+      })
+        );
+}
+
+
   
     return (
 
@@ -66,13 +82,16 @@ console.log(totalEntries)
 
     {toDoData.map((data, index)=><Tasks
         key={data.id}
+        id={data.id}
         title={data.title}
         tags={data.tags}
         index={index}
+        data={getIdFromChild}
     />
     )}
 </>
     );
+
 }
 
 export default MainForm;

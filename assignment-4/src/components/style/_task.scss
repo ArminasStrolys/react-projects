@@ -1,5 +1,11 @@
 @import "_var.scss";
 
+.task-number {
+  position: relative;
+  left: 180px;
+  top: 83px;
+  font-weight: 600;
+}
 .task {
   background-color: white;
   position: relative;

@@ -1,73 +1,26 @@
 {
   "tasks": [
     {
-      "id": "785621485",
-      "title": "Create a todo app",
-      "tags": "#App_creating"
-    },
-    {
-      "id": "100284902",
-      "title": "Get a job as a web dev",
-      "tags": "#Intern"
-    },
-    {
-      "id": "485892040",
-      "title": "Go to market",
-      "tags": "#Shopping_spree"
-    },
-    {
-      "id": "657002198",
-      "title": "Backend rulez",
-      "tags": [
-        "#joking",
-        "#Just_a_prank"
-      ]
-    },
-    {
-      "id": 595796457,
-      "title": "Test run",
-      "tags": "back_end"
-    },
-    {
-      "id": 284464209,
-      "title": "Run the test",
-      "tags": "front-End"
-    },
-    {
-      "id": 556557095,
-      "title": "Just test",
-      "tags": "front-End"
-    },
-    {
-      "id": 794535522,
-      "title": "Try",
-      "tags": "json"
-    },
-    {
-      "id": 789927395,
-      "title": "Try one",
-      "tags": "Hit"
-    },
-    {
-      "id": 410303737,
-      "title": "Two",
-      "tags": "Hit"
-    },
-    {
-      "id": 685586360,
-      "title": "Gato",
-      "tags": "spain"
-    },
-    {
-      "id": 557841541,
-      "title": "Sparta",
-      "tags": "Haooh"
-    },
-    {
       "id": 687549300,
       "title": "Halo",
       "tags": "MasterChief",
       "index": ""
+    },
+    {
+      "id": 697260381,
+      "title": "New Test",
+      "tags": "Hello",
+      "index": ""
+    },
+    {
+      "id": 201955311,
+      "title": "Try this delete",
+      "tags": "#button"
+    },
+    {
+      "id": 552724338,
+      "title": "Test entry",
+      "tags": "Front"
     }
   ]
 }
