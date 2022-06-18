@@ -17,7 +17,7 @@
     width: 115px;
   }
   .btn-add {
-    background-color: rgb(151, 255, 151);
+    background-color: $addTaskBtn;
     margin-left: 15px;
     border: none;
     height: 37px;
@@ -28,7 +28,7 @@
   }
   .btn-add:hover {
     cursor: pointer;
-    background-color: rgb(74, 202, 74);
+    background-color: $addTaskBtnHover;
   }
 }
 .task-collection-title {
@@ -43,7 +43,7 @@
   transform: translate(-50%, -50%);
   width: 30%;
   height: 150px;
-  background-color: rgb(207, 207, 207);
+  background-color: $hiddenModal;
   border: 1px solid gray;
   .title-form {
     position: absolute;
