@@ -7,7 +7,7 @@
   font-weight: 600;
 }
 .task {
-  background-color: white;
+  background-color: $white;
   position: relative;
   width: 60%;
   left: -60px;
@@ -31,22 +31,22 @@
       cursor: pointer;
     }
     .edit {
-      background-color: rgb(255, 255, 101);
+      background-color: $editBtn;
     }
     .edit:hover {
-      background-color: rgb(218, 218, 103);
+      background-color: $editBtnHover;
     }
     .delete {
-      background-color: rgb(255, 118, 118);
+      background-color: $cancelBtn;
     }
     .delete:hover {
-      background-color: rgb(228, 96, 96);
+      background-color: $cancelBtnHover;
     }
     .tag {
-      background-color: rgb(255, 198, 93);
+      background-color: $tagBtn;
     }
     .tag:hover {
-      background-color: rgb(199, 146, 47);
+      background-color: $tagBtnHover;
     }
   }
 }

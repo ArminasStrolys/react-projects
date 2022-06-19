@@ -59,7 +59,7 @@
       width: 100%;
       display: inline;
       .approve {
-        background-color: rgb(151, 255, 151);
+        background-color: $addTaskBtn;
         width: 40%;
         border: none;
         cursor: pointer;
@@ -69,10 +69,10 @@
         margin-right: 20px;
       }
       .approve:hover {
-        background-color: rgb(74, 202, 74);
+        background-color: $addTaskBtnHover;
       }
       .decline {
-        background-color: rgb(255, 118, 118);
+        background-color: $cancelBtn;
         width: 40%;
         border: none;
         cursor: pointer;
@@ -81,7 +81,7 @@
         border-radius: 4px;
       }
       .decline:hover {
-        background-color: rgb(228, 96, 96);
+        background-color: $cancelBtnHover;
       }
     }
   }
