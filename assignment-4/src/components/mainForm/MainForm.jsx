@@ -4,6 +4,7 @@ import Tasks from "../tasks/Tasks";
 import Data from "../data/data.json";
 
 const MainForm = () => {
+  
   const randomId = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
@@ -21,16 +22,21 @@ const MainForm = () => {
     tags: "",
   });
 
+  // Fetches data from json file
+  useEffect(() => {
+    fetch("http://localhost:3001/tasks")
+      .then((res) => res.json())
+      .then((data) => setToDoData(data))
+      .catch((error) => console.log(error));
+  }, []);
+
   const getIdFromChild = (data) => {
     deleteEntry(data);
   };
 
-
-
   const getTitleState = (titleState, title, tags, id) => {
     setTitleChange({...titleChange, state: titleState, title: title, tags: tags, id: id})
   }
-
 
   const handleTasks = (e, data) => {
     e.preventDefault();
@@ -40,13 +46,10 @@ const MainForm = () => {
     createEntry();
   };
 
-  // Fetches data from json file
-  useEffect(() => {
-    fetch("http://localhost:3001/tasks")
-      .then((res) => res.json())
-      .then((data) => setToDoData(data))
-      .catch((error) => console.log(error));
-  }, []);
+  const handleCloseModal = (e) => {
+    e.preventDefault()
+    setTitleChange({...titleChange, state: false})
+  }
 
   // Creates entry in json file
   const createEntry = () => {
@@ -65,6 +68,7 @@ const MainForm = () => {
     );
   };
 
+  // Edit entry in json file
   const editEntry = () => {
     fetch("http://localhost:3001/tasks/" + titleChange.id, {
       method: "PUT",
@@ -77,9 +81,10 @@ const MainForm = () => {
         title: addTask.title,
       })
     );
+    setTitleChange({...titleChange, state: false})
   };
 
-    // Deletes entry in json file
+  // Deletes entry in json file
   const deleteEntry = (data) => {
     fetch("http://localhost:3001/tasks/" + data, {
       method: "DELETE",
@@ -89,19 +94,6 @@ const MainForm = () => {
     })
   };
   
-  const handleCloseModal = (e) => {
-    e.preventDefault()
-    setTitleChange({...titleChange, state: false})
-  }
-
-
-
-
-
-
-
-
-
 
   return (
     <>
@@ -154,7 +146,7 @@ const MainForm = () => {
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
         <label>Title change: </label>
-            <input type="text" placeholder={titleChange.title} defaultValue={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
+            <input type="text" placeholder={titleChange.title} defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
 
             <div className="title-buttons">
             <button onClick={editEntry} className="approve">Approve</button>

@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Data from "../data/data.json";
 
 const Tasks = (props) => {
-  let deleteId;
+  // let deleteId;
   const [showTitleEdit, setShowTitleEdit] = useState(true);
 
   const handleDelete = (e) => {
     e.preventDefault();
-    deleteId = props.id;
-    props.getIdFromChild(deleteId);
+    // deleteId = props.id;
+    props.getIdFromChild(props.id);
   };
   const handleTitleEdit = (e) => {
     e.preventDefault();
