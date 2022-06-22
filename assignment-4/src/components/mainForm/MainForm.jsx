@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Tasks from "../tasks/Tasks";
 // this row is responsible for live update
 import Data from "../data/data.json";
@@ -19,7 +19,7 @@ const MainForm = () => {
   const [addTask, setAddTask] = useState({
     id: 0,
     title: "",
-    tags: "",
+    tags: [],
   });
   
     // Fetches data from json file
@@ -38,8 +38,8 @@ const MainForm = () => {
     setTitleChange({...titleChange, tagState: false, titleState: true, title: title, tags: tags, id: id})
   }
 
-  const getTagState = (tags, id) => {
-    setTitleChange({...titleChange, tagState: true, titleState: false, tags: tags, id: id})
+  const getTagState = (title, tags, id) => {
+    setTitleChange({...titleChange, tagState: true, titleState: false, title: title, tags: tags, id: id})
   }
 
   const handleTasks = (e, data) => {
@@ -87,7 +87,7 @@ const MainForm = () => {
         tags: addTask.tags
       }) 
     );
-    setTitleChange({...titleChange, titleState: false})
+    setTitleChange({...titleChange, titleState: false, tagState: false})
   };
 
   // Deletes entry in json file
@@ -99,7 +99,6 @@ const MainForm = () => {
       }
     })
   };
-  
 
   return (
     <>
@@ -109,7 +108,7 @@ const MainForm = () => {
             setAddTask({ ...addTask, title: e.target.value, id: randomId(0, 999999999),}) } required  />
 
         <input className="tag-input" type="text" placeholder="Optional: add tags"
-          onChange={(e) => setAddTask({ ...addTask, tags: e.target.value })} />
+          onChange={(e) => setAddTask({ ...addTask, tags: [e.target.value] })} />
           
         <button type="submit" className="btn-add">
           Add task
@@ -148,10 +147,13 @@ const MainForm = () => {
       <div style={{display: titleChange.tagState === true ? "block" : "none"}} className="hidden-tags">
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
-        <label>Edit tags: </label>
-            <input type="text" defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
+        <div className="tag-container">
+        <span>{titleChange.tags}</span>
+        </div>
+        <label>Add tags: </label>
+            <input type="text"  defaultValue={''} key={titleChange.tagState} onChange={(e) =>  setAddTask({ ...addTask, title: titleChange.title, tags: [e.target.value] }) }/>
             <div className="title-buttons">
-          
+            {console.log(addTask)}
             <button onClick={editEntry} className="approve">Approve</button>
             <button onClick={handleCloseModal} className="decline">Cancel</button>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Data from "../data/data.json";
 
 const Tasks = (props) => {
@@ -13,7 +13,7 @@ const Tasks = (props) => {
   };
   const handleTagEdit = (e) => {
     e.preventDefault();
-    props.getTagState(props.tags, props.id);
+    props.getTagState(props.title, props.tags, props.id);
   };
 
   return (
