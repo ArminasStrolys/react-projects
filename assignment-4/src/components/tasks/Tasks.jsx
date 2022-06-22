@@ -2,22 +2,26 @@ import React, { useState } from "react";
 import Data from "../data/data.json";
 
 const Tasks = (props) => {
-  // let deleteId;
-  const [showTitleEdit, setShowTitleEdit] = useState(true);
+  const [showTitleEdit, setShowTitleEdit] = useState({
+    title: true,
+    tag: true
+  });
 
   const handleDelete = (e) => {
     e.preventDefault();
-    // deleteId = props.id;
     props.getIdFromChild(props.id);
   };
   const handleTitleEdit = (e) => {
     e.preventDefault();
-    showTitleEdit === false && setShowTitleEdit(true);
-    props.getTitleState(showTitleEdit, props.title, props.tags, props.id);
+    showTitleEdit.title === false && setShowTitleEdit.title(true);
+    setShowTitleEdit.tag(false)
+    props.getTitleState(showTitleEdit.title, props.title, props.tags, props.id);
   };
   const handleTagEdit = (e) => {
     e.preventDefault();
-
+    showTitleEdit.tag === false && setShowTitleEdit.tag(true);
+    setShowTitleEdit.title(false)
+    props.getTagState(showTitleEdit.tag, props.tags, props.id);
     console.log(props.tags);
   };
 

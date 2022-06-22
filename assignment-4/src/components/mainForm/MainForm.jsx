@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Tasks from "../tasks/Tasks";
 // this row is responsible for live update
 import Data from "../data/data.json";
@@ -8,9 +8,9 @@ const MainForm = () => {
   const randomId = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
-
   const [titleChange, setTitleChange] = useState({
-    state: false,
+    titleState: false,
+    tagState: false,
     title: '',
     tags: '',
     id: ''
@@ -21,8 +21,8 @@ const MainForm = () => {
     title: "",
     tags: "",
   });
-
-  // Fetches data from json file
+  
+    // Fetches data from json file
   useEffect(() => {
     fetch("http://localhost:3001/tasks")
       .then((res) => res.json())
@@ -35,7 +35,11 @@ const MainForm = () => {
   };
 
   const getTitleState = (titleState, title, tags, id) => {
-    setTitleChange({...titleChange, state: titleState, title: title, tags: tags, id: id})
+    setTitleChange({...titleChange, titleState: titleState, title: title, tags: tags, id: id})
+  }
+
+  const getTagState = (tagState, tags, id) => {
+    setTitleChange({...titleChange, tagState: tagState, tags: tags, id: id})
   }
 
   const handleTasks = (e, data) => {
@@ -48,8 +52,9 @@ const MainForm = () => {
 
   const handleCloseModal = (e) => {
     e.preventDefault()
-    setTitleChange({...titleChange, state: false})
+    setTitleChange({...titleChange, titleState: false, tagState: false})
   }
+
 
   // Creates entry in json file
   const createEntry = () => {
@@ -79,9 +84,10 @@ const MainForm = () => {
     }).then(
       setAddTask({
         title: addTask.title,
-      })
+        tags: addTask.tags
+      }) 
     );
-    setTitleChange({...titleChange, state: false})
+    setTitleChange({...titleChange, titleState: false})
   };
 
   // Deletes entry in json file
@@ -99,34 +105,18 @@ const MainForm = () => {
     <>
 
       <form onSubmit={handleTasks} className="main-form" action="">
-        <input
-          className="task-input"
-          type="text"
-          placeholder="Enter task"
-          onChange={(e) =>
-            setAddTask({
-              ...addTask,
-              title: e.target.value,
-              id: randomId(0, 999999999),
-            })
-          }
-          required
-        />
+        <input className="task-input"  type="text" placeholder="Enter task" onChange={(e) =>
+            setAddTask({ ...addTask, title: e.target.value, id: randomId(0, 999999999),}) } required  />
 
-        <input
-          className="tag-input"
-          type="text"
-          placeholder="Optional: add tags"
-          onChange={(e) => setAddTask({ ...addTask, tags: e.target.value })}
-        />
+        <input className="tag-input" type="text" placeholder="Optional: add tags"
+          onChange={(e) => setAddTask({ ...addTask, tags: e.target.value })} />
+          
         <button type="submit" className="btn-add">
           Add task
         </button>
       </form>
 
       <h1 className="task-collection-title">Task collection</h1>
-
-
 
       {toDoData.map((data, index) => (
         <Tasks
@@ -137,31 +127,37 @@ const MainForm = () => {
           index={index}
           getIdFromChild={getIdFromChild}
           getTitleState={getTitleState}
+          getTagState={getTagState}
         />
       ))}
 
-
-
-      <div style={{display: titleChange.state === true ? "block" : "none"}} className="hidden-title">
+      {(titleChange.titleState === true && titleChange.tagState === true) ? titleChange.titleState === false : titleChange.tagState === false}
+      <div style={{display: titleChange.titleState === true ? "block" : "none"}} className="hidden-title">
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
         <label>Title change: </label>
-            <input type="text" placeholder={titleChange.title} defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
-
+            <input type="text" defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
             <div className="title-buttons">
+          
             <button onClick={editEntry} className="approve">Approve</button>
             <button onClick={handleCloseModal} className="decline">Cancel</button>
             </div>
         </form>
-
-
       </div>
-      <div className="hidden-tags">
-        <form action="">
-            <input type="text" placeholder="Tags"/>
+
+      <div style={{display: titleChange.tagState === true ? "block" : "none"}} className=".hidden-tags">
+
+        <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
+        <label>Title change: </label>
+            <input type="text" defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
+            <div className="title-buttons">
+          
+            <button onClick={editEntry} className="approve">Approve</button>
+            <button onClick={handleCloseModal} className="decline">Cancel</button>
+            </div>
         </form>
-
       </div>
+
     </>
   );
 };
