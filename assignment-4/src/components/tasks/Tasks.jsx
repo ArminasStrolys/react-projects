@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import Data from "../data/data.json";
 
 const Tasks = (props) => {
-  const [showTitleEdit, setShowTitleEdit] = useState({
-    title: true,
-    tag: true
-  });
 
   const handleDelete = (e) => {
     e.preventDefault();
@@ -13,16 +9,11 @@ const Tasks = (props) => {
   };
   const handleTitleEdit = (e) => {
     e.preventDefault();
-    showTitleEdit.title === false && setShowTitleEdit.title(true);
-    setShowTitleEdit.tag(false)
-    props.getTitleState(showTitleEdit.title, props.title, props.tags, props.id);
+    props.getTitleState(props.title, props.tags, props.id);
   };
   const handleTagEdit = (e) => {
     e.preventDefault();
-    showTitleEdit.tag === false && setShowTitleEdit.tag(true);
-    setShowTitleEdit.title(false)
-    props.getTagState(showTitleEdit.tag, props.tags, props.id);
-    console.log(props.tags);
+    props.getTagState(props.tags, props.id);
   };
 
   return (

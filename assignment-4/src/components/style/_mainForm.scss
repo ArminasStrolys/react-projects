@@ -43,8 +43,48 @@
   transform: translate(-50%, -50%);
   width: 30%;
   height: 150px;
-  background-color: $black;
-  border: 1px solid $white;
+  background-color: $hiddenModal;
+  border: 1px solid $gray;
+  .title-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    .title-buttons {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      display: inline;
+      .approve {
+        background-color: $addTaskBtn;
+        width: 40%;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        padding: 5px 0;
+        border-radius: 4px;
+        margin-right: 20px;
+      }
+      .approve:hover {
+        background-color: $addTaskBtnHover;
+      }
+      .decline {
+        background-color: $cancelBtn;
+        width: 40%;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        padding: 5px 0;
+        border-radius: 4px;
+      }
+      .decline:hover {
+        background-color: $cancelBtnHover;
+      }
+    }
+  }
 }
 .hidden-title {
   display: none;

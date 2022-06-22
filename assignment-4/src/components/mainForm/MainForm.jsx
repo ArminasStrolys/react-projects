@@ -34,12 +34,12 @@ const MainForm = () => {
     deleteEntry(data);
   };
 
-  const getTitleState = (titleState, title, tags, id) => {
-    setTitleChange({...titleChange, titleState: titleState, title: title, tags: tags, id: id})
+  const getTitleState = (title, tags, id) => {
+    setTitleChange({...titleChange, tagState: false, titleState: true, title: title, tags: tags, id: id})
   }
 
-  const getTagState = (tagState, tags, id) => {
-    setTitleChange({...titleChange, tagState: tagState, tags: tags, id: id})
+  const getTagState = (tags, id) => {
+    setTitleChange({...titleChange, tagState: true, titleState: false, tags: tags, id: id})
   }
 
   const handleTasks = (e, data) => {
@@ -131,7 +131,7 @@ const MainForm = () => {
         />
       ))}
 
-      {(titleChange.titleState === true && titleChange.tagState === true) ? titleChange.titleState === false : titleChange.tagState === false}
+
       <div style={{display: titleChange.titleState === true ? "block" : "none"}} className="hidden-title">
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
@@ -145,10 +145,10 @@ const MainForm = () => {
         </form>
       </div>
 
-      <div style={{display: titleChange.tagState === true ? "block" : "none"}} className=".hidden-tags">
+      <div style={{display: titleChange.tagState === true ? "block" : "none"}} className="hidden-tags">
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
-        <label>Title change: </label>
+        <label>Edit tags: </label>
             <input type="text" defaultValue={titleChange.title} key={titleChange.title} onChange={(e) => setAddTask({ ...addTask, title: e.target.value, tags: titleChange.tags })}/>
             <div className="title-buttons">
           
