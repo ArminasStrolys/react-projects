@@ -51,3 +51,33 @@
     }
   }
 }
+
+@media screen and (max-width: 715px) {
+  .task-number {
+    position: absolute;
+    left: -200px;
+  }
+  .task {
+    position: relative;
+    width: 80%;
+    left: 0;
+    margin-bottom: 150px;
+    .form-buttons {
+      right: 0;
+      position: relative;
+      top: 200px;
+      transform: translate(0, -50%);
+      width: 100%;
+      .btn {
+        height: 30px;
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 5px 0;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 4px;
+      }
+    }
+  }
+}
