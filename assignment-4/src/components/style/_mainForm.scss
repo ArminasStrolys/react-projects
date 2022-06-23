@@ -45,6 +45,7 @@
   height: 150px;
   background-color: $hiddenModal;
   border: 1px solid $gray;
+
   .title-form {
     position: absolute;
     top: 40%;
@@ -52,12 +53,12 @@
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+
     .title-buttons {
       position: absolute;
-      top: 50px;
-      left: 0;
+      bottom: -50px;
       width: 100%;
-      display: inline;
+      display: block;
       .approve {
         background-color: $addTaskBtn;
         width: 40%;
@@ -84,6 +85,16 @@
         background-color: $cancelBtnHover;
       }
     }
+  }
+  .tag-array{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-weight: 600;
   }
 }
 .hidden-title {
@@ -137,4 +148,69 @@
     }
   }
 }
+@media screen and (max-width: 715px) {
+  .main-form {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    .task-input {
+      margin-right: 0;
+      width: 200px;
+    }
+    .tag-input {
+      margin: 10px 0;
+      width: 200px;
+    }
+    .btn-add {
+      margin-left: 0;
+      height: 37px;
+      width: 215px;
+    }
+  }
 
+  .hidden-tags {
+    width: 60%;
+    height: 30%;
+    .title-form {
+      .title-buttons {
+        bottom: -100px;
+        .approve {
+          width: 80%;
+          margin: auto;
+          padding: 5px 0;
+          margin-bottom: 10px;
+        }
+        .decline {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+}
+.tag-array{
+  position: relative;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+.hidden-title{
+  width: 60%;
+  height: 200px;
+  .title-form {
+  .title-buttons {
+  .approve {
+    width: 80%;
+    margin: auto;
+    padding: 5px 0;
+    margin-bottom: 10px;
+  }
+  .decline {
+    width: 80%;
+    margin: auto;
+  }
+}
+  }
+}
+}

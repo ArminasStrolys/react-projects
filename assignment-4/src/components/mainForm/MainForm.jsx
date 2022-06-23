@@ -198,10 +198,8 @@ const MainForm = () => {
           className="title-form"
           action=""
         >
-          <div className="tag-container">
-            <span>
+          <div className="tag-array">
               {titleChange.tags.map((val) => val.length > 0 && "#" + val + " ")}
-            </span>
           </div>
           <label>Add tags: </label>
           <input

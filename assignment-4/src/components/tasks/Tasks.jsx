@@ -29,13 +29,13 @@ const Tasks = (props) => {
 
         <form className="form-buttons" action="">
           <button onClick={handleTitleEdit} className="btn edit">
-            Edit
+            Edit title
           </button>
           <button onClick={handleDelete} className="btn delete">
-            Delete
+            Delete task
           </button>
           <button onClick={handleTagEdit} className="btn tag">
-            Add / Edit tags
+            Add tags
           </button>
         </form>
       </div>
