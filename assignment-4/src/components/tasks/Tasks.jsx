@@ -2,7 +2,6 @@ import React from "react";
 import Data from "../data/data.json";
 
 const Tasks = (props) => {
-
   const handleDelete = (e) => {
     e.preventDefault();
     props.getIdFromChild(props.id);
@@ -23,7 +22,10 @@ const Tasks = (props) => {
       </span>
       <div className="task">
         <p>{props.title}</p>
-        <span>Tags: {props.tags.map(value=>value.length>0&&'#'+value+' ')}</span>
+        <span>
+          Tags:{" "}
+          {props.tags.map((value) => value.length > 0 && "#" + value + " ")}
+        </span>
 
         <form className="form-buttons" action="">
           <button onClick={handleTitleEdit} className="btn edit">
