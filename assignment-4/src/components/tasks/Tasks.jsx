@@ -23,7 +23,7 @@ const Tasks = (props) => {
       </span>
       <div className="task">
         <p>{props.title}</p>
-        <span>Tags: {props.tags}</span>
+        <span>Tags: {props.tags.map(value=>value.length>0&&'#'+value+' ')}</span>
 
         <form className="form-buttons" action="">
           <button onClick={handleTitleEdit} className="btn edit">

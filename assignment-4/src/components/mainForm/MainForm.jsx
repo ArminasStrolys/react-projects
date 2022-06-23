@@ -12,7 +12,7 @@ const MainForm = () => {
     titleState: false,
     tagState: false,
     title: '',
-    tags: '',
+    tags: [],
     id: ''
   })
   const [toDoData, setToDoData] = useState([]);
@@ -21,7 +21,7 @@ const MainForm = () => {
     title: "",
     tags: [],
   });
-  
+
     // Fetches data from json file
   useEffect(() => {
     fetch("http://localhost:3001/tasks")
@@ -55,7 +55,6 @@ const MainForm = () => {
     setTitleChange({...titleChange, titleState: false, tagState: false})
   }
 
-
   // Creates entry in json file
   const createEntry = () => {
     fetch("http://localhost:3001/tasks", {
@@ -80,13 +79,13 @@ const MainForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(addTask),
+      body:(JSON.stringify(addTask)),
     }).then(
       setAddTask({
         title: addTask.title,
         tags: addTask.tags
       }) 
-    );
+    )
     setTitleChange({...titleChange, titleState: false, tagState: false})
   };
 
@@ -148,12 +147,12 @@ const MainForm = () => {
 
         <form onSubmit={(e)=>e.preventDefault()} className="title-form" action="">
         <div className="tag-container">
-        <span>{titleChange.tags}</span>
+        <span>{titleChange.tags.map(val=>val.length>0&&'#'+val+' ')}</span>
         </div>
         <label>Add tags: </label>
-            <input type="text"  defaultValue={''} key={titleChange.tagState} onChange={(e) =>  setAddTask({ ...addTask, title: titleChange.title, tags: [e.target.value] }) }/>
+            <input type="text"  defaultValue={''} key={titleChange.tagState} onChange={(e) =>  setAddTask({ ...addTask, title: titleChange.title, tags: [...titleChange.tags, e.target.value] }) }/>
             <div className="title-buttons">
-            {console.log(addTask)}
+
             <button onClick={editEntry} className="approve">Approve</button>
             <button onClick={handleCloseModal} className="decline">Cancel</button>
             </div>

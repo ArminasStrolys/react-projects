@@ -1,22 +1,10 @@
 {
   "tasks": [
     {
-      "title": "Gart",
-      "tags": "Harty",
-      "id": 818398705
-    },
-    {
-      "title": "Gest",
+      "id": 428817036,
+      "title": "Test list",
       "tags": [
-        "Try"
-      ],
-      "id": 475160195
-    },
-    {
-      "id": 876245881,
-      "title": "Test",
-      "tags": [
-        "Yelp"
+        "App"
       ]
     }
   ]
