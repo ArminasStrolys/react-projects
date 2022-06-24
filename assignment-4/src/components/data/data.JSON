@@ -1,21 +1,6 @@
 {
   "tasks": [
     {
-      "title": "Test list",
-      "tags": [
-        "App",
-        "React",
-        "List",
-        "#Max_tags",
-        "Max_tags",
-        "#Max_tags",
-        "#Max_tags",
-        "#Max_tags",
-        "#Max_tags#Max_tags#Max_tags#Max_tags#Max_tags#Max_tags#Max_tags"
-      ],
-      "id": 428817036
-    },
-    {
       "id": 977976733,
       "title": "To do app",
       "tags": [
@@ -38,6 +23,14 @@
         "Healthy"
       ],
       "id": 466264030
+    },
+    {
+      "id": 870179953,
+      "title": "Cook dinner",
+      "tags": [
+        "Meatloaf",
+        "Potatoes"
+      ]
     }
   ]
 }

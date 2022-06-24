@@ -86,7 +86,7 @@
       }
     }
   }
-  .tag-array{
+  .tag-array {
     position: absolute;
     top: -150%;
     left: 50%;
@@ -186,32 +186,32 @@
         }
       }
     }
-}
-.tag-array{
-  position: relative;
-  top: 20px;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 20px;
-  word-wrap: break-word;
-}
-.hidden-title{
-  width: 60%;
-  height: 200px;
-  .title-form {
-  .title-buttons {
-  .approve {
-    width: 80%;
-    margin: auto;
-    padding: 5px 0;
-    margin-bottom: 10px;
   }
-  .decline {
-    width: 80%;
-    margin: auto;
+  .tag-array {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    word-wrap: break-word;
   }
-}
+  .hidden-title {
+    width: 60%;
+    height: 200px;
+    .title-form {
+      .title-buttons {
+        .approve {
+          width: 80%;
+          margin: auto;
+          padding: 5px 0;
+          margin-bottom: 10px;
+        }
+        .decline {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
   }
-}
 }
