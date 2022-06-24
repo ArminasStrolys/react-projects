@@ -17,10 +17,10 @@ const Tasks = (props) => {
 
   return (
     <>
-      <span className="task-number">
-        {props.index + 1} / {Data.tasks.length}
-      </span>
       <div className="task">
+        <span className="task-number">
+          {props.index + 1} / {Data.tasks.length}
+        </span>
         <p>{props.title}</p>
         <span>
           Tags:{" "}

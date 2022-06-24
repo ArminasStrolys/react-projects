@@ -1,9 +1,9 @@
 @import "_var.scss";
 
 .task-number {
-  position: relative;
-  left: 180px;
-  top: 83px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
   font-weight: 600;
 }
 .task {
@@ -53,10 +53,6 @@
 }
 
 @media screen and (max-width: 715px) {
-  .task-number {
-    position: absolute;
-    left: -200px;
-  }
   .task {
     position: relative;
     width: 80%;
