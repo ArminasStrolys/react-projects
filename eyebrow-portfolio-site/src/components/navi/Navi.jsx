@@ -1,21 +1,23 @@
 import React from 'react';
 import Contacts from '../contacts/Contacts';
-import PricesAndServices from '../pricesAndServices/PricesAndServices'
+import Services from '../services/Services';
 import Home from '../home/Home';
 import About from '../about/About';
+import Gallery from '../gallery/Gallery';
 
 const Navi = () => {
   return (
     <div>
       Navigation:
       <b>
-      <Home />
-      <PricesAndServices />
-      <Contacts />
-      <About />
+        <Home />
+        <Services />
+        <Contacts />
+        <Gallery />
+        <About />
       </b>
     </div>
   );
-}
+};
 
 export default Navi;
