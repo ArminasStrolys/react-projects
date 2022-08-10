@@ -4,7 +4,7 @@ import Services from '../services/Services';
 import Home from '../home/Home';
 import About from '../about/About';
 import Gallery from '../gallery/Gallery';
-
+//
 const Navi = () => {
   return (
     <div>
