@@ -1,12 +1,12 @@
 @import "./_var";
 
 .nav-bar{
-  background-color: $nav_bar_color;
+  background: $nav_bar_color;
   margin: 0;
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 20px 0;
+  padding: 30px 0 50px 0;
   font-size: 20px;
   font-weight: 500;
 }
