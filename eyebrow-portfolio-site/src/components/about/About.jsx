@@ -4,7 +4,7 @@ import profile from '../../images/portrait.jpg';
 export default function About() {
   return (
     <div className="about">
-      <h2>About</h2>
+      <h2>Apie mus</h2>
       <div>
         <img src={profile} alt="" />
         <article className="bio">

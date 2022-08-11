@@ -4,12 +4,7 @@ import Services from '../services/Services';
 import Home from '../home/Home';
 import About from '../about/About';
 import Gallery from '../gallery/Gallery';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  // Navigate,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const Navi = () => {
   return (
@@ -23,8 +18,6 @@ const Navi = () => {
       </div>
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Navigate to="/home#" replace />} /> */}
-          {/* <Route path="/!" element={<ListPage />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />

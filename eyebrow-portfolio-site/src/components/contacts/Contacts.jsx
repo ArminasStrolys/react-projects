@@ -29,7 +29,16 @@ const Contacts = () => {
         Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
       </div>
       <br />
-      <div>Susisiekite</div>
+
+      <h3>Susisiekite:</h3>
+      <div>
+        <form action="">
+          <input type="text" placeholder="Vardas" />
+          <input type="text" placeholder="Pavardė" />
+          <input type="email" placeholder="E-paštas" />
+          <input type="text" placeholder="Jūsų žinutė" />
+        </form>
+      </div>
     </div>
   );
 };
