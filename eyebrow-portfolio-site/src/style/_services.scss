@@ -1,17 +1,24 @@
 .services{
   margin: auto 10%;
   margin-top: 50px;
+
 }
 h2{
   text-align: center;
   margin-bottom: 50px;
 }
-.laminate{
-  float: wrap;
-  width: 300px;
+.eyebrow-types{
+  height: 450px;
+  img{
+    float: left;
+    width: 400px;
+  }
+}
+.eyebrow-types:nth-of-type(1){
+  height: 350px;
 }
 .customTable{
-  margin-top: 350px;
+  margin: 50px auto;
   width: 100%;
   background-color: #FFFFFF;
   border-collapse: collapse;

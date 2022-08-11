@@ -1,12 +1,41 @@
 import React from 'react';
+import correction from '../../images/correction.webp';
 import lamination from '../../images/lamination.webp';
+import henna from '../../images/henna.jpg';
 
 const PricesAndServices = () => {
   return (
     <div className="services">
       <div>
         <h2>Paslaugos</h2>
-        <article>
+        <article className="eyebrow-types">
+          <img src={correction} alt="Laminated eyebrows before and after" />
+          <h3>Antakių korekcija</h3>
+          <p>
+            Procedūra atliekama tiek vyrams, tiek moterims. Antakių korekcijos
+            metu suteikiama teisinga, veidui tinkama antakių forma, pašalinant
+            nereikalingus plaukelius iš netinkamų vietų.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ea
+            eligendi id dignissimos ullam inventore accusantium rerum ipsum
+            sequi, commodi excepturi. Quo sunt maxime eos nam corrupti delectus
+            veniam suscipit possimus numquam ad modi, doloribus, accusantium
+            amet animi debitis non repudiandae in! Veritatis natus alias amet
+            qui distinctio perspiciatis doloribus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at sunt
+            deserunt animi exercitationem aliquam dolore. Delectus autem
+            perspiciatis adipisci impedit non ea enim, aspernatur vero est
+            asperiores nobis consequuntur, repellendus numquam nulla rerum
+            architecto temporibus animi optio deleniti laborum eos, laboriosam
+            ullam. At ullam, iusto obcaecati maiores laborum vitae, inventore ab
+            alias sed nulla ducimus qui corporis nesciunt. Minima.
+          </p>
+        </article>
+        <article className="eyebrow-types">
+          <img src={lamination} alt="Laminated eyebrows before and after" />
           <h3>Antakių laminavimas</h3>
           <p>
             Antakių laminavimas yra procedūra, kuri skirta ne tik antakių formai
@@ -18,11 +47,59 @@ const PricesAndServices = () => {
             norinčioms idealios jų išvaizdos. Antakių laminavimas padeda
             moterims atsiauginti plaukelius ir džiaugtis gražesne jų išvaizda.
           </p>
-          <img
-            className="laminate"
-            src={lamination}
-            alt="Laminated eyebrows before and after"
-          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ea
+            eligendi id dignissimos ullam inventore accusantium rerum ipsum
+            sequi, commodi excepturi. Quo sunt maxime eos nam corrupti delectus
+            veniam suscipit possimus numquam ad modi, doloribus, accusantium
+            amet animi debitis non repudiandae in! Veritatis natus alias amet
+            qui distinctio perspiciatis doloribus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit at sunt
+            deserunt animi exercitationem aliquam dolore. Delectus autem
+            perspiciatis adipisci impedit non ea enim, aspernatur vero est
+            asperiores nobis consequuntur, repellendus numquam nulla rerum
+            architecto temporibus animi optio deleniti laborum eos, laboriosam
+            ullam. At ullam, iusto obcaecati maiores laborum vitae, inventore ab
+            alias sed nulla ducimus qui corporis nesciunt. Minima.
+          </p>
+        </article>
+        <article className="eyebrow-types">
+          <img src={henna} alt="Dyed eyebrows with henna before and after" />
+          <h3>Antakių dažymas HENNA</h3>
+          <p>
+            Henna yra natūralus augalinis pigmentas, išgaunamas iš Heninės
+            lavsonijos medžio. Labiausiai pamėgta henna dažų savybė yra jų ilgas
+            išsilaikymas - antakių dažymas išlieka net iki 4 savaičių,
+            priklausomai nuo Jūsų odos ir plaukelių gebėjimo išlaikyti pigmentą.
+          </p>
+          <p>
+            Šios procedūros metu tobulai suformuojami antakiai, atsižvelgiant į
+            visus Jūsų veido bruožus. Antakių korekcija vyksta pagal poreikį
+            apjungiant kelias technikas - pincetą, vašką. Taip išgaunamas
+            švarus, nepriekaištingas antakio linkis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            voluptate maiores dignissimos quis asperiores officiis. Facere
+            possimus a repellat quaerat. Corrupti ea totam, accusamus dolorum
+            saepe necessitatibus temporibus aspernatur reprehenderit quo id fuga
+            incidunt. Magnam facilis beatae laboriosam numquam molestias aliquam
+            laudantium? Enim odio sunt doloribus harum, aut placeat eum magni
+            mollitia, dolorum aperiam laudantium et, libero eaque vero? Eum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            laudantium fugit aspernatur amet ut cupiditate! Ad soluta ipsum ut
+            in distinctio aliquam et deleniti culpa facilis optio natus unde
+            quaerat dolorum cupiditate, reiciendis error hic velit laudantium
+            laborum repellat? Fugiat animi quaerat dolores iste iure.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+            ipsum architecto dolores, vero eius debitis?
+          </p>
         </article>
 
         <table class="customTable">
