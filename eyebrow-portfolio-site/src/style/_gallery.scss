@@ -1,17 +1,16 @@
 .gallery{
   margin: auto 10%;
-  margin-top: 100px;
-  h2{
-    text-align: center;
-  }
+  margin-top: 50px;
 }
-
+h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
 .image-collection{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 100px;
   img{
     width: 400px;
   }

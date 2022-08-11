@@ -5,6 +5,7 @@ const PricesAndServices = () => {
   return (
     <div className="services">
       <div>
+        <h2>Paslaugos</h2>
         <article>
           <h3>Antakių laminavimas</h3>
           <p>
