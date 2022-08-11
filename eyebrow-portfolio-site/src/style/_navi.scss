@@ -9,4 +9,12 @@
   padding: 30px 0 50px 0;
   font-size: 20px;
   font-weight: 500;
+  a{
+    color: $black_color;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+      color: white;
+    }
+  }
 }

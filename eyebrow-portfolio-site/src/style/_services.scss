@@ -1,3 +1,27 @@
 .services{
+  margin: auto 10%;
   margin-top: 100px;
+}
+.laminate{
+  float: wrap;
+  width: 300px;
+}
+.customTable{
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  color: #000000;
+}
+.customTable td, .customTable th {
+  border-width: 2px;
+  border-color: #ffd4d4;
+  border-style: solid;
+  padding: 5px;
+}
+.customTable thead {
+  background-color: #F88686;
+  text-align: left;
 }
