@@ -1,6 +1,8 @@
+@import "./var";
 @import "./_navi.scss";
 
 body{
-  background-color: rgb(255, 146, 146);
+  background-color: $body_color;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
 }
