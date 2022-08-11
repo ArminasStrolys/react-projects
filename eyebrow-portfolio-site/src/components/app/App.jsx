@@ -2,7 +2,7 @@ import Navi from '../navi/Navi';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navi />
     </div>
   );
