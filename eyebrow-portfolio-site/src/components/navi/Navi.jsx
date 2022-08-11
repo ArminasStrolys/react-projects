@@ -17,8 +17,8 @@ const Navi = () => {
       <div className="nav-bar">
         <a href="/">Home</a>
         <a href="/services">Services</a>
-        <a href="/contacts">Contacts</a>
         <a href="/gallery">Gallery</a>
+        <a href="/contacts">Contacts</a>
         <a href="/about">About</a>
       </div>
       <Router>
