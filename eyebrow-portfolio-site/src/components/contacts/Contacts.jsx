@@ -49,10 +49,10 @@ const Contacts = () => {
       <h3>Susisiekite:</h3>
       <div>
         <form action="">
-          <input type="text" placeholder="Vardas" />
-          <input type="text" placeholder="Pavardė" />
-          <input type="email" placeholder="E-paštas" />
-          <input type="text" placeholder="Jūsų žinutė" />
+          <input className="field-1" type="text" placeholder="Vardas" />
+          <input className="field-2" type="text" placeholder="Pavardė" />
+          <input className="field-3" type="email" placeholder="E-paštas" />
+          <input className="field-4" type="text" placeholder="Jūsų žinutė" />
         </form>
       </div>
     </div>
