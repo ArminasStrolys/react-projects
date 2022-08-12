@@ -1,4 +1,8 @@
 import React from 'react';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { BsInstagram } from 'react-icons/bs';
+import { FiPhoneCall } from 'react-icons/fi';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Contacts = () => {
   return (
@@ -20,9 +24,21 @@ const Contacts = () => {
       <div>
         <h3>Socialiniai tinklai:</h3>
         <p>Facebook/link/antakiai</p>
+        <i className="fb-icon">
+          <FaFacebookSquare />
+        </i>
         <p>Instagram/link/antakiai</p>
+        <i className="ig-icon">
+          <BsInstagram />
+        </i>
         <p>Mob. tel.: +3701234567</p>
+        <i className="phone-icon">
+          <FiPhoneCall />
+        </i>
         <p>E-mail: lor.antakiai@gmail.com</p>
+        <i className="email-icon">
+          <HiOutlineMail />
+        </i>
       </div>
       <br />
       <div>
