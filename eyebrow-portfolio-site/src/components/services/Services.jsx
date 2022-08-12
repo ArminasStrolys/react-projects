@@ -12,7 +12,7 @@ const PricesAndServices = () => {
         <Laminate />
         <Henna />
 
-        <table class="customTable">
+        <table className="customTable">
           <thead>
             <tr>
               <th>Procedūra</th>
