@@ -9,19 +9,13 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 const Navi = () => {
   return (
     <div>
-      {/* <div className="nav-bar">
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/contacts">Contacts</a>
-        <a href="/about">About</a>
-      </div> */}
-
       <Router>
         <nav className="nav-bar">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/">Pagrindinis</Link>
+          <Link to="/services">Paslaugos</Link>
+          <Link to="/gallery">Galerija</Link>
+          <Link to="/contacts">Kontaktai</Link>
+          <Link to="/about">Apie</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
