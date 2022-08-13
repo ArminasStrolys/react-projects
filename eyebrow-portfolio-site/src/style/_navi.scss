@@ -9,6 +9,9 @@
   padding: 30px 0 50px 0;
   font-size: 20px;
   font-weight: 500;
+  position: fixed;
+  width: 100%;
+  top: 0;
   a{
     color: $black_color;
     text-decoration: none;
@@ -17,4 +20,13 @@
       color: white;
     }
   }
+}
+.active-nav{
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+}
+.inactive-nav{
+  color: black;
+  border: 1px solid orange;
+  padding: 10px;
 }

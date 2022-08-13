@@ -48,7 +48,7 @@ const Contacts = () => {
 
       <h3>Susisiekite:</h3>
       <div>
-        <form action="">
+        <form className="contact-us-form" action="">
           <input className="field-1" type="text" placeholder="Vardas" />
           <input className="field-2" type="text" placeholder="Pavardė" />
           <input className="field-3" type="email" placeholder="E-paštas" />

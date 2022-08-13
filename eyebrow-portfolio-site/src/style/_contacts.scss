@@ -18,6 +18,21 @@
   font-size: 30px;
   color: #999999;
 }
+.contact-us-form{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 .field-1, .field-2{
-  width: 40%;
+  width: 50%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.field-3, .field-4{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.field-4{
+  height: 50px;
 }
