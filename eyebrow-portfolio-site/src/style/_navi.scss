@@ -13,7 +13,7 @@
   width: 100%;
   top: 0;
   a{
-    color: $black_color;
+    // color: $black_color;
     text-decoration: none;
     transition: 0.3s;
     &:hover{
@@ -21,12 +21,12 @@
     }
   }
 }
-.active-nav{
-  color: rgb(255, 255, 255);
-  border: 1px solid white;
+.active-link{
+  color: rgb(255, 77, 77);
+  // .nav-bar a{
+  //   color: rgb(255, 74, 74);
+  // }
 }
-.inactive-nav{
-  color: black;
-  border: 1px solid orange;
-  padding: 10px;
+.inactive-link{
+  color: $black_color;
 }

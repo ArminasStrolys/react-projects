@@ -5,6 +5,10 @@ import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
 
 const Contacts = () => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault(e);
+  };
+
   return (
     <div className="contacts">
       <h2>Kontaktai</h2>
@@ -48,11 +52,23 @@ const Contacts = () => {
 
       <h3>Susisiekite:</h3>
       <div>
-        <form className="contact-us-form" action="">
+        <form
+          className="contact-us-form"
+          onSubmit={(e) => handleFormSubmit(e)}
+          action=""
+        >
           <input className="field-1" type="text" placeholder="Vardas" />
           <input className="field-2" type="text" placeholder="Pavardė" />
           <input className="field-3" type="email" placeholder="E-paštas" />
-          <input className="field-4" type="text" placeholder="Jūsų žinutė" />
+          <textarea
+            className="field-4"
+            rows="5"
+            cols="33"
+            placeholder="Jūsų žinutė"
+          ></textarea>
+          <button className="send-btn" type="submit">
+            Siųsti
+          </button>
         </form>
       </div>
     </div>

@@ -19,20 +19,44 @@
   color: #999999;
 }
 .contact-us-form{
-  width: 70%;
+  width: 50%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 60px;
 }
 .field-1, .field-2{
-  width: 50%;
+  width: 45%;
+  margin: auto;
   margin-bottom: 20px;
+  justify-content: space-between;
   box-sizing: border-box;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
 }
 .field-3, .field-4{
   width: 100%;
   margin-bottom: 20px;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
 }
 .field-4{
   height: 50px;
+  resize: none
+}
+.send-btn{
+  margin: 0 auto;
+  height: 30px;
+  width: 100px;
+  background-color: #E4405F;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover{
+    background-color: hsl(0, 100%, 33%);
+  }
 }
