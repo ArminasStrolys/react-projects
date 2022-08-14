@@ -23,25 +23,21 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  // column-gap: 60px;
 }
 .field-1, .field-2{
+  position: relative;
   width: 45%;
   margin: auto;
   margin-bottom: 20px;
-  // justify-content: space-between;
   box-sizing: border-box;
   background-color: rgba($color: #ffffff, $alpha: 0.7);
   border: 1px solid rgb(204, 204, 204);
   padding: 10px;
 }
-
 .field-1{
-  position: relative;
 left: -2.45%;
 }
 .field-2{
-  position: relative;
 right: -2.45%;
 }
 .field-3, .field-4{
