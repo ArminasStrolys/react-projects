@@ -1,7 +1,5 @@
 import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import carousel1 from '../../images/eyes-wide1.jpg';
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from './CarouselComponent.jsx';
 
 const Home = () => {
   return (
@@ -10,31 +8,7 @@ const Home = () => {
 
       <h2>Pagrindinis</h2>
       <div>Bendra info</div>
-      <div className="carousel-section">
-        <Carousel
-          autoPlay="true"
-          infiniteLoop="true"
-          interval={5000}
-          showStatus="false"
-          showIndicators="false"
-          showThumbs="false"
-          showArrows="true"
-          centerMode="true"
-          transitionTime="700"
-          centerSlidePercentage="70"
-          dynamicHeight="true"
-        >
-          <div>
-            <img src={carousel1} alt="eyes" />
-          </div>
-          <div>
-            <img src={carousel1} alt="eyes" />
-          </div>
-          <div>
-            <img src={carousel1} alt="eyes" />
-          </div>
-        </Carousel>
-      </div>
+      <Carousel className="carousel-section" />
     </div>
   );
 };
