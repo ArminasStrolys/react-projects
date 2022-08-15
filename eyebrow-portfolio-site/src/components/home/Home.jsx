@@ -1,11 +1,10 @@
 import React from 'react';
 import Carousel from './CarouselComponent.jsx';
+// import { BrowserRouter as Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className="home">
-      <h2>Pagrindinis</h2>
-
       <h2>Pagrindinis</h2>
       <article>
         <p>
@@ -50,7 +49,37 @@ const Home = () => {
         </p>
       </article>
       <Carousel className="carousel-section" />
-      <div style={{ marginTop: '50px' }}>
+      <div>
+        <h3>Kokį antakių korekcijos tipą išsirinkti?</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          fugiat qui minus veniam assumenda beatae distinctio ipsam odio, quae
+          laudantium saepe possimus consequuntur repellendus explicabo dicta
+          dolor quas vitae nulla. Architecto nesciunt deserunt soluta totam,
+          cupiditate sequi iure officiis repudiandae amet sed, facilis velit
+          ipsa laboriosam maxime ad, aperiam placeat!
+        </p>
+        <h3>Ar man nepakenks dažai?</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+          magnam in provident quibusdam cumque similique maiores, cum, vero a
+          omnis, natus fugit molestias hic laboriosam eum. Repellat qui soluta
+          odio debitis! Magni repudiandae, dolorum magnam, soluta deleniti a
+          quaerat laudantium, mollitia omnis iste ipsam blanditiis sequi aperiam
+          quas inventore ullam aspernatur perspiciatis. Dignissimos sequi
+          corrupti facilis perferendis fugit, velit vitae.
+        </p>
+        <h3>Alergijos dažams</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+          sapiente laborum at, velit tempore praesentium quia tempora amet autem
+          necessitatibus, reiciendis dicta facere, magni ipsa aperiam rem ipsum
+          neque eaque molestias! Mollitia eos perferendis saepe rerum inventore
+          cupiditate modi adipisci!
+        </p>
+      </div>
+      <div>
+        <h2>Nuolaidos</h2>
         <b>Nuolaidos</b>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, neque,
@@ -58,7 +87,24 @@ const Home = () => {
           ipsum distinctio facilis maxime quos ea?
         </p>
       </div>
-      <footer>Copyrights 'Lorenzia' 2022.</footer>
+      <div style={{ textAlign: 'center', margin: '50px 0' }}>
+        <h2>Susisiekite konsultacijai</h2>
+        <button>
+          {/* <Link className="active-link" to="/contacts">
+            Kontaktai
+          </Link> */}
+          <a href="/contacts">Apsilankymo rezervacija</a>
+        </button>
+      </div>
+      <footer
+        style={{
+          marginBottom: '20px',
+          textAlign: 'center',
+          fontWeight: 'bold',
+        }}
+      >
+        Copyrights © Lorenzia 2022.
+      </footer>
     </div>
   );
 };
