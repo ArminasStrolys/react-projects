@@ -70,6 +70,17 @@ const Contacts = () => {
             Siųsti
           </button>
         </form>
+        <div className="map-of-location">
+          <iframe
+            title="mapsas"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.8966549027164!2d23.960906017443847!3d54.9222856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e718f6c185a0c7%3A0x1b7e0661a2f6dc00!2sSAVAS!5e0!3m2!1sen!2slt!4v1660559216633!5m2!1sen!2slt"
+            width="100%"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </div>
   );

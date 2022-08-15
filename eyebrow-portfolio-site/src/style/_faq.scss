@@ -1,7 +1,26 @@
+
 .faq{
   margin: auto 10%;
   margin-top: 50px;
 }
+.faq-split{
+  display: flex;
+  justify-content: space-between;
+}
 .faq-style{
   width: 40%;
+  ul{
+    list-style: none;
+    li::before{
+      content: "\1F441";
+      font-size: 30px;
+      color: #ff0022;
+      position: relative;
+      top: 48px;
+      left: -70px;
+    }
+    li{
+      text-indent: 20px;
+    }
+  }
 }
