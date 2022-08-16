@@ -7,8 +7,27 @@ h2{
   text-align: center;
   top: 50px;
   margin-bottom: 50px;
+  z-index: -1;
 }
 .carousel-section{
   margin: 0 auto;
   width: 90%;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px 0;
+  .card-1, .card-2, .card-3{
+    width: 200px;
+    height: 300px;
+    border: 1px solid coral;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .card-2{
+  }
+  .card-3{
+  }
 }

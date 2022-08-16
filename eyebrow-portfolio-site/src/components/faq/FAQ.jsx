@@ -1,28 +1,16 @@
 import React from 'react';
-import { GrDebian } from 'react-icons/gr';
 
 export default function FAQ() {
   return (
     <div className="faq">
       <p>DUK</p>
-      <p>DUK</p>
-      <p>DUK</p>
+      <h2>Dažniausiai užduodami klausimai</h2>
       <div className="faq-split">
         <article className="faq-style">
-          {/* <h3>Does it hurt?</h3>
-        <p>
-          Before the Permanent Makeup/Microblading begins, a topical numbing
-          cream is applied to the area to minimize discomfort, followed by a
-          liquid anesthetic. You might feel a slight discomfort but it is almost
-          painless. Patients with even the slightest pain tolerance are able to
-          handle the treatment just fine.
-        </p> */}
           <ul>
-            {/* GrDebian */}
             <li>
-
               <h3>How long do the results last?</h3>
-              
+
               <p>
                 Since microblading pigments are not implanted into the skin as
                 deep as traditional tattoos, the area will naturally fade

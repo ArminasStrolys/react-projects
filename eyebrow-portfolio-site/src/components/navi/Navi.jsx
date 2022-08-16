@@ -23,7 +23,7 @@ const Navi = () => {
             Pagrindinis
           </Link>
           <Link
-            onClick={(e) => handleActiveLinks(e)}
+            // onClick={(e) => handleActiveLinks(e)}
             className="inactive-link"
             to="/services"
           >
