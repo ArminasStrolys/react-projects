@@ -18,11 +18,23 @@
   font-size: 30px;
   color: #999999;
 }
+.arrow-icon{
+  position: relative;
+  display: inline-block;
+  height: 75px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  
+}
 .contact-us-form{
   width: 50%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  border: 2px solid #E4405F;
+  padding: 40px 80px;
+  border-radius: 20px;
+  margin-bottom: 50px;
 }
 .field-1, .field-2{
   position: relative;

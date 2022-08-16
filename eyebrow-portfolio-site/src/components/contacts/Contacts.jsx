@@ -3,6 +3,7 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
+import { BsArrow90DegRight } from 'react-icons/bs';
 
 const Contacts = () => {
   const handleFormSubmit = (e) => {
@@ -44,10 +45,7 @@ const Contacts = () => {
           <HiOutlineMail />
         </i>
       </div>
-      <br />
-      <div>
-        Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
-      </div>
+
       <br />
 
       <h3>Susisiekite:</h3>
@@ -70,6 +68,13 @@ const Contacts = () => {
             Siųsti
           </button>
         </form>
+        <br />
+        <div>
+          Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
+          <i className="arrow-icon">
+            <BsArrow90DegRight />
+          </i>
+        </div>
         <div className="map-of-location">
           <iframe
             title="mapsas"
