@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from './CarouselComponent.jsx';
-// import { BrowserRouter as Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -125,10 +124,7 @@ const Home = () => {
       </div>
       <div style={{ textAlign: 'center', margin: '50px 0' }}>
         <h2>Susisiekite konsultacijai</h2>
-        <button>
-          {/* <Link className="active-link" to="/contacts">
-            Kontaktai
-          </Link> */}
+        <button className="redirect-btn">
           <a href="/contacts">Apsilankymo rezervacija</a>
         </button>
       </div>
