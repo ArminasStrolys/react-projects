@@ -32,7 +32,7 @@ const Navi = () => {
           <Link className="inactive-link" to="/gallery">
             Galerija
           </Link>
-          <Link className="active-link" to="/contacts">
+          <Link className="inactive-link" to="/contacts">
             Kontaktai
           </Link>
           <Link className="inactive-link" to="/about">
@@ -51,6 +51,20 @@ const Navi = () => {
           <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Router>
+      <footer
+        style={{
+          marginBottom: '20px',
+          textAlign: 'center',
+          fontWeight: 'bold',
+          position: 'relative',
+          bottom: '-20px',
+          backgroundColor: 'black',
+          color: 'white',
+          padding: '10px',
+        }}
+      >
+        Copyrights © Lorenzia 2022.
+      </footer>
     </div>
   );
 };

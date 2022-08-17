@@ -128,15 +128,6 @@ const Home = () => {
           <a href="/contacts">Apsilankymo rezervacija</a>
         </button>
       </div>
-      <footer
-        style={{
-          marginBottom: '20px',
-          textAlign: 'center',
-          fontWeight: 'bold',
-        }}
-      >
-        Copyrights © Lorenzia 2022.
-      </footer>
     </div>
   );
 };
