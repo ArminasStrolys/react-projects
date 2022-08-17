@@ -7,14 +7,18 @@ h2{
   margin-bottom: 50px;
 }
 .eyebrow-types{
-  height: 450px;
+display: inline-block;
+margin: 50px auto;
   img{
+    margin: 10px;
     float: left;
     width: 400px;
   }
 }
-.eyebrow-types:nth-of-type(1){
-  height: 400px;
+.eyebrow-types:nth-of-type(2){
+  img{
+    float: right;
+  }
 }
 .customTable{
   margin: 50px auto;
