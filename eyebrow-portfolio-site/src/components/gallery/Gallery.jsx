@@ -2,7 +2,7 @@ import React from 'react';
 import eyes1 from '../../images/eyebrows1.jpg';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-// 
+
 const Gallery = () => {
   const images = [eyes1, eyes1, eyes1, eyes1, eyes1, eyes1];
 
