@@ -7,18 +7,26 @@ const Gallery = () => {
   const images = [eyes1, eyes1, eyes1, eyes1, eyes1, eyes1];
   //
   return (
-    <div className="gallery">
-      <h2>Galerija</h2>
-      <div className="image-collection">
-        {images.map((e) => {
-          return (
-            <Zoom>
-              <img src={e} alt="Woman eyebrows after and before in this pic" />
-            </Zoom>
-          );
-        })}
+    <div>
+      <div className="gallery">
+        <h2>Galerija</h2>
+        <div className="image-collection">
+          {images.map((e) => {
+            return (
+              <Zoom>
+                <img
+                  src={e}
+                  alt="Woman eyebrows after and before in this pic"
+                />
+              </Zoom>
+            );
+          })}
+        </div>
+        <div className="empty-div"></div>
       </div>
-      <div className="empty-div"></div>
+      <footer className="footer-gallery-about-faq">
+        Copyrights © Lorenzia 2022.
+      </footer>
     </div>
   );
 };
