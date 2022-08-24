@@ -5,19 +5,96 @@ import Home from '../home/Home';
 import About from '../about/About';
 import Gallery from '../gallery/Gallery';
 import FAQ from '../faq/FAQ';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  NavLink,
+} from 'react-router-dom';
 
 const Navi = () => {
   return (
     <div>
       <Router>
         <nav className="nav-bar">
-          <Link to="/">Pagrindinis</Link>
-          <Link to="/services">Paslaugos</Link>
-          <Link to="/gallery">Galerija</Link>
-          <Link to="/contacts">Kontaktai</Link>
-          <Link to="/about">Apie</Link>
-          <Link to="/faq">D.U.K</Link>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/"
+          >
+            Pagrindinis
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/services"
+          >
+            Paslaugos
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/gallery"
+          >
+            Galerija
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/contacts"
+          >
+            Kontaktai
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/about"
+          >
+            Apie
+          </NavLink>
+          <NavLink
+            style={({ isActive }) => ({
+              color: isActive ? 'white' : 'black',
+              border: isActive ? '1px solid white' : 'none',
+              padding: isActive ? '10px' : '10px',
+              backgroundColor: isActive
+                ? 'rgba(250, 235, 215, 0)'
+                : 'rgba(250, 235, 215, 0)',
+            })}
+            to="/faq"
+          >
+            D.U.K
+          </NavLink>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
