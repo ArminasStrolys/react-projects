@@ -25,7 +25,6 @@ const Gallery = () => {
             );
           })}
         </div>
-        <div className="empty-div"></div>
       </div>
       <footer className="footer-gallery-about-faq">
         Copyrights © Lorenzia 2022.
