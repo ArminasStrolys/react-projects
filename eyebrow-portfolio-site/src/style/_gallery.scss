@@ -11,8 +11,7 @@ h2{
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 50px;
-
+  margin: 200px 50px;
   img{
     width: 400px;
   }
@@ -27,9 +26,8 @@ h2{
   font-weight: 600;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1725px), (max-height: 1300px) {
   .footer-gallery-about-faq{
       position: relative;
-      bottom: 0px;
     }
 }

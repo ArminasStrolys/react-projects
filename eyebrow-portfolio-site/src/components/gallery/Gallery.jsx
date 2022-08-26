@@ -1,15 +1,18 @@
 import React from 'react';
 import eyes1 from '../../images/eyebrows1.jpg';
+import eyes2 from '../../images/eyebrows2.jpg';
+import eyes3 from '../../images/eyebrows3.jpg';
+import eyes4 from '../../images/eyebrows4.jpg';
+import eyes5 from '../../images/eyebrows5.jpg';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 const Gallery = () => {
-  const images = [eyes1, eyes1, eyes1, eyes1, eyes1, eyes1];
+  const images = [eyes1, eyes2, eyes3, eyes4, eyes5];
 
   return (
     <div>
       <div className="gallery">
-        <h2>Galerija</h2>
         <div className="image-collection">
           {images.map((e) => {
             return (
