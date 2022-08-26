@@ -96,9 +96,7 @@ export default function FAQ() {
           </article>
         </div>
       </div>
-      <footer className="footer-gallery-about-faq">
-        Copyrights © Lorenzia 2022.
-      </footer>
+      <footer className="footer-faq">Copyrights © Lorenzia 2022.</footer>
     </div>
   );
 }

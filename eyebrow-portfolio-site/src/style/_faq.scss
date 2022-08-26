@@ -21,3 +21,21 @@
     }
   }
 }
+.footer-faq{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  background-color: #ffb9b9;
+  padding: 10px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1220px) {
+  .footer-faq{
+      position: relative;
+      bottom: 0px;
+      margin-top: 20px;
+    }
+}

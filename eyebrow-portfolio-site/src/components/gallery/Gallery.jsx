@@ -5,7 +5,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 const Gallery = () => {
   const images = [eyes1, eyes1, eyes1, eyes1, eyes1, eyes1];
-  //
+
   return (
     <div>
       <div className="gallery">

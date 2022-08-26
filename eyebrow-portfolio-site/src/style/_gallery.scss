@@ -20,11 +20,16 @@ h2{
 .footer-gallery-about-faq{
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   text-align: center;
   background-color: #ffb9b9;
   padding: 10px;
   font-weight: 600;
   box-sizing: border-box;
 }
-//
+@media screen and (max-width: 1599px) {
+  .footer-gallery-about-faq{
+      position: relative;
+      bottom: 0px;
+    }
+}
