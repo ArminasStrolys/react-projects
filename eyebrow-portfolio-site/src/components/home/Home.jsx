@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div>
       <div className="home">
-        <h2>Pagrindinis</h2>
         <article>
           <p>
             <b>Svarbi informacija</b>
