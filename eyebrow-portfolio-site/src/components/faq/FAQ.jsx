@@ -4,8 +4,6 @@ export default function FAQ() {
   return (
     <div>
       <div className="faq">
-        <p>DUK</p>
-        <h2>Dažniausiai užduodami klausimai</h2>
         <div className="faq-split">
           <article className="faq-style">
             <ul>

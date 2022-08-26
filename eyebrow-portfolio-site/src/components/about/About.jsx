@@ -5,7 +5,6 @@ export default function About() {
   return (
     <div>
       <div className="about">
-        <h2>Apie mus</h2>
         <div>
           <img src={profile} alt="" />
           <article className="bio">
@@ -36,13 +35,25 @@ export default function About() {
               Reiciendis quae molestias cupiditate. Error odio dicta sunt sint
               culpa labore aspernatur.
             </p>
+            <h3>Mano misija:</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              natus ducimus quia maiores. Debitis, numquam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quia vel obcaecati odio iste officia illum
+              consectetur, adipisci qui error nesciunt hic! Et, blanditiis
+              veritatis, quis cumque voluptatum doloremque, nesciunt ea error
+              eos illo perspiciatis ab! Non earum corporis perspiciatis
+              consectetur eius dolorum quia tenetur, ab iure expedita error
+              ipsam sint repudiandae nam ratione cumque perferendis illum hic
+              quasi quibusdam!
             </p>
+            <h3>Mano vizija:</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Suscipit, nesciunt.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quia vel obcaecati odio iste officia illum
+              consectetur, adipisci qui error nesciunt hic! Et, blanditiis
+              veritatis, quis cumque voluptatum doloremque, nesciunt ea error
+              eos illo perspiciatis ab! Non earum corporis perspiciatis
+              consectetur eius dolorum quia tenetur.
             </p>
           </article>
         </div>

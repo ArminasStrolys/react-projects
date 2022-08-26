@@ -13,7 +13,6 @@ const Contacts = () => {
   return (
     <div>
       <div className="contacts">
-        <h2>Kontaktai</h2>
         <div>
           <h3>Darbo laikas:</h3>
           <p>Pirmadienis: 08:00 - 19:00</p>
