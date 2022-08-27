@@ -85,7 +85,7 @@ const Home = () => {
             </div>
           </div>
         </article>
-        <Carousel className="carousel-section" />
+        <Carousel />
         <div>
           <h3>Kokį antakių korekcijos tipą išsirinkti?</h3>
           <p>

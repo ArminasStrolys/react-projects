@@ -34,8 +34,8 @@ const CarouselComponent = () => {
 
   return (
     <div>
-      <div>
-        <h2>Mano klienčių darbai</h2>
+      <h2>Mano klienčių darbai:</h2>
+      <div className="carousel-section">
         <Carousel
           data={data}
           time={4000}

@@ -8,10 +8,6 @@ const PricesAndServices = () => {
     <div>
       <div className="services">
         <div>
-          <Correction />
-          <Laminate />
-          <Henna />
-
           <table className="customTable">
             <thead>
               <tr>
@@ -51,6 +47,10 @@ const PricesAndServices = () => {
             </tbody>
           </table>
         </div>
+
+        <Correction />
+        <Laminate />
+        <Henna />
       </div>
       <footer className="footer-home-services-contacts">
         Copyrights © Lorenzia 2022.

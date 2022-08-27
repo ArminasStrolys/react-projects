@@ -23,7 +23,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/"
@@ -36,7 +36,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/services"
@@ -49,7 +49,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/gallery"
@@ -62,7 +62,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/contacts"
@@ -75,7 +75,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/about"
@@ -88,7 +88,7 @@ const Navi = () => {
               border: isActive ? '1px solid white' : 'none',
               padding: isActive ? '10px' : '10px',
               backgroundColor: isActive
-                ? 'rgba(250, 235, 215, 0)'
+                ? 'rgba(250, 250, 250, 0.2)'
                 : 'rgba(250, 235, 215, 0)',
             })}
             to="/faq"

@@ -18,7 +18,7 @@ margin: 50px auto;
 .customTable{
   margin: 50px auto;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff81;
   border-collapse: collapse;
   border-width: 2px;
   border-color: #FFFFFF;
@@ -32,6 +32,11 @@ margin: 50px auto;
   padding: 5px;
 }
 .customTable thead {
-  background-color: #F88686;
+  background-color: #f8868693;
   text-align: left;
+}
+@media screen and (min-width: 1000px) {
+  .customTable{
+    width: 50%;
+    }
 }
