@@ -17,6 +17,7 @@ const Navi = () => {
     <div>
       <Router>
         <nav className="nav-bar">
+          <div className="drop-down">MENIU</div>
           <NavLink
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',

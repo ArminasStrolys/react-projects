@@ -14,7 +14,7 @@ const Gallery = () => {
     <div>
       <div className="gallery">
         <div className="image-collection">
-          {images.map((e) => {
+          {images.map((e, index) => {
             return (
               <Zoom>
                 <img
