@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Contacts from '../contacts/Contacts';
 import Services from '../services/Services';
 import Home from '../home/Home';
@@ -13,11 +13,23 @@ import {
 } from 'react-router-dom';
 
 const Navi = () => {
+  const [visible, setVisible] = useState(false);
+
+  const visibility = () => {
+    visible === true ? setVisible(false) : setVisible(true);
+    console.log(visible);
+  };
+
   return (
     <div>
       <Router>
-        <nav className="nav-bar">
-          <div className="drop-down">MENIU</div>
+        <div onClick={visibility} className="drop-down">
+          MENIU
+        </div>
+        <nav
+          className="nav-bar"
+          style={{ marginTop: visible === false ? '0px' : '-450px' }}
+        >
           <NavLink
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
