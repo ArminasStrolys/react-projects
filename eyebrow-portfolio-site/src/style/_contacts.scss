@@ -23,7 +23,6 @@
   height: 75px;
   font-size: 30px;
   transform: rotate(90deg);
-  
 }
 .contact-us-form{
   width: 50%;
@@ -78,4 +77,24 @@ right: -2.45%;
 }
 .map-of-location{
   margin: 20px auto;
+}
+@media screen and (max-width: 800px) {
+  .contact-us-form{
+    width: 80%;
+    padding: 30px;
+  }
+  .field-1, .field-2, .field-3, .field-4{
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .timesheet{
+    text-align: center;
+  }
+  .social-links{
+    text-align: center;
+  }
 }

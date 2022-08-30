@@ -40,6 +40,22 @@ margin: 50px auto;
     width: 50%;
     }
 }
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  .eyebrow-types{
+    img{
+      width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 500px) {
+  .eyebrow-types{
+    img{
+      width: 200px;
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .eyebrow-types{
       img{
@@ -48,4 +64,12 @@ margin: 50px auto;
         float: none;
       }
     }
+    .eyebrow-types:nth-of-type(2){
+      img{
+        float: none;
+      }
+}
+.services-title{
+  text-align: center;
+}
 }

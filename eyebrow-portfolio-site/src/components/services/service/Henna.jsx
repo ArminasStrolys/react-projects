@@ -5,7 +5,7 @@ export default function Henna() {
   return (
     <article className="eyebrow-types">
       <img src={henna} alt="Dyed eyebrows with henna before and after" />
-      <h3>Antakių dažymas HENNA</h3>
+      <h3 className="services-title">Antakių dažymas HENNA</h3>
       <p>
         Henna yra natūralus augalinis pigmentas, išgaunamas iš Heninės
         lavsonijos medžio. Labiausiai pamėgta henna dažų savybė yra jų ilgas

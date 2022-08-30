@@ -5,7 +5,7 @@ export default function Laminate() {
   return (
     <article className="eyebrow-types">
       <img src={lamination} alt="Laminated eyebrows before and after" />
-      <h3>Antakių laminavimas</h3>
+      <h3 className="services-title">Antakių laminavimas</h3>
       <p>
         Antakių laminavimas yra procedūra, kuri skirta ne tik antakių formai
         išlaikyti, bet ir juos pamaitinti. Tai neinvazinė procedūra antakiams

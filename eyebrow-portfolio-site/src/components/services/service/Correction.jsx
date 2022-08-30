@@ -5,7 +5,7 @@ export default function Correction() {
   return (
     <article className="eyebrow-types">
       <img src={correction} alt="Eyebrow correction before and after" />
-      <h3>Antakių korekcija</h3>
+      <h3 className="services-title">Antakių korekcija</h3>
       <p>
         Procedūra atliekama tiek vyrams, tiek moterims. Antakių korekcijos metu
         suteikiama teisinga, veidui tinkama antakių forma, pašalinant

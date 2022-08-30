@@ -13,7 +13,7 @@ const Contacts = () => {
   return (
     <div>
       <div className="contacts">
-        <div>
+        <div className="timesheet">
           <h3>Darbo laikas:</h3>
           <p>Pirmadienis: 08:00 - 19:00</p>
           <p>Antradienis: 08:00 - 19:00</p>
@@ -26,7 +26,7 @@ const Contacts = () => {
           </p>
         </div>
         <br />
-        <div>
+        <div className="social-links">
           <h3>Socialiniai tinklai:</h3>
           <p>Facebook/link/antakiai</p>
           <i className="fb-icon">
