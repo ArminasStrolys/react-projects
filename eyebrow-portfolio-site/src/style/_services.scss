@@ -40,3 +40,12 @@ margin: 50px auto;
     width: 50%;
     }
 }
+@media screen and (max-width: 500px) {
+  .eyebrow-types{
+      img{
+        width: 100%;
+        margin: auto;
+        float: none;
+      }
+    }
+}
