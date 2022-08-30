@@ -96,6 +96,7 @@ const Navi = () => {
             Apie
           </NavLink>
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',

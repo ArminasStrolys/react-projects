@@ -14,16 +14,11 @@ const Gallery = () => {
     <div>
       <div className="gallery">
         <div className="image-collection">
-          {images.map((e, index) => {
-            return (
-              <Zoom>
-                <img
-                  src={e}
-                  alt="Woman eyebrows after and before in this pic"
-                />
-              </Zoom>
-            );
-          })}
+          {images.map((e, index) => (
+            <Zoom key={index}>
+              <img src={e} alt="Woman eyebrows after and before in this pic" />
+            </Zoom>
+          ))}
         </div>
       </div>
       <footer className="footer-gallery-about-faq">
