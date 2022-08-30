@@ -23,7 +23,7 @@
 .footer-faq{
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   text-align: center;
   background-color: #ffb9b9;
   padding: 10px;
@@ -31,9 +31,27 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1490px), (max-height: 1500px) and (min-height: 1000px) {
+@media screen and (max-width: 1200px) {
   .footer-faq{
-      position: relative;
-      margin-top: 20px;
+    bottom: auto;
     }
+}
+@media screen and (max-width: 700px) {
+  .faq-split{
+    display: block;
+    h3{
+      text-align: center;
+    }
+  }
+  .faq-style{
+    width: 100%;
+    ul{
+      li{
+        margin-top: 50px;
+      }
+      li::before{
+        content: " ";
+      }
+    }
+}
 }

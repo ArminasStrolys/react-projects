@@ -61,7 +61,7 @@ const Contacts = () => {
             <i className="phone-icon">
               <FiPhoneCall />
             </i>
-            <b> Tel.: +3701234567</b>
+            <b> +(370) 123 4567</b>
           </p>
           <br />
           {/* ------------------- MA -------------------*/}
@@ -69,7 +69,7 @@ const Contacts = () => {
             <i className="email-icon">
               <HiOutlineMail />
             </i>
-            <b> E-mail: lor.antakiai@gmail.com</b>{' '}
+            <b> E-mail: lor.antakiai@gmail.com</b>
           </p>
         </div>
 

@@ -31,6 +31,12 @@
     cursor: pointer;
     visibility: none;
   }
+  .logo{
+    width: 150px;
+    position: absolute;
+    left: 10px;
+    top: -30px;
+  }
 }
 
 @media screen and (max-width: 850px) {

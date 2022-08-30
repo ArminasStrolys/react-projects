@@ -5,6 +5,7 @@ import Home from '../home/Home';
 import About from '../about/About';
 import Gallery from '../gallery/Gallery';
 import FAQ from '../faq/FAQ';
+import logo from '../../images/logo.png';
 import {
   BrowserRouter as Router,
   Route,
@@ -29,6 +30,7 @@ const Navi = () => {
           className="nav-bar"
           style={{ marginTop: visible === false ? '0px' : '-450px' }}
         >
+          <img className="logo" src={logo} alt="logo" />
           <NavLink
             onClick={() => setVisible(true)}
             style={({ isActive }) => ({
