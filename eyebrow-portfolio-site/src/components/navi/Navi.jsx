@@ -13,11 +13,10 @@ import {
 } from 'react-router-dom';
 
 const Navi = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   const visibility = () => {
     visible === true ? setVisible(false) : setVisible(true);
-    console.log(visible);
   };
 
   return (
@@ -31,6 +30,7 @@ const Navi = () => {
           style={{ marginTop: visible === false ? '0px' : '-450px' }}
         >
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',
@@ -44,6 +44,7 @@ const Navi = () => {
             Pagrindinis
           </NavLink>
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',
@@ -57,6 +58,7 @@ const Navi = () => {
             Paslaugos
           </NavLink>
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',
@@ -70,6 +72,7 @@ const Navi = () => {
             Galerija
           </NavLink>
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',
@@ -83,6 +86,7 @@ const Navi = () => {
             Kontaktai
           </NavLink>
           <NavLink
+            onClick={() => setVisible(true)}
             style={({ isActive }) => ({
               color: isActive ? 'white' : 'black',
               border: isActive ? '1px solid white' : 'none',

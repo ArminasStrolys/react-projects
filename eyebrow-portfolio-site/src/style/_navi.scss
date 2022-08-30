@@ -18,7 +18,8 @@
     text-decoration: none;
     transition: 0.3s;
     &:hover{
-      color: white;
+      text-decoration: underline;
+      transition: 0.3s;
     }
   }
   .drop-down{
@@ -31,14 +32,10 @@
     visibility: none;
   }
 }
-.inactive-link{
-  color: $black_color;
-}
 
 @media screen and (max-width: 850px) {
   .nav-bar{
     background: rgba(255, 166, 0, 0.267);
-    // padding: 0;
     flex-direction: column;
     gap: 5px;
     height: auto;
@@ -46,9 +43,6 @@
     margin-bottom: 100px;
     transition: 0.3s;
     position: relative;
-    // a{
-    //   display: none;
-    // }
     }
     .drop-down{
       display: flex;
@@ -64,5 +58,8 @@
     display: none;
     left: -100px;
     position: absolute;
+  }
+  .nav-bar{
+    margin-top: 0 !important;
   }
 }
