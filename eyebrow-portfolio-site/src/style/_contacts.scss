@@ -1,6 +1,15 @@
 .contacts{
   margin: 200px 5% 50px 5%;
 }
+.social-links{
+  a{
+    color: black;
+    &:hover{
+      color: rgb(134, 0, 0);
+    }
+  }
+
+}
 .fb-icon{
   font-size: 30px;
   color: #4267B2;
@@ -8,6 +17,13 @@
 .ig-icon{
   font-size: 30px;
   color: #E4405F;
+}
+.ig-link{
+  display: inline-block;
+  b{
+    position: relative;
+    top: -9px;
+  }
 }
 .phone-icon{
   font-size: 30px;

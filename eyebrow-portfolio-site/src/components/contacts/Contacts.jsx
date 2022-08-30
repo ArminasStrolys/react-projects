@@ -28,22 +28,49 @@ const Contacts = () => {
         <br />
         <div className="social-links">
           <h3>Socialiniai tinklai:</h3>
-          <p>Facebook/link/antakiai</p>
-          <i className="fb-icon">
-            <FaFacebookSquare />
-          </i>
-          <p>Instagram/link/antakiai</p>
-          <i className="ig-icon">
-            <BsInstagram />
-          </i>
-          <p>Mob. tel.: +3701234567</p>
-          <i className="phone-icon">
-            <FiPhoneCall />
-          </i>
-          <p>E-mail: lor.antakiai@gmail.com</p>
-          <i className="email-icon">
-            <HiOutlineMail />
-          </i>
+          {/* ------------------- FB -------------------*/}
+          <a
+            href="https://www.instagram.com/lorbeautystudio_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="ig-link">
+              <i className="fb-icon">
+                <FaFacebookSquare />
+              </i>
+              <b> lorbeautystudio</b>
+            </p>
+          </a>
+          <br />
+          {/* ------------------- IG -------------------*/}
+          <a
+            href="https://www.instagram.com/lorbeautystudio_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="ig-link">
+              <i className="ig-icon">
+                <BsInstagram />
+              </i>
+              <b> lorbeautystudio_</b>
+            </p>
+          </a>
+          <br />
+          {/* ------------------- PH -------------------*/}
+          <p className="ig-link">
+            <i className="phone-icon">
+              <FiPhoneCall />
+            </i>
+            <b> Tel.: +3701234567</b>
+          </p>
+          <br />
+          {/* ------------------- MA -------------------*/}
+          <p className="ig-link">
+            <i className="email-icon">
+              <HiOutlineMail />
+            </i>
+            <b> E-mail: lor.antakiai@gmail.com</b>{' '}
+          </p>
         </div>
 
         <br />
