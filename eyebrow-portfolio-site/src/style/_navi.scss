@@ -52,7 +52,6 @@
     }
     .drop-down{
       display: flex;
-
       justify-content: center;
       height: 100%;
       line-height: 50px;
@@ -69,4 +68,9 @@
   .nav-bar{
     margin-top: 0 !important;
   }
+}
+@media screen and (max-width: 1100px) {
+  .logo{
+display: none;
+      }
 }
