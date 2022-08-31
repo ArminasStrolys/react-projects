@@ -4,10 +4,21 @@ import { BsInstagram } from 'react-icons/bs';
 import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsArrow90DegRight } from 'react-icons/bs';
+// import emailKeys from '../../utils/emailKeys';
 
 const Contacts = () => {
   const handleFormSubmit = (e) => {
-    e.preventDefault(e);
+    // e.preventDefault(e);
+    // emailjs
+    //   .sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+    //   .then(
+    //     (result) => {
+    //       alert('Message Sent, We will get back to you shortly', result.text);
+    //     },
+    //     (error) => {
+    //       alert('An error occurred, Please try again', error.text);
+    //     }
+    //   );
   };
 
   return (
@@ -81,14 +92,41 @@ const Contacts = () => {
             onSubmit={(e) => handleFormSubmit(e)}
             action=""
           >
-            <input className="field-1" type="text" placeholder="Vardas" />
-            <input className="field-2" type="text" placeholder="Pavardė" />
-            <input className="field-3" type="email" placeholder="E-paštas" />
+            <input
+              className="field-1"
+              name="user_name"
+              type="text"
+              placeholder="Vardas"
+              required
+            />
+            <input
+              className="field-2"
+              name="user_surname"
+              type="text"
+              placeholder="Pavardė"
+              required
+            />
+            <input
+              className="field-3"
+              name="user_email"
+              type="email"
+              placeholder="E-paštas"
+              required
+            />
+            <input
+              className="field-3"
+              name="user_phone"
+              type="tel"
+              placeholder="Mob. tel. numeris"
+              required
+            />
             <textarea
               className="field-4"
+              name="user_msg"
               rows="5"
               cols="33"
               placeholder="Jūsų žinutė"
+              required
             ></textarea>
             <button className="send-btn" type="submit">
               Siųsti
