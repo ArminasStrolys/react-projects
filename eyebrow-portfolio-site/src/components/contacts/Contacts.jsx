@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsArrow90DegRight } from 'react-icons/bs';
-// import emailKeys from '../../utils/emailKeys';
+import emailjs from '@emailjs/browser';
+import emailKeys from '../../utils/emailKeys';
 
 const Contacts = () => {
+  const form = useRef();
+
   const handleFormSubmit = (e) => {
-    // e.preventDefault(e);
-    // emailjs
-    //   .sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
-    //   .then(
-    //     (result) => {
-    //       alert('Message Sent, We will get back to you shortly', result.text);
-    //     },
-    //     (error) => {
-    //       alert('An error occurred, Please try again', error.text);
-    //     }
-    //   );
+    // e.preventDefault();
+    emailjs
+      .sendForm(
+        emailKeys.SERVICE_ID,
+        emailKeys.TEMPLATE_ID,
+        form.current,
+        emailKeys.PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    alert('Ačiū, Jūsų žinutė išsiųsta!');
   };
 
   return (
@@ -36,7 +45,6 @@ const Contacts = () => {
             Sekmadienis: <b>Nedirbame</b>
           </p>
         </div>
-        {/* <br /> */}
         <div className="social-links">
           <h3>Soc. tinklų nuorodos:</h3>
           {/* ------------------- FB -------------------*/}
@@ -88,6 +96,7 @@ const Contacts = () => {
         <div className="contact-form">
           <h3>Palikite mums žinutę</h3>
           <form
+            ref={form}
             className="contact-us-form"
             onSubmit={(e) => handleFormSubmit(e)}
             action=""
