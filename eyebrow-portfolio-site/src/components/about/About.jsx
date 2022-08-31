@@ -58,9 +58,7 @@ export default function About() {
           </article>
         </div>
       </div>
-      <footer className="footer-gallery-about-faq">
-        Copyrights © Lorenzia 2022.
-      </footer>
+      <footer className="footer-about">Copyrights © Lorenzia 2022.</footer>
     </div>
   );
 }
