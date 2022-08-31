@@ -25,20 +25,20 @@ const Contacts = () => {
             Sekmadienis: <b>Nedirbame</b>
           </p>
         </div>
-        <br />
+        {/* <br /> */}
         <div className="social-links">
-          <h3>Socialiniai tinklai:</h3>
+          <h3>Soc. tinklų nuorodos:</h3>
           {/* ------------------- FB -------------------*/}
           <a
             href="https://www.instagram.com/lorbeautystudio_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="ig-link">
+            <p className="icons">
               <i className="fb-icon">
                 <FaFacebookSquare />
               </i>
-              <b> lorbeautystudio</b>
+              <p> lorbeautystudio</p>
             </p>
           </a>
           <br />
@@ -48,35 +48,34 @@ const Contacts = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="ig-link">
+            <p className="icons">
               <i className="ig-icon">
                 <BsInstagram />
               </i>
-              <b> lorbeautystudio_</b>
+              <p> lorbeautystudio_</p>
             </p>
           </a>
           <br />
           {/* ------------------- PH -------------------*/}
-          <p className="ig-link">
+          <h3>Susisiekite:</h3>
+          <p className="icons">
             <i className="phone-icon">
               <FiPhoneCall />
             </i>
-            <b> +(370) 123 4567</b>
+            <p> +(370) 123 4567</p>
           </p>
           <br />
           {/* ------------------- MA -------------------*/}
-          <p className="ig-link">
+          <p className="icons">
             <i className="email-icon">
               <HiOutlineMail />
             </i>
-            <b> E-mail: lor.antakiai@gmail.com</b>
+            <p> lor.antakiai@gmail.com</p>
           </p>
         </div>
-
         <br />
-
-        <h3>Susisiekite:</h3>
-        <div>
+        <div className="contact-form">
+          <h3>Palikite mums žinutę</h3>
           <form
             className="contact-us-form"
             onSubmit={(e) => handleFormSubmit(e)}

@@ -1,14 +1,31 @@
 .contacts{
   margin: 200px 5% 50px 5%;
-}
-.social-links{
-  a{
-    color: black;
-    &:hover{
-      color: rgb(134, 0, 0);
-    }
+  .timesheet, .social-links{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
   }
-
+  .timesheet{
+    line-height: 31px;
+  }
+  .social-links{
+    float: right;
+    margin-bottom: 50px;
+    a{
+      color: black;
+      &:hover{
+        color: rgb(134, 0, 0);
+      }
+    }
+}
+.contact-form{
+  h3{
+    margin-top: 50px;
+    text-align: right;
+    float: none;
+  }
+}
 }
 .fb-icon{
   font-size: 30px;
@@ -18,13 +35,6 @@
   font-size: 30px;
   color: #E4405F;
 }
-.ig-link{
-  display: inline-block;
-  b{
-    position: relative;
-    top: -9px;
-  }
-}
 .phone-icon{
   font-size: 30px;
   color: #006928;
@@ -33,6 +43,15 @@
   font-size: 30px;
   color: #999999;
 }
+.icons{
+  display: inline-block;
+  p{
+    position: relative;
+    display: inline;
+    top: -9px;
+  }
+}
+
 .arrow-icon{
   position: relative;
   display: inline-block;
@@ -107,10 +126,8 @@ right: -2.45%;
   }
 }
 @media screen and (max-width: 600px) {
-  .timesheet{
+  .timesheet, .social-links{
     text-align: center;
-  }
-  .social-links{
-    text-align: center;
+    width: 100%;
   }
 }
