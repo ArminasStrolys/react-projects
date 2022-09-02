@@ -21,9 +21,9 @@ const Gallery = () => {
           ))}
         </div>
       </div>
-      <footer className="footer-gallery-about-faq">
+      {/* <footer className="footer-gallery-about-faq">
         Copyrights © Lorenzia 2022.
-      </footer>
+      </footer> */}
     </div>
   );
 };

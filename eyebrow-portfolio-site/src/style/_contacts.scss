@@ -16,11 +16,9 @@
     width: 20%;
   }
   .social-links{
-    text-align: left;
-    align-content: flex-start;
     a{
       color: white;
-
+      transition: 0.2s;
       &:hover{
         color: rgb(255, 174, 174);
       }
@@ -97,9 +95,6 @@
     width: 100%;
     height: 400px;
   }
-  // p{
-  //   margin-top: -20px;
-  // }
 }
 .footer-home-services-contacts{
   position: relative;
