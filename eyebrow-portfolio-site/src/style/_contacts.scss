@@ -1,7 +1,11 @@
 .contacts{
-  margin: 200px 5% 50px 5%;
-  .timesheet, .social-links{
-  width: 50%;
+  margin: 20px 5% 50px 5%;
+  display: flex;
+  align-items: flex-start;
+
+  .timesheet, .social-links, .contact-form, .location-map{
+  margin-top: 50px;
+  width: 25%;
   text-align: center;
   box-sizing: border-box;
   display: inline-block;
@@ -10,7 +14,6 @@
     line-height: 31px;
   }
   .social-links{
-    float: right;
     margin-bottom: 50px;
     a{
       color: black;
@@ -22,10 +25,17 @@
 .contact-form{
   h3{
     margin-top: 50px;
-    float: right;
     margin-right: -80px;
   }
 }
+}
+.icons{
+  display: inline-block;
+  p{
+    position: relative;
+    display: inline;
+    top: -9px;
+  }
 }
 .fb-icon{
   font-size: 30px;
@@ -43,14 +53,7 @@
   font-size: 30px;
   color: #999999;
 }
-.icons{
-  display: inline-block;
-  p{
-    position: relative;
-    display: inline;
-    top: -9px;
-  }
-}
+
 
 .arrow-icon{
   position: relative;
@@ -69,9 +72,9 @@
   border-radius: 20px;
   margin-bottom: 50px;
 }
-.field-1, .field-2{
+.field-1, .field-2, .field-3, .field-4{
   position: relative;
-  width: 45%;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -79,21 +82,8 @@
   border: 1px solid rgb(204, 204, 204);
   padding: 10px;
 }
-.field-1{
-left: -2.45%;
-}
-.field-2{
-right: -2.45%;
-}
-.field-3, .field-4{
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: rgba($color: #ffffff, $alpha: 0.7);
-  border: 1px solid rgb(204, 204, 204);
-  padding: 10px;
-}
 .field-4{
-  height: 50px;
+  height: 100px;
   resize: none
 }
 .send-btn{
@@ -110,8 +100,12 @@ right: -2.45%;
     background-color: hsl(0, 100%, 33%);
   }
 }
-.map-of-location{
-  margin: 20px auto;
+.location-map{
+  position: relative;
+  top: -100px;
+  iframe{
+    width: 80%;
+  }
 }
 @media screen and (max-width: 800px) {
   .contact-us-form{

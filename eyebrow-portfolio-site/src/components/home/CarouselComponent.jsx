@@ -34,7 +34,7 @@ const CarouselComponent = () => {
 
   return (
     <div>
-      <h2>Mano klienčių darbai:</h2>
+      <h2>Mano keletas darbų:</h2>
       <div className="carousel-section">
         <Carousel
           data={data}

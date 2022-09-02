@@ -131,9 +131,9 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <footer className="footer-home-services-contacts">
+      {/* <footer className="footer-home-services-contacts">
         Copyrights © Lorenzia 2022.
-      </footer>
+      </footer> */}
     </div>
   );
 };

@@ -60,7 +60,7 @@ const Contacts = () => {
               <p> lorbeautystudio</p>
             </p>
           </a>
-          <br />
+
           {/* ------------------- IG -------------------*/}
           <a
             href="https://www.instagram.com/lorbeautystudio_/"
@@ -94,7 +94,7 @@ const Contacts = () => {
         </div>
         <br />
         <div className="contact-form">
-          <h3>Palikite mums žinutę</h3>
+          {/* <h3>Palikite mums žinutę</h3> */}
           <form
             ref={form}
             className="contact-us-form"
@@ -110,13 +110,6 @@ const Contacts = () => {
             />
             <input
               className="field-2"
-              name="user_surname"
-              type="text"
-              placeholder="Pavardė"
-              required
-            />
-            <input
-              className="field-3"
               name="user_email"
               type="email"
               placeholder="E-paštas"
@@ -141,31 +134,30 @@ const Contacts = () => {
               Siųsti
             </button>
           </form>
-          <br />
-          <div></div>
-          <br />
-          <div>
+        </div>
+        <div className="location-map">
+          <p>
             Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
             <i className="arrow-icon">
               <BsArrow90DegRight />
             </i>
-          </div>
-          <div className="map-of-location">
-            <iframe
-              title="Lokacija"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.8966549027164!2d23.960906017443847!3d54.9222856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e718f6c185a0c7%3A0x1b7e0661a2f6dc00!2sSAVAS!5e0!3m2!1sen!2slt!4v1660559216633!5m2!1sen!2slt"
-              width="100%"
-              height="450"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          </p>
+          <iframe
+            title="Lokacija"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.8966549027164!2d23.960906017443847!3d54.9222856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e718f6c185a0c7%3A0x1b7e0661a2f6dc00!2sSAVAS!5e0!3m2!1sen!2slt!4v1660559216633!5m2!1sen!2slt"
+            width="100%"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-      <footer className="footer-home-services-contacts">
-        Copyrights © Lorenzia 2022.
-      </footer>
+      <div>
+        <footer className="footer-home-services-contacts">
+          Copyrights © Lorenzia 2022.
+        </footer>
+      </div>
     </div>
   );
 };
