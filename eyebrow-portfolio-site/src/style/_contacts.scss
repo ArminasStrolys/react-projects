@@ -3,26 +3,27 @@
   color: white;
 }
 .contacts{
-  margin: 20px 5% 10px 5%;
+  margin: 50px 5% 50px 5%;
   display: flex;
   align-items: flex-start;
 
   .timesheet, .social-links, .contact-form, .location-map{
   margin-top: 50px;
-  width: 25%;
+  width: 33%;
   text-align: center;
   box-sizing: border-box;
   display: inline-block;
   }
   .timesheet{
-    line-height: 31px;
+    line-height: 5px;
   }
   .social-links{
-    margin-bottom: 50px;
+    text-align: left;
     a{
       color: white;
+      margin-left: 10px;
       &:hover{
-        color: rgb(134, 0, 0);
+        color: rgb(255, 174, 174);
       }
     }
 }
@@ -35,6 +36,7 @@
 }
 .icons{
   display: inline-block;
+  margin: 10px auto;
   p, a{
     text-decoration: none;
     position: relative;
@@ -58,24 +60,14 @@
   font-size: 30px;
   color: #999999;
 }
-
-
-// .arrow-icon{
-//   position: relative;
-//   display: inline-block;
-//   height: 75px;
-//   font-size: 30px;
-//   transform: rotate(90deg);
-// }
 .contact-us-form{
-  width: 50%;
-  margin: auto;
+  width: 70%;
+  margin: 15px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid #E4405F;
-  padding: 40px 80px;
-  border-radius: 20px;
-  margin-bottom: 50px;
+  border: 2px solid white;
+  padding: 30px 40px;
+  border-radius: 10px;
 }
 .field-1, .field-2, .field-3, .field-4{
   position: relative;
@@ -83,7 +75,7 @@
   margin: auto;
   margin-bottom: 20px;
   box-sizing: border-box;
-  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  background-color: rgba($color: #ffffff, $alpha: 1);
   border: 1px solid rgb(204, 204, 204);
   padding: 10px;
 }
@@ -94,7 +86,7 @@
 .send-btn{
   margin: 0 auto;
   height: 30px;
-  width: 100px;
+  width: 100%;
   background-color: #E4405F;
   border-radius: 5px;
   border: none;
@@ -106,11 +98,24 @@
   }
 }
 .location-map{
-  width: 100%;
+  iframe{
+    width: 100%;
+    height: 390px;
+  }
   p{
     margin-top: -20px;
   }
 }
+.footer-home-services-contacts{
+  position: relative;
+  text-align: center;
+  background-color: #3d3d3d;
+  padding: 10px;
+  font-weight: 600;
+}
+
+//---------------------------------------- MEDIA -------------------------------------
+
 @media screen and (max-width: 800px) {
   .contact-us-form{
     width: 80%;

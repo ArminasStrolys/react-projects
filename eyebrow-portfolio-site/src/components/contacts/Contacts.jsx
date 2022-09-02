@@ -33,7 +33,7 @@ const Contacts = () => {
     <div className="contacts-bg">
       <div className="contacts">
         <div className="timesheet">
-          <h3>Darbo laikas:</h3>
+          {/* <h3>Darbo laikas:</h3>
           <p>Pirmadienis: 08:00 - 19:00</p>
           <p>Antradienis: 08:00 - 19:00</p>
           <p>Trečiadienis: 08:00 - 19:00</p>
@@ -42,56 +42,70 @@ const Contacts = () => {
           <p>Šeštadienis: 10:00 - 15:00</p>
           <p>
             Sekmadienis: <b>Nedirbame</b>
-          </p>
+          </p> */}
+          <div className="social-links">
+            {/* ------------------- FB -------------------*/}
+            <a
+              href="https://www.instagram.com/lorbeautystudio_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="icons">
+                <i className="fb-icon">
+                  <FaFacebookSquare />
+                </i>
+                <p> lorbeautystudio</p>
+              </p>
+            </a>
+            <br />
+            {/* ------------------- IG -------------------*/}
+            <a
+              href="https://www.instagram.com/lorbeautystudio_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="icons">
+                <i className="ig-icon">
+                  <BsInstagram />
+                </i>
+                <p> lorbeautystudio_</p>
+              </p>
+            </a>
+            <br />
+            {/* ------------------- PH -------------------*/}
+            <a href="callto:+37063010954">
+              <p className="icons">
+                <i className="phone-icon">
+                  <FiPhoneCall />
+                </i>
+                {/* <p> +(370) 123 4567</p> */}
+                <p>+3706 3010 954</p>
+              </p>
+            </a>
+            <br />
+            {/* ------------------- MA -------------------*/}
+            <a href="mailto:lor.antakiai@gmail.com">
+              <p className="icons">
+                <i className="email-icon">
+                  <HiOutlineMail />
+                </i>
+                <p>lor.antakiai@gmail.com</p>
+              </p>
+            </a>
+          </div>
         </div>
-        <div className="social-links">
-          <h3>Soc. tinklų nuorodos:</h3>
-          {/* ------------------- FB -------------------*/}
-          <a
-            href="https://www.instagram.com/lorbeautystudio_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="icons">
-              <i className="fb-icon">
-                <FaFacebookSquare />
-              </i>
-              <p> lorbeautystudio</p>
-            </p>
-          </a>
-          <br />
-          {/* ------------------- IG -------------------*/}
-          <a
-            href="https://www.instagram.com/lorbeautystudio_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="icons">
-              <i className="ig-icon">
-                <BsInstagram />
-              </i>
-              <p> lorbeautystudio_</p>
-            </p>
-          </a>
-          <br />
-          {/* ------------------- PH -------------------*/}
-          <h3>Susisiekite:</h3>
-          <p className="icons">
-            <i className="phone-icon">
-              <FiPhoneCall />
-            </i>
-            {/* <p> +(370) 123 4567</p> */}
-            <a href="callto:+37063010954"> 1222216651</a>
+
+        <div className="location-map">
+          <p>
+            Mes randamės: <b>A. Juozapavičiaus pr.</b> 44, Kaunas 45220
           </p>
-          <br />
-          {/* ------------------- MA -------------------*/}
-          <p className="icons">
-            <i className="email-icon">
-              <HiOutlineMail />
-            </i>
-            <a href="mailto:lor.antakiai@gmail.com"> lor.antakiai@gmail.com</a>
-            {/* <p> lor.antakiai@gmail.com</p> */}
-          </p>
+          <iframe
+            title="Lokacija"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.5066959600674!2d23.940821182592888!3d54.86965717483533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e722ed78bda63b%3A0x8719e841092953ed!2sA.%20Juozapavi%C4%8Diaus%20pr.%2044%2C%20Kaunas%2045220!5e0!3m2!1sen!2slt!4v1662128138761!5m2!1sen!2slt"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <br />
         <div className="contact-form">
@@ -135,19 +149,6 @@ const Contacts = () => {
               Siųsti
             </button>
           </form>
-        </div>
-        <div className="location-map">
-          <p>
-            Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
-          </p>
-          <iframe
-            title="Lokacija"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.5066959600674!2d23.940821182592888!3d54.86965717483533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e722ed78bda63b%3A0x8719e841092953ed!2sA.%20Juozapavi%C4%8Diaus%20pr.%2044%2C%20Kaunas%2045220!5e0!3m2!1sen!2slt!4v1662128138761!5m2!1sen!2slt"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
         </div>
       </div>
       <div>
