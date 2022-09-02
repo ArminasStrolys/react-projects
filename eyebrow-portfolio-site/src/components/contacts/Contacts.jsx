@@ -3,7 +3,6 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { FiPhoneCall } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsArrow90DegRight } from 'react-icons/bs';
 import emailjs from '@emailjs/browser';
 import emailKeys from '../../utils/emailKeys';
 
@@ -31,7 +30,7 @@ const Contacts = () => {
   };
 
   return (
-    <div>
+    <div className="contacts-bg">
       <div className="contacts">
         <div className="timesheet">
           <h3>Darbo laikas:</h3>
@@ -60,7 +59,7 @@ const Contacts = () => {
               <p> lorbeautystudio</p>
             </p>
           </a>
-
+          <br />
           {/* ------------------- IG -------------------*/}
           <a
             href="https://www.instagram.com/lorbeautystudio_/"
@@ -81,7 +80,8 @@ const Contacts = () => {
             <i className="phone-icon">
               <FiPhoneCall />
             </i>
-            <p> +(370) 123 4567</p>
+            {/* <p> +(370) 123 4567</p> */}
+            <a href="callto:+37063010954"> 1222216651</a>
           </p>
           <br />
           {/* ------------------- MA -------------------*/}
@@ -89,7 +89,8 @@ const Contacts = () => {
             <i className="email-icon">
               <HiOutlineMail />
             </i>
-            <p> lor.antakiai@gmail.com</p>
+            <a href="mailto:lor.antakiai@gmail.com"> lor.antakiai@gmail.com</a>
+            {/* <p> lor.antakiai@gmail.com</p> */}
           </p>
         </div>
         <br />
@@ -138,14 +139,10 @@ const Contacts = () => {
         <div className="location-map">
           <p>
             Mes randamės: <b>PC SAVAS</b> Savanorių pr. 346, Kaunas 49450
-            <i className="arrow-icon">
-              <BsArrow90DegRight />
-            </i>
           </p>
           <iframe
             title="Lokacija"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2292.8966549027164!2d23.960906017443847!3d54.9222856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e718f6c185a0c7%3A0x1b7e0661a2f6dc00!2sSAVAS!5e0!3m2!1sen!2slt!4v1660559216633!5m2!1sen!2slt"
-            width="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.5066959600674!2d23.940821182592888!3d54.86965717483533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e722ed78bda63b%3A0x8719e841092953ed!2sA.%20Juozapavi%C4%8Diaus%20pr.%2044%2C%20Kaunas%2045220!5e0!3m2!1sen!2slt!4v1662128138761!5m2!1sen!2slt"
             height="450"
             allowFullScreen=""
             loading="lazy"
