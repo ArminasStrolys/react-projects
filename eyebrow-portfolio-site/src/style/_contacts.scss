@@ -7,31 +7,24 @@
   display: flex;
   align-items: flex-start;
 
-  .timesheet, .social-links, .contact-form, .location-map{
+ .social-links, .contact-form, .location-map{
   margin-top: 50px;
-  width: 33%;
-  text-align: center;
+  width: 40%;
   box-sizing: border-box;
-  display: inline-block;
   }
-  .timesheet{
-    line-height: 5px;
+  .social-links{
+    width: 20%;
   }
   .social-links{
     text-align: left;
+    align-content: flex-start;
     a{
       color: white;
-      margin-left: 10px;
+
       &:hover{
         color: rgb(255, 174, 174);
       }
     }
-}
-.contact-form{
-  h3{
-    margin-top: 50px;
-    margin-right: -80px;
-  }
 }
 }
 .icons{
@@ -42,6 +35,7 @@
     position: relative;
     display: inline;
     top: -9px;
+    margin-left: 20px;
   }
 }
 .fb-icon{
@@ -62,7 +56,8 @@
 }
 .contact-us-form{
   width: 70%;
-  margin: 15px auto 0 auto;
+  height: 340px;
+  margin: 0 auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   border: 2px solid white;
@@ -100,11 +95,11 @@
 .location-map{
   iframe{
     width: 100%;
-    height: 390px;
+    height: 400px;
   }
-  p{
-    margin-top: -20px;
-  }
+  // p{
+  //   margin-top: -20px;
+  // }
 }
 .footer-home-services-contacts{
   position: relative;
@@ -129,8 +124,14 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .timesheet, .social-links{
+  .social-links{
     text-align: center;
     width: 100%;
   }
+}
+@media screen and (max-width: 1260px) {
+  .social-links, .contact-form, .location-map{
+    flex-wrap: wrap;
+    width: 100%;
+    }
 }
