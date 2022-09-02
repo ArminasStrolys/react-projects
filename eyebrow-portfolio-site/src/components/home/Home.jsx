@@ -124,12 +124,12 @@ const Home = () => {
             deleniti ipsum distinctio facilis maxime quos ea?
           </p>
         </div>
-        <div style={{ textAlign: 'center', margin: '50px 0' }}>
+        {/* <div style={{ textAlign: 'center', margin: '50px 0' }}>
           <h2>Susisiekite konsultacijai</h2>
           <button className="redirect-btn">
             <a href="/contacts">Apsilankymo rezervacija</a>
           </button>
-        </div>
+        </div> */}
       </div>
       {/* <footer className="footer-home-services-contacts">
         Copyrights © Lorenzia 2022.
