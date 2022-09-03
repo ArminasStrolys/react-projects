@@ -9,10 +9,7 @@ import logoW from '../../images/logo-white.png';
 
 const Contacts = () => {
   const form = useRef();
-  const bottomRef = useRef(null);
-  const handleScroll = () => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+
   const handleFormSubmit = (e) => {
     // e.preventDefault();
     emailjs
@@ -142,7 +139,7 @@ const Contacts = () => {
           </form>
         </div>
       </div>
-      <div ref={bottomRef}>
+      <div>
         <footer className="footer-home-services-contacts">
           Copyrights © Lorenzia 2022.
         </footer>

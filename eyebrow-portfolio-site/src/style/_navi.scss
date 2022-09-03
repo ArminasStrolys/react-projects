@@ -13,14 +13,19 @@
   width: 100%;
   top: 0;
   z-index: 1;
-  a{
+  span{
+    padding: 10px 5px;
+  }
+  a, span{
     color: $black_color;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
     &:hover{
       text-decoration: underline;
       transition: 0.3s;
     }
+
   }
   .drop-down{
     display: flex;

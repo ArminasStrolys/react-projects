@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Contacts from '../contacts/Contacts';
 import Services from '../services/Services';
 import Home from '../home/Home';
@@ -15,6 +15,10 @@ import {
 
 const Navi = () => {
   const [visible, setVisible] = useState(true);
+  const bottomRef = useRef(null);
+  const handleScroll = () => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const visibility = () => {
     visible === true ? setVisible(false) : setVisible(true);
@@ -74,7 +78,8 @@ const Navi = () => {
             >
               Galerija
             </NavLink>
-            <NavLink
+
+            {/* <NavLink
               onClick={() => setVisible(true)}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
@@ -87,7 +92,10 @@ const Navi = () => {
               to="/contacts"
             >
               Kontaktai
-            </NavLink>
+            </NavLink> */}
+
+            <span onClick={handleScroll}>Kontaktai</span>
+
             <NavLink
               onClick={() => setVisible(true)}
               style={({ isActive }) => ({
@@ -127,7 +135,9 @@ const Navi = () => {
           </Routes>
         </Router>
       </div>
-      <Contacts />
+      <div ref={bottomRef}>
+        <Contacts />
+      </div>
     </div>
   );
 };
