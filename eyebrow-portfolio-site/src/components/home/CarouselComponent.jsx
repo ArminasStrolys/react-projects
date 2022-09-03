@@ -3,6 +3,8 @@ import Image1 from '../../images/eyes-wide1.jpg';
 import Image2 from '../../images/eyes-wide2.jpg';
 import Image3 from '../../images/eyes-wide3.jpg';
 import Image4 from '../../images/eyes-wide4.jpg';
+import Image5 from '../../images/eyes-wide5.jpg';
+import Image6 from '../../images/eyes-wide6.jpg';
 import { Carousel } from 'react-carousel-minimal';
 
 const CarouselComponent = () => {
@@ -18,6 +20,14 @@ const CarouselComponent = () => {
     },
     {
       image: Image4,
+      // caption: 'Scotland',
+    },
+    {
+      image: Image5,
+      // caption: 'Scotland',
+    },
+    {
+      image: Image6,
       // caption: 'Scotland',
     },
     // {
