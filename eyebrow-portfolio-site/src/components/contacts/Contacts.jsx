@@ -64,30 +64,30 @@ const Contacts = () => {
           </a>
           <br />
           {/* ------------------- PH -------------------*/}
-          <a href="callto:+37063010954">
+          <a href="callto:+37062732478">
             <p className="icons">
               <i className="phone-icon">
                 <FiPhoneCall />
               </i>
-              <p>+3706 3010 954</p>
+              <p>+370 62 732478</p>
             </p>
           </a>
           <br />
           {/* ------------------- MA -------------------*/}
-          <a href="mailto:lor.antakiai@gmail.com">
+          <a href="mailto:info.lorbeautystudio@gmail.com">
             <p className="icons">
               <i className="email-icon">
                 <HiOutlineMail />
               </i>
-              <p>lor.antakiai@gmail.com</p>
+              <p>info.lorbeautystudio@gmail.com</p>
             </p>
           </a>
         </div>
 
         <div className="location-map">
-          {/* <p>
+          <span>
             Mes randamės: <b>A. Juozapavičiaus pr.</b> 44, Kaunas 45220
-          </p> */}
+          </span>
           <iframe
             title="Lokacija"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835.5066959600674!2d23.940821182592888!3d54.86965717483533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e722ed78bda63b%3A0x8719e841092953ed!2sA.%20Juozapavi%C4%8Diaus%20pr.%2044%2C%20Kaunas%2045220!5e0!3m2!1sen!2slt!4v1662128138761!5m2!1sen!2slt"

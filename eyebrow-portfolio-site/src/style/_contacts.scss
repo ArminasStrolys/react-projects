@@ -91,9 +91,19 @@
   }
 }
 .location-map{
+  span{
+    top: -30px;
+    display: block;
+    position: relative;
+    text-align: center;
+    b{
+      color: rgb(255, 154, 154);
+    }
+  }
   iframe{
+    margin-top: -15px;
     width: 100%;
-    height: 400px;
+    height: 396px;
   }
 }
 .footer-home-services-contacts{
