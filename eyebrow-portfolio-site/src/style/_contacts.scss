@@ -12,28 +12,49 @@
   width: 40%;
   box-sizing: border-box;
   }
+
   .social-links{
-    width: 20%;
-  }
-  .social-links{
-    a{
-      color: white;
-      transition: 0.2s;
-      &:hover{
-        color: rgb(255, 174, 174);
+    flex-wrap: nowrap;
+    width: 30%;
+    position: relative;
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .links{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 110%);
+      // margin-left: 20px;
+      margin: 15px 0 0 20px;
+      a{
+        display: block;
+        color: white;
+        transition: 0.2s;
+        width: 265px;
+        &:hover{
+          color: rgb(255, 174, 174);
+        }
       }
     }
+
 }
 }
 .icons{
   display: inline-block;
-  margin: 10px auto;
+  margin: 5px auto;
   p, a{
     text-decoration: none;
     position: relative;
     display: inline;
     top: -9px;
     margin-left: 20px;
+  }
+  .email{
+    letter-spacing: -1px;
   }
 }
 .fb-icon{
@@ -101,9 +122,9 @@
     }
   }
   iframe{
-    margin-top: -15px;
+    margin-top: -20px;
     width: 100%;
-    height: 396px;
+    height: 400px;
   }
 }
 .footer-home-services-contacts{

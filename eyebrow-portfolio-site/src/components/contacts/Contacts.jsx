@@ -36,52 +36,51 @@ const Contacts = () => {
         <div className="social-links">
           <img src={logoW} alt="logo of LOR beauty studio" />
           {/* ------------------- FB -------------------*/}
-          <a
-            href="https://www.instagram.com/lorbeautystudio_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="icons">
-              <i className="fb-icon">
-                <FaFacebookSquare />
-              </i>
-              <p> lorbeautystudio</p>
-            </p>
-          </a>
-          <br />
-          {/* ------------------- IG -------------------*/}
-          <a
-            href="https://www.instagram.com/lorbeautystudio_/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className="icons">
-              <i className="ig-icon">
-                <BsInstagram />
-              </i>
-              <p> lorbeautystudio_</p>
-            </p>
-          </a>
-          <br />
-          {/* ------------------- PH -------------------*/}
-          <a href="callto:+37062732478">
-            <p className="icons">
-              <i className="phone-icon">
-                <FiPhoneCall />
-              </i>
-              <p>+370 62 732478</p>
-            </p>
-          </a>
-          <br />
-          {/* ------------------- MA -------------------*/}
-          <a href="mailto:info.lorbeautystudio@gmail.com">
-            <p className="icons">
-              <i className="email-icon">
-                <HiOutlineMail />
-              </i>
-              <p>info.lorbeautystudio@gmail.com</p>
-            </p>
-          </a>
+          <div className="links">
+            <a
+              href="https://www.instagram.com/lorbeautystudio_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="icons">
+                <i className="fb-icon">
+                  <FaFacebookSquare />
+                </i>
+                <p> lorbeautystudio</p>
+              </p>
+            </a>
+            {/* ------------------- IG -------------------*/}
+            <a
+              href="https://www.instagram.com/lorbeautystudio_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="icons">
+                <i className="ig-icon">
+                  <BsInstagram />
+                </i>
+                <p> lorbeautystudio_</p>
+              </p>
+            </a>
+            {/* ------------------- PH -------------------*/}
+            <a href="callto:+37062732478">
+              <p className="icons">
+                <i className="phone-icon">
+                  <FiPhoneCall />
+                </i>
+                <p>+370 62 732478</p>
+              </p>
+            </a>
+            {/* ------------------- MA -------------------*/}
+            <a href="mailto:info.lorbeautystudio@gmail.com">
+              <p className="icons">
+                <i className="email-icon">
+                  <HiOutlineMail />
+                </i>
+                <p className="email">info.lorbeautystudio@gmail.com</p>
+              </p>
+            </a>
+          </div>
         </div>
 
         <div className="location-map">
