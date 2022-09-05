@@ -95,8 +95,9 @@ const Contacts = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <br />
+
         <div className="contact-form">
+          <span>Susisiekime!</span>
           <form
             ref={form}
             className="contact-us-form"
