@@ -44,12 +44,12 @@ const Contacts = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="icons">
+              <span className="icons">
                 <i className="fb-icon">
                   <FaFacebookSquare />
                 </i>
                 <p> lorbeautystudio</p>
-              </p>
+              </span>
             </a>
             {/* ------------------- IG -------------------*/}
             <a
@@ -57,30 +57,30 @@ const Contacts = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="icons">
+              <span className="icons">
                 <i className="ig-icon">
                   <BsInstagram />
                 </i>
                 <p> lorbeautystudio_</p>
-              </p>
+              </span>
             </a>
             {/* ------------------- PH -------------------*/}
             <a href="callto:+37062732478">
-              <p className="icons">
+              <span className="icons">
                 <i className="phone-icon">
                   <FiPhoneCall />
                 </i>
                 <p>+370 62 732478</p>
-              </p>
+              </span>
             </a>
             {/* ------------------- MA -------------------*/}
             <a href="mailto:info.lorbeautystudio@gmail.com">
-              <p className="icons">
+              <span className="icons">
                 <i className="email-icon">
                   <HiOutlineMail />
                 </i>
                 <p className="email">info.lorbeautystudio@gmail.com</p>
-              </p>
+              </span>
             </a>
           </div>
         </div>
