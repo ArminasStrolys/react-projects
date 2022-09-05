@@ -153,30 +153,37 @@
 
 //---------------------------------------- MEDIA -------------------------------------
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .contacts {
     flex-wrap: wrap;
+
     .social-links {
-      width: 100%;
-      top: 0;
-      left: 0;
-      margin-top: 20px;
+      width: 270px;
       border: 1px solid white;
-      padding-right: 320px;
       margin: 30px auto 10px auto;
       border-radius: 7px;
+      box-sizing: border-box;
       img {
         display: none;
       }
       .links {
         position: relative;
-        left: 15px;
+        left: 0;
         top: 0;
         transform: none;
       }
     }
-
+    .contact-form {
+      width: 100%;
+      .contact-us-form {
+        width: 90%;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 20px;
+      }
+    }
     .location-map {
+      width: 100%;
       iframe {
         padding: 15px;
         margin-top: -20px;
@@ -187,23 +194,51 @@
   }
 }
 //---------------------- 800px
-@media screen and (max-width: 800px) {
-  .contact-us-form {
-    width: 80%;
-    padding: 30px;
-  }
-  .field-1,
-  .field-2,
-  .field-3,
-  .field-4 {
-    position: relative;
-    width: 100%;
-    left: 0;
-    right: 0;
+// @media screen and (max-width: 800px) {
+//   .contacts {
+//     width: 90%;
+//     // background-color: #4267b2;
+//     .contact-us-form {
+//       width: 80%;
+//       padding: 30px;
+//     }
+//     .field-1,
+//     .field-2,
+//     .field-3,
+//     .field-4 {
+//       position: relative;
+//       width: 100%;
+//       left: 0;
+//       right: 0;
+//     }
+//   }
+// }
+//---------------------- 1200px
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .contacts {
+    flex-wrap: wrap;
+    .social-links,
+    .contact-form {
+      width: 60%;
+      position: unset;
+    }
+    .social-links {
+      img {
+        margin-left: 200px;
+      }
+      .links {
+        margin-left: 220px;
+      }
+    }
+    .location-map {
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      width: 90%;
+    }
   }
 }
 //---------------------- 1400px
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) and (min-width: 1200px) {
   .contacts {
     margin: 50px 0 50px 0;
     display: flex;

@@ -1,31 +1,32 @@
-.services{
+.services {
   margin: 200px 5% 50px 5%;
 }
-.eyebrow-types{
-display: inline-block;
-margin: 50px auto;
-  img{
+.eyebrow-types {
+  display: inline-block;
+  margin: 50px auto;
+  img {
     margin: 10px;
     float: left;
     width: 400px;
   }
 }
-.eyebrow-types:nth-of-type(2){
-  img{
+.eyebrow-types:nth-of-type(2) {
+  img {
     float: right;
   }
 }
-.customTable{
+.customTable {
   margin: 50px auto;
   width: 100%;
   background-color: #ffffff81;
   border-collapse: collapse;
   border-width: 2px;
-  border-color: #FFFFFF;
+  border-color: #ffffff;
   border-style: solid;
   color: #000000;
 }
-.customTable td, .customTable th {
+.customTable td,
+.customTable th {
   border-width: 2px;
   border-color: #ffd4d4;
   border-style: solid;
@@ -36,40 +37,41 @@ margin: 50px auto;
   text-align: left;
 }
 @media screen and (min-width: 1000px) {
-  .customTable{
+  .customTable {
     width: 50%;
-    }
+  }
 }
 
 @media screen and (max-width: 700px) and (min-width: 600px) {
-  .eyebrow-types{
-    img{
+  .eyebrow-types {
+    img {
       width: 300px;
     }
   }
 }
 @media screen and (max-width: 600px) and (min-width: 500px) {
-  .eyebrow-types{
-    img{
+  .eyebrow-types {
+    img {
       width: 200px;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .eyebrow-types{
-      img{
-        width: 100%;
-        margin: auto;
-        float: none;
-      }
+  .eyebrow-types {
+    img {
+      width: 100%;
+      margin: auto;
+      float: none;
+      box-sizing: border-box;
     }
-    .eyebrow-types:nth-of-type(2){
-      img{
-        float: none;
-      }
-}
-.services-title{
-  text-align: center;
-}
+  }
+  .eyebrow-types:nth-of-type(2) {
+    img {
+      float: none;
+    }
+  }
+  .services-title {
+    text-align: center;
+  }
 }

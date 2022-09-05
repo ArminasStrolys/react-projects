@@ -20,15 +20,12 @@ const CarouselComponent = () => {
     },
     {
       image: Image4,
-      // caption: 'Scotland',
     },
     {
       image: Image5,
-      // caption: 'Scotland',
     },
     {
       image: Image6,
-      // caption: 'Scotland',
     },
     // {
     //   image:
@@ -47,10 +44,11 @@ const CarouselComponent = () => {
       <h2>Mano keletas darbų:</h2>
       <div className="carousel-section">
         <Carousel
+          className="car"
           data={data}
           time={4000}
           width="100%"
-          height="500px"
+          // height="500px"
           // captionStyle={captionStyle}
           // radius="10px"
           // slideNumber={true}
