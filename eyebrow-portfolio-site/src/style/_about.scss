@@ -1,26 +1,27 @@
-.about{
-  margin: 200px 5% 50px 5%;
+.about {
+  margin: 200px 5% 200px 5%;
 }
-.bio{
+.bio {
   margin-top: 50px;
+  width: 700px;
 }
-img{
+img {
   float: left;
   width: 200px;
   padding-right: 20px;
 }
-.footer-about{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  background-color: #ffb9b9;
-  padding: 10px;
-  font-weight: 600;
-  box-sizing: border-box;
-}
+// .footer-about {
+//   position: absolute;
+//   width: 100%;
+//   bottom: 0;
+//   text-align: center;
+//   background-color: #ffb9b9;
+//   padding: 10px;
+//   font-weight: 600;
+//   box-sizing: border-box;
+// }
 @media screen and (max-width: 540px) {
-  .footer-about{
-    position: relative;
-  }
+  // .footer-about{
+  //   position: relative;
+  // }
 }
