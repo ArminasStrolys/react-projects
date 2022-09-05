@@ -27,21 +27,11 @@ const CarouselComponent = () => {
     {
       image: Image6,
     },
-    // {
-    //   image:
-    //     'https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg',
-    //   // caption: 'Darjeeling',
-    // },
-    // {
-    //   image:
-    //     'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg',
-    //   // caption: 'San Francisco',
-    // },
   ];
 
   return (
     <div>
-      <h2>Mano keletas darbų:</h2>
+      <h2>Keletas mano darbų:</h2>
       <div className="carousel-section">
         <Carousel
           className="car"

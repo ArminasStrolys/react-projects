@@ -10,18 +10,23 @@ img {
   width: 200px;
   padding-right: 20px;
 }
-// .footer-about {
-//   position: absolute;
-//   width: 100%;
-//   bottom: 0;
-//   text-align: center;
-//   background-color: #ffb9b9;
-//   padding: 10px;
-//   font-weight: 600;
-//   box-sizing: border-box;
-// }
-@media screen and (max-width: 540px) {
-  // .footer-about{
-  //   position: relative;
-  // }
+// MEDIA ---------------------------------------
+@media screen and (max-width: 400px) {
+  .bio {
+    margin-top: 50px;
+    width: 90%;
+  }
+  img {
+    float: none;
+    display: block;
+    width: 200px;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 760px) and (min-width: 400px) {
+  .bio {
+    margin-top: 50px;
+    width: 100%;
+  }
 }

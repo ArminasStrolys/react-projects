@@ -7,7 +7,9 @@ export default function About() {
       <div>
         <img src={profile} alt="" />
         <article className="bio">
-          <p>Sveiki, aš - Loreta</p>
+          <p>
+            Sveiki, aš - <b>Loreta</b>
+          </p>
           <p>
             Save atradau antakių dažyme dar būdama paauglė, tačiau rimtai apie
             šią sritį susimąsčiusi nebuvau. Baigusi mokyklą ir atvykusi gyventi

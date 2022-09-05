@@ -18,6 +18,7 @@ const Navi = () => {
   const bottomRef = useRef(null);
   const handleScroll = () => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    setVisible(true);
   };
 
   const visibility = () => {
