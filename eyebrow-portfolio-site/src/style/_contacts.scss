@@ -153,25 +153,9 @@
 
 //---------------------------------------- MEDIA -------------------------------------
 
-@media screen and (max-width: 800px) {
-  .contact-us-form {
-    width: 80%;
-    padding: 30px;
-  }
-  .field-1,
-  .field-2,
-  .field-3,
-  .field-4 {
-    position: relative;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-}
 @media screen and (max-width: 600px) {
   .contacts {
     flex-wrap: wrap;
-
     .social-links {
       width: 100%;
       top: 0;
@@ -182,11 +166,7 @@
       margin: 30px auto 10px auto;
       border-radius: 7px;
       img {
-        // position: absolute;
         display: none;
-        // top: -90px;
-        // left: 98px;
-        // width: 100px;
       }
       .links {
         position: relative;
@@ -206,6 +186,23 @@
     }
   }
 }
+//---------------------- 800px
+@media screen and (max-width: 800px) {
+  .contact-us-form {
+    width: 80%;
+    padding: 30px;
+  }
+  .field-1,
+  .field-2,
+  .field-3,
+  .field-4 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+//---------------------- 1400px
 @media screen and (max-width: 1400px) {
   .contacts {
     margin: 50px 0 50px 0;

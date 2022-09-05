@@ -10,6 +10,8 @@ import logoW from '../../images/logo-white.png';
 const Contacts = () => {
   const form = useRef();
 
+  const years = new Date().getFullYear();
+
   const handleFormSubmit = (e) => {
     // e.preventDefault();
     emailjs
@@ -141,7 +143,7 @@ const Contacts = () => {
       </div>
       <div>
         <footer className="footer-home-services-contacts">
-          Copyrights © Lorenzia 2022.
+          Copyrights © Lorenzia {years}.
         </footer>
       </div>
     </div>
