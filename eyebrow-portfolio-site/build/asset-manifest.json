@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a6eb043.css",
+    "main.js": "/static/js/main.747bb3fb.js",
+    "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
+    "static/media/eyes-wide2.jpg": "/static/media/eyes-wide2.58e959b6e26a4f9bdc2e.jpg",
+    "static/media/eyes-wide6.jpg": "/static/media/eyes-wide6.2dd9dac4eaef201cc6dd.jpg",
+    "static/media/eyes-wide3.jpg": "/static/media/eyes-wide3.bacfbbf28157cdafe966.jpg",
+    "static/media/eyes-wide4.jpg": "/static/media/eyes-wide4.0aee310a27aad13a9b9c.jpg",
+    "static/media/eyes-wide5.jpg": "/static/media/eyes-wide5.89f201826598b2a4ea47.jpg",
+    "static/media/portrait.jpg": "/static/media/portrait.abb3361f69ee43872a34.jpg",
+    "static/media/eyebrows2.jpg": "/static/media/eyebrows2.8a2790714504ed78592d.jpg",
+    "static/media/eyebrows3.jpg": "/static/media/eyebrows3.42f4bee136e4583c6781.jpg",
+    "static/media/eyebrows5.jpg": "/static/media/eyebrows5.e30f7dd062b7ea4bfaee.jpg",
+    "static/media/henna.jpg": "/static/media/henna.754666704a93bbbe81e5.jpg",
+    "static/media/eyebrows6.jpg": "/static/media/eyebrows6.0adc16a32bed15639f93.jpg",
+    "static/media/eyebrows4.jpg": "/static/media/eyebrows4.a9a51c925cd44739f799.jpg",
+    "static/media/eyebrows1.jpg": "/static/media/eyebrows1.c5392f20f42cf37f2b35.jpg",
+    "static/media/lamination.webp": "/static/media/lamination.fd41536eac2e6c79778d.webp",
+    "static/media/correction.webp": "/static/media/correction.616171774a2664d37cc7.webp",
+    "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
+    "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
+    "index.html": "/index.html",
+    "main.1a6eb043.css.map": "/static/css/main.1a6eb043.css.map",
+    "main.747bb3fb.js.map": "/static/js/main.747bb3fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a6eb043.css",
+    "static/js/main.747bb3fb.js"
+  ]
+}

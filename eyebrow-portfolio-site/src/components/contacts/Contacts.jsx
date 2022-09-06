@@ -65,7 +65,7 @@ const Contacts = () => {
               </span>
             </a>
             {/* ------------------- PH -------------------*/}
-            <a href="callto:+37062732478">
+            <a href="tel:+37062732478">
               <span className="icons">
                 <i className="phone-icon">
                   <FiPhoneCall />

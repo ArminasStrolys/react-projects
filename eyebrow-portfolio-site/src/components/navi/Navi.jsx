@@ -16,8 +16,12 @@ import {
 const Navi = () => {
   const [visible, setVisible] = useState(true);
   const bottomRef = useRef(null);
-  const handleScroll = () => {
+  const handleScrollBottom = () => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    setVisible(true);
+  };
+  const handleScrollTop = () => {
+    window.scrollTo(0, 0);
     setVisible(true);
   };
 
@@ -38,7 +42,7 @@ const Navi = () => {
           >
             <img className="logo" src={logo} alt="logo" />
             <NavLink
-              onClick={() => setVisible(true)}
+              onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
                 border: isActive ? '1px solid white' : 'none',
@@ -52,7 +56,7 @@ const Navi = () => {
               Pagrindinis
             </NavLink>
             <NavLink
-              onClick={() => setVisible(true)}
+              onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
                 border: isActive ? '1px solid white' : 'none',
@@ -66,7 +70,7 @@ const Navi = () => {
               Paslaugos
             </NavLink>
             <NavLink
-              onClick={() => setVisible(true)}
+              onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
                 border: isActive ? '1px solid white' : 'none',
@@ -79,24 +83,7 @@ const Navi = () => {
             >
               Galerija
             </NavLink>
-
-            {/* <NavLink
-              onClick={() => setVisible(true)}
-              style={({ isActive }) => ({
-                color: isActive ? 'white' : 'black',
-                border: isActive ? '1px solid white' : 'none',
-                padding: isActive ? '10px' : '10px',
-                backgroundColor: isActive
-                  ? 'rgba(250, 250, 250, 0.2)'
-                  : 'rgba(250, 235, 215, 0)',
-              })}
-              to="/contacts"
-            >
-              Kontaktai
-            </NavLink> */}
-
-            <span onClick={handleScroll}>Kontaktai</span>
-
+            <span onClick={handleScrollBottom}>Kontaktai</span>
             <NavLink
               onClick={() => setVisible(true)}
               style={({ isActive }) => ({
@@ -112,7 +99,7 @@ const Navi = () => {
               Apie
             </NavLink>
             <NavLink
-              onClick={() => setVisible(true)}
+              onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
                 border: isActive ? '1px solid white' : 'none',
