@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from './CarouselComponent.jsx';
+import location from '../../images/locationv1.jpg';
 
 const Home = () => {
   return (

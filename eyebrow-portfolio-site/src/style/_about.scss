@@ -26,7 +26,7 @@ img {
     display: block;
     width: 200px;
     padding-right: 0;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 400px) {
@@ -37,9 +37,10 @@ img {
 }
 @media screen and (max-width: 850px) {
   .about {
+    margin: 10px 0 -100px 0;
+    padding: 2% 5% 5% 5%;
     position: unset;
-    padding: 20px;
     top: 0;
-    margin-bottom: 0;
+    margin-bottom: -50px;
   }
 }

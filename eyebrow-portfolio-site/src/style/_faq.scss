@@ -1,5 +1,5 @@
 .faq {
-  margin: 200px 5% 50px 5%;
+  margin: 150px 5% 50px 5%;
   background-color: $white_color;
   padding: 15% 3%;
   position: relative;
@@ -24,24 +24,17 @@
     }
   }
 }
-.footer-faq {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  background-color: #ffb9b9;
-  padding: 10px;
-  font-weight: 600;
-  box-sizing: border-box;
-}
 
 @media screen and (max-width: 850px) {
   .faq {
     text-align: justify;
     position: unset;
-    padding: 20px;
+    padding: 0 5% 50px 5%;
     top: 0;
-    margin-bottom: 0;
+    margin: 100px 0 -50px 0;
+  }
+  .faq-style {
+    width: 45%;
   }
 }
 @media screen and (max-width: 700px) {

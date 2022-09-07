@@ -27,48 +27,22 @@
   .card-3 {
     width: 200px;
     height: 300px;
-    border: 1px solid coral;
+    border: 1px solid $purple_color;
     border-radius: 10px;
     padding: 20px;
-  }
-  .card-2 {
-  }
-  .card-3 {
-  }
-}
-.redirect-btn {
-  margin: 20px auto;
-  height: 30px;
-  width: 200px;
-  background-color: #e4405f;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  cursor: pointer;
-  &:hover {
-    background-color: hsl(0, 100%, 33%);
-  }
-  a {
-    width: 100%;
-    height: 100%;
-    line-height: 25px;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
   }
 }
 
 @media screen and (max-width: 850px) {
+  .home {
+    margin: 100px 0 -50px 0;
+    padding: 50px 5%;
+    position: unset;
+    top: 0;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
 }
-// @media screen and (max-width: 900px) and (min-width: 700px) {
-//   .carousel-section{
-// height: 50%;
-// width: 100%;
-//   }
-// }
