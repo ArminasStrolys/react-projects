@@ -1,6 +1,8 @@
+@import './_var';
+
 .contacts-bg {
-  background-color: #2e2e2e;
-  color: white;
+  background-color: $footer_bg_color;
+  color: $white_color;
   position: relative;
   bottom: 0;
 }
@@ -18,7 +20,6 @@
   }
 
   .social-links {
-    // flex-wrap: nowrap;
     width: 20%;
     position: relative;
     img {
@@ -35,11 +36,11 @@
       margin: 15px 0 0 20px;
       a {
         display: block;
-        color: white;
+        color: $white_color;
         transition: 0.2s;
         width: 250px;
         &:hover {
-          color: rgb(246, 149, 255);
+          color: $logo_color;
         }
       }
     }
@@ -62,19 +63,19 @@
 }
 .fb-icon {
   font-size: 30px;
-  color: #4267b2;
+  color: $fb_color;
 }
 .ig-icon {
   font-size: 30px;
-  color: #e4405f;
+  color: $ig_color;
 }
 .phone-icon {
   font-size: 30px;
-  color: #006928;
+  color: $phone_color;
 }
 .email-icon {
   font-size: 30px;
-  color: #999999;
+  color: $email_color;
 }
 .contact-us-form {
   width: 70%;
@@ -82,7 +83,7 @@
   margin: -20px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid white;
+  border: 2px solid $white_color;
   padding: 30px 40px;
   border-radius: 10px;
 }
@@ -92,7 +93,7 @@
     display: block;
     position: relative;
     text-align: center;
-    color: rgb(246, 149, 255);
+    color: $logo_color;
     font-weight: bold;
   }
 }
@@ -105,8 +106,8 @@
   margin: auto;
   margin-bottom: 20px;
   box-sizing: border-box;
-  background-color: rgba($color: #ffffff, $alpha: 1);
-  border: 1px solid rgb(204, 204, 204);
+  background-color: $white_color;
+  border: 1px solid $white_color;
   padding: 10px;
 }
 .field-4 {
@@ -117,14 +118,14 @@
   margin: 0 auto;
   height: 30px;
   width: 100%;
-  background-color: #e4405f;
+  background-color: $logo_color;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: $white_color;
   transition: 0.3s;
   cursor: pointer;
   &:hover {
-    background-color: hsl(0, 100%, 33%);
+    background-color: $purple_color;
   }
 }
 .location-map {
@@ -134,7 +135,7 @@
     position: relative;
     text-align: center;
     b {
-      color: rgb(246, 149, 255);
+      color: $logo_color;
     }
   }
   iframe {
@@ -146,7 +147,7 @@
 .footer-home-services-contacts {
   position: relative;
   text-align: center;
-  background-color: #3d3d3d;
+  background-color: $footer_side_color;
   padding: 10px;
   font-weight: 600;
 }
@@ -159,7 +160,7 @@
 
     .social-links {
       width: 270px;
-      border: 1px solid white;
+      border: 1px solid $white_color;
       margin: 30px auto 10px auto;
       border-radius: 7px;
       box-sizing: border-box;

@@ -143,7 +143,7 @@ const Contacts = () => {
       </div>
       <div>
         <footer className="footer-home-services-contacts">
-          Copyrights © Lorenzia {years}.
+          Copyrights © Lor Beauty Studio {years}.
         </footer>
       </div>
     </div>

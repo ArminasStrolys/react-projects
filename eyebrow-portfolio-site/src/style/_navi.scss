@@ -52,23 +52,31 @@
 @media screen and (max-width: 850px) {
   .drop-down {
     display: flex;
+    font-weight: 600;
     justify-content: center;
-    height: 100%;
-    line-height: 50px;
+    // height: 100%;
+    line-height: 60px;
     background-color: $nav_bar_color;
     cursor: pointer;
     position: relative;
     z-index: 2;
+    transition: 0.5s;
+    &:hover {
+      background-color: $service_table_color_brighter;
+    }
   }
   .nav-bar {
     background: #faf4ff;
     flex-direction: column;
     gap: 5px;
-    height: auto;
-    margin-top: -450px;
-    margin-bottom: 100px;
+    height: 100%;
+    // margin-top: -450px;
+    margin-bottom: -100px;
     transition: 0.3s;
     position: relative;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
   .logo {
     display: none;
