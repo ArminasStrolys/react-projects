@@ -12,19 +12,14 @@ const Gallery = () => {
   const images = [eyes1, eyes2, eyes3, eyes4, eyes5, eyes6];
 
   return (
-    <div>
-      <div className="gallery">
-        <div className="image-collection">
-          {images.map((e, index) => (
-            <Zoom key={index}>
-              <img src={e} alt="Woman eyebrows after and before in this pic" />
-            </Zoom>
-          ))}
-        </div>
+    <div className="gallery">
+      <div className="image-collection">
+        {images.map((e, index) => (
+          <Zoom key={index}>
+            <img src={e} alt="Woman eyebrows after and before in this pic" />
+          </Zoom>
+        ))}
       </div>
-      {/* <footer className="footer-gallery-about-faq">
-        Copyrights © Lorenzia 2022.
-      </footer> */}
     </div>
   );
 };
