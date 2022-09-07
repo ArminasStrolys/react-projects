@@ -1,5 +1,10 @@
 .faq {
   margin: 200px 5% 50px 5%;
+  background-color: $white_color;
+  padding: 15% 3%;
+  position: relative;
+  top: -150px;
+  margin-bottom: -200px;
 }
 .faq-split {
   display: flex;
@@ -30,9 +35,18 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .faq {
     text-align: justify;
+    position: unset;
+    padding: 20px;
+    top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .faq {
+    padding: 30px;
   }
   .faq-split {
     display: block;

@@ -1,6 +1,11 @@
 .gallery {
-  margin: auto 0;
+  margin: 200px 5% 50px 5%;
+  background-color: $white_color;
   margin-top: 50px;
+  padding: 15% 3%;
+  position: relative;
+  top: -150px;
+  margin-bottom: -200px;
 }
 .image-collection {
   display: flex;

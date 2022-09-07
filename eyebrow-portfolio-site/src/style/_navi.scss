@@ -4,6 +4,7 @@
   margin-bottom: -200px;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -91,6 +92,14 @@
 }
 
 @media screen and (max-width: 1100px) and (min-width: 850px) {
+  .logo {
+    display: none;
+  }
+  .svg-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 2500px) {
   .logo {
     display: none;
   }
