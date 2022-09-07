@@ -1,7 +1,14 @@
+@import './_var';
+
 .home {
   margin: 200px 5% 50px 5%;
+  background-color: $white_color;
+  padding: 10% 3%;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  margin-bottom: -150px;
 }
-//
 .carousel-section {
   margin: 0 auto;
   padding: 10px 0 30px 0;

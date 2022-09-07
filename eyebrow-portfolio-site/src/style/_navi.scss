@@ -1,12 +1,18 @@
 @import './_var';
 
+.svg-icon {
+  margin-bottom: -200px;
+  position: absolute;
+  top: 0;
+}
+
 .nav-bar {
   background: $nav_bar_color;
   margin: 0;
   display: flex;
   justify-content: center;
   gap: 50px;
-  padding: 30px 0 50px 0;
+  padding: 20px 0 20px 0;
   font-size: 20px;
   font-weight: 500;
   position: fixed;
@@ -35,10 +41,10 @@
   //   visibility: none;
   // }
   .logo {
-    width: 150px;
+    width: 130px;
     position: absolute;
     left: 10px;
-    top: -30px;
+    top: -20px;
   }
 }
 
@@ -48,12 +54,12 @@
     justify-content: center;
     height: 100%;
     line-height: 50px;
-    background-color: rgb(255, 199, 199);
+    background-color: $nav_bar_color;
     cursor: pointer;
     // position: fixed;
   }
   .nav-bar {
-    background: rgba(255, 193, 214, 0.567);
+    background: #faf4ff;
     flex-direction: column;
     gap: 5px;
     height: auto;
@@ -67,6 +73,9 @@
   }
   .contacts-link {
     margin-left: 5px;
+  }
+  .svg-icon {
+    display: none;
   }
 }
 
@@ -83,6 +92,9 @@
 
 @media screen and (max-width: 1100px) and (min-width: 850px) {
   .logo {
+    display: none;
+  }
+  .svg-icon {
     display: none;
   }
 }
