@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9ecf142.css",
-    "main.js": "/static/js/main.0480f94f.js",
+    "main.css": "/static/css/main.643737c9.css",
+    "main.js": "/static/js/main.e69dbe2f.js",
     "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
+    "static/media/locationv1.jpg": "/static/media/locationv1.70ebdd6f9ffed88c655d.jpg",
     "static/media/eyes-wide2.jpg": "/static/media/eyes-wide2.58e959b6e26a4f9bdc2e.jpg",
     "static/media/eyes-wide6.jpg": "/static/media/eyes-wide6.2dd9dac4eaef201cc6dd.jpg",
     "static/media/eyes-wide3.jpg": "/static/media/eyes-wide3.bacfbbf28157cdafe966.jpg",
@@ -21,11 +22,11 @@
     "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
     "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
     "index.html": "/index.html",
-    "main.e9ecf142.css.map": "/static/css/main.e9ecf142.css.map",
-    "main.0480f94f.js.map": "/static/js/main.0480f94f.js.map"
+    "main.643737c9.css.map": "/static/css/main.643737c9.css.map",
+    "main.e69dbe2f.js.map": "/static/js/main.e69dbe2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9ecf142.css",
-    "static/js/main.0480f94f.js"
+    "static/css/main.643737c9.css",
+    "static/js/main.e69dbe2f.js"
   ]
 }
