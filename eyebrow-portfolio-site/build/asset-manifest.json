@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd8593bb.css",
+    "main.css": "/static/css/main.e9ecf142.css",
     "main.js": "/static/js/main.0480f94f.js",
     "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
     "static/media/eyes-wide2.jpg": "/static/media/eyes-wide2.58e959b6e26a4f9bdc2e.jpg",
@@ -21,11 +21,11 @@
     "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
     "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
     "index.html": "/index.html",
-    "main.cd8593bb.css.map": "/static/css/main.cd8593bb.css.map",
+    "main.e9ecf142.css.map": "/static/css/main.e9ecf142.css.map",
     "main.0480f94f.js.map": "/static/js/main.0480f94f.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd8593bb.css",
+    "static/css/main.e9ecf142.css",
     "static/js/main.0480f94f.js"
   ]
 }

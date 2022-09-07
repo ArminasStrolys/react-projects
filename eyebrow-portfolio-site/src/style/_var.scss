@@ -1,5 +1,9 @@
-$nav_bar_color: linear-gradient(0deg, rgba(255,226,226,1) 0%, rgba(255,148,148,1) 100%);
+$nav_bar_color: linear-gradient(
+  0deg,
+  rgba(255, 226, 226, 1) 30%,
+  rgba(255, 148, 148, 1) 100%
+);
 $nav_bar_links_color: rgb(255, 149, 149);
 $body_color: #ffe2e2;
 $black_color: black;
-$gradient_1: linear-gradient(to bottom, #FFFFFF, #FFEFBA);
+$gradient_1: linear-gradient(to bottom, #ffffff, #ffefba);

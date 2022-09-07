@@ -13,29 +13,27 @@
   width: 100%;
   top: 0;
   z-index: 1;
-  span {
+  span,
+  a {
     padding: 10px 5px;
-  }
-  a,
-  span {
     color: $black_color;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;
     &:hover {
       text-decoration: underline;
-      transition: 0.3s;
+      transition: 0.5s;
     }
   }
-  .drop-down {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    line-height: 50px;
-    background-color: rgba(255, 228, 196, 0.041);
-    cursor: pointer;
-    visibility: none;
-  }
+  // .drop-down {
+  //   display: flex;
+  //   justify-content: center;
+  //   height: 100%;
+  //   // line-height: 50px;
+  //   background-color: rgba(255, 228, 196, 0.041);
+  //   cursor: pointer;
+  //   visibility: none;
+  // }
   .logo {
     width: 150px;
     position: absolute;
@@ -45,6 +43,15 @@
 }
 
 @media screen and (max-width: 850px) {
+  .drop-down {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    line-height: 50px;
+    background-color: rgb(255, 199, 199);
+    cursor: pointer;
+    // position: fixed;
+  }
   .nav-bar {
     background: rgba(255, 193, 214, 0.567);
     flex-direction: column;
@@ -55,15 +62,14 @@
     transition: 0.3s;
     position: relative;
   }
-  .drop-down {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    line-height: 50px;
-    background-color: rgb(255, 199, 199);
-    cursor: pointer;
+  .logo {
+    display: none;
+  }
+  .contacts-link {
+    margin-left: 5px;
   }
 }
+
 @media screen and (min-width: 850px) {
   .drop-down {
     display: none;
@@ -74,7 +80,8 @@
     margin-top: 0 !important;
   }
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 1100px) and (min-width: 850px) {
   .logo {
     display: none;
   }

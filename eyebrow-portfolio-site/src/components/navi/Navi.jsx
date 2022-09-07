@@ -83,9 +83,11 @@ const Navi = () => {
             >
               Galerija
             </NavLink>
-            <span onClick={handleScrollBottom}>Kontaktai</span>
+            <span className="contacts-link" onClick={handleScrollBottom}>
+              Kontaktai
+            </span>
             <NavLink
-              onClick={() => setVisible(true)}
+              onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? 'white' : 'black',
                 border: isActive ? '1px solid white' : 'none',
