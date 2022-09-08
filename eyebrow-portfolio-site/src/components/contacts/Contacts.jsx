@@ -40,7 +40,7 @@ const Contacts = () => {
           {/* ------------------- FB -------------------*/}
           <div className="links">
             <a
-              href="https://www.instagram.com/lorbeautystudio_/"
+              href="https://www.facebook.com/lorbeautystudio"
               target="_blank"
               rel="noopener noreferrer"
             >
