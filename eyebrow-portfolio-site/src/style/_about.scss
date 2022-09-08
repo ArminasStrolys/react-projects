@@ -1,7 +1,7 @@
 .about {
-  margin: 200px 5% 50px 5%;
+  margin: 150px 5% 50px 5%;
   background-color: $white_color;
-  padding: 15% 3%;
+  padding: 15% 3% 5% 3%;
   position: relative;
   top: -150px;
   margin-bottom: -200px;
@@ -37,10 +37,20 @@ img {
 }
 @media screen and (max-width: 850px) {
   .about {
-    margin: 0 0 -100px 0;
-    padding: 200px 5% 50px 5%;
+    margin: 50px 0 -100px 0;
+    padding: 200px 5% 100px 5%;
     position: unset;
     top: 0;
     margin-bottom: -50px;
+  }
+}
+@media screen and (max-width: 1500px) and (min-width: 850px) {
+  .about {
+    padding: 15% 3% 10% 3%;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .about {
+    margin: -100px 15% -200px 15%;
   }
 }

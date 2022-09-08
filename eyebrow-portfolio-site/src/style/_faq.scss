@@ -1,7 +1,7 @@
 .faq {
-  margin: 150px 5% 50px 5%;
+  margin: 100px 5% 50px 5%;
   background-color: $white_color;
-  padding: 15% 3%;
+  padding: 15% 3% 5% 3%;
   position: relative;
   top: -150px;
   margin-bottom: -200px;
@@ -31,7 +31,7 @@
     position: unset;
     padding: 100px 5% 50px 5%;
     top: 0;
-    margin: 100px 0 -50px 0;
+    margin: 150px 0 -50px 0;
   }
   .faq-style {
     width: 45%;
@@ -40,6 +40,7 @@
 @media screen and (max-width: 700px) {
   .faq {
     padding: 30px;
+    margin: 200px 0 -50px 0;
   }
   .faq-split {
     display: block;
@@ -58,5 +59,10 @@
         content: ' ';
       }
     }
+  }
+}
+@media screen and (min-width: 2500px) {
+  .faq {
+    margin: -100px 15% -200px 15%;
   }
 }

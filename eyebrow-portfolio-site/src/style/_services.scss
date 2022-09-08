@@ -1,9 +1,9 @@
 @import './_var';
 
 .services {
-  margin: 200px 5% 50px 5%;
+  margin: 150px 5% 50px 5%;
   background-color: $white_color;
-  padding: 15% 3%;
+  padding: 15% 3% 5% 3%;
   position: relative;
   top: -150px;
   margin-bottom: -200px;
@@ -90,5 +90,10 @@
   }
   .services-title {
     text-align: center;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .services {
+    margin: -100px 15% -200px 15%;
   }
 }
