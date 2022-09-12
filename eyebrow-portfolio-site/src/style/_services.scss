@@ -11,6 +11,26 @@
 .eyebrow-types {
   display: inline-block;
   margin: 50px auto;
+  .first-img {
+    position: relative;
+    transition: 0.5s;
+    z-index: 2;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  .second-img,
+  .second-img-float {
+    position: relative;
+    width: 400px;
+    height: 334px;
+    left: -440px;
+    margin-right: -400px;
+    z-index: 1;
+  }
+  .second-img-float {
+    left: 30px;
+  }
   img {
     margin: 10px;
     float: left;

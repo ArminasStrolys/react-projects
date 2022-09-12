@@ -1,10 +1,20 @@
 import React from 'react';
 import correction from '../../../images/correction.png';
+import logo from '../../../images/logo-white.png';
 
 export default function Correction() {
   return (
     <article className="eyebrow-types">
-      <img src={correction} alt="Eyebrow correction before and after" />
+      <img
+        className="first-img"
+        src={correction}
+        alt="Eyebrow correction before and after"
+      />
+      <img
+        className="second-img"
+        src={logo}
+        alt="Eyebrow correction before and after"
+      />
       <h3 className="services-title">Antakių korekcija</h3>
       <p>
         Procedūra atliekama tiek vyrams, tiek moterims. Antakių korekcijos metu

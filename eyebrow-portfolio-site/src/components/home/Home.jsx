@@ -54,38 +54,17 @@ const Home = () => {
           </p>
           <div className="cards">
             <div className="card-1">
-              <h3>Info kortelė 1</h3>
+              <h3>Sertifikatas 1</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Asperiores voluptatem in cumque eligendi debitis! Quaerat
-                reprehenderit a ullam quia? Aliquid cumque aut dolor ipsam atque
-                illum amet? Sequi, voluptas laboriosam. Temporibus delectus
-                vitae architecto in eius voluptate odit magni tenetur.
+                Asperiores voluptatem in cumque eligendi debitis!
               </p>
             </div>
             <div className="card-2">
-              <h3>Info kortelė 2</h3>
+              <h3>Sertifikatas 2</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Cupiditate mollitia velit debitis. Harum, blanditiis deserunt.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                voluptates voluptas itaque commodi earum sit voluptate qui
-                repellat quisquam veniam!
-              </p>
-            </div>
-            <div className="card-3">
-              <h3>Info kortelė 3</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                nisi.
-              </p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo, voluptates quaerat accusamus eos recusandae
-                assumenda!
               </p>
             </div>
           </div>

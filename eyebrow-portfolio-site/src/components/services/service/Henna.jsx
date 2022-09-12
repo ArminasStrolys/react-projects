@@ -1,10 +1,20 @@
 import React from 'react';
 import henna from '../../../images/henna.jpg';
+import logo from '../../../images/logo-white.png';
 
 export default function Henna() {
   return (
     <article className="eyebrow-types">
-      <img src={henna} alt="Dyed eyebrows with henna before and after" />
+      <img
+        className="first-img"
+        src={henna}
+        alt="Dyed eyebrows with henna before and after"
+      />
+      <img
+        className="second-img"
+        src={logo}
+        alt="Eyebrow correction before and after"
+      />
       <h3 className="services-title">
         Antakių dažymas Nick Mole Ekko Beauty Henna
       </h3>

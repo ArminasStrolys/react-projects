@@ -1,10 +1,20 @@
 import React from 'react';
 import lamination from '../../../images/lamination.png';
+import logo from '../../../images/logo-white.png';
 
 export default function Laminate() {
   return (
     <article className="eyebrow-types">
-      <img src={lamination} alt="Laminated eyebrows before and after" />
+      <img
+        className="first-img"
+        src={lamination}
+        alt="Laminated eyebrows before and after"
+      />
+      <img
+        className="second-img-float"
+        src={logo}
+        alt="Eyebrow correction before and after"
+      />
       <h3 className="services-title">Antakių laminavimas</h3>
       <p>
         Tai puiki procedūra toms, kurios turi nepaklusnius antakių plaukelius.

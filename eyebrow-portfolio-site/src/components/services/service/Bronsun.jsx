@@ -1,10 +1,20 @@
 import React from 'react';
 import bronsun from '../../../images/bronsun.png';
+import logo from '../../../images/logo-white.png';
 
 export default function Laminate() {
   return (
     <article className="eyebrow-types">
-      <img src={bronsun} alt="Laminated eyebrows before and after" />
+      <img
+        className="first-img"
+        src={bronsun}
+        alt="Laminated eyebrows before and after"
+      />
+      <img
+        className="second-img-float"
+        src={logo}
+        alt="Eyebrow correction before and after"
+      />
       <h3 className="services-title">Antakių dažymas Bronsun</h3>
       <p>
         Blakstienų ir antakių dažai su hennos efektu be amoniako. Tolygiai dažo
