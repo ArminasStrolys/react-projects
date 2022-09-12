@@ -20,6 +20,8 @@
   width: 100%;
   top: 0;
   z-index: 1;
+  font-family: kalam-regular;
+  font-size: 25px;
   span,
   a {
     padding: 10px 5px;
@@ -32,15 +34,6 @@
       transition: 0.5s;
     }
   }
-  // .drop-down {
-  //   display: flex;
-  //   justify-content: center;
-  //   height: 100%;
-  //   // line-height: 50px;
-  //   background-color: rgba(255, 228, 196, 0.041);
-  //   cursor: pointer;
-  //   visibility: none;
-  // }
   .logo {
     width: 130px;
     position: absolute;
@@ -54,7 +47,6 @@
     display: flex;
     font-weight: 600;
     justify-content: center;
-    // height: 100%;
     line-height: 60px;
     background-color: $nav_bar_color;
     cursor: pointer;
@@ -70,7 +62,6 @@
     flex-direction: column;
     gap: 5px;
     height: 100%;
-    // margin-top: -450px;
     margin-bottom: -100px;
     transition: 0.3s;
     position: relative;
@@ -101,6 +92,9 @@
 }
 
 @media screen and (max-width: 1100px) and (min-width: 850px) {
+  .nav-bar {
+    gap: 20px;
+  }
   .logo {
     display: none;
   }
@@ -109,6 +103,9 @@
   }
 }
 @media screen and (min-width: 2500px) {
+  .nav-bar {
+    gap: 100px;
+  }
   .logo {
     display: none;
   }

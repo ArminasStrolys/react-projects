@@ -12,8 +12,7 @@ const Contacts = () => {
 
   const years = new Date().getFullYear();
 
-  const handleFormSubmit = (e) => {
-    // e.preventDefault();
+  const handleFormSubmit = () => {
     emailjs
       .sendForm(
         emailKeys.SERVICE_ID,
@@ -136,7 +135,7 @@ const Contacts = () => {
               required
             ></textarea>
             <button className="send-btn" type="submit">
-              Siųsti
+              <b>Siųsti</b>
             </button>
           </form>
         </div>

@@ -33,7 +33,10 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, 110%);
-      margin: 15px 0 0 20px;
+      margin: 15px 0 0 10px;
+      p {
+        font-size: 15px;
+      }
       a {
         display: block;
         color: $white_color;
@@ -55,7 +58,7 @@
     position: relative;
     display: inline;
     top: -9px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .email {
     letter-spacing: -1px;
@@ -123,6 +126,7 @@
   border: none;
   color: $white_color;
   transition: 0.3s;
+  font-family: monste;
   cursor: pointer;
   &:hover {
     background-color: $purple_color;
@@ -208,7 +212,7 @@
         margin-left: 200px;
       }
       .links {
-        margin-left: 220px;
+        margin-left: 210px;
       }
     }
     .location-map {

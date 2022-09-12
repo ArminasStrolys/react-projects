@@ -1,26 +1,37 @@
 .faq {
-  margin: 100px 5% 50px 5%;
+  margin: 150px 5% 50px 5%;
   background-color: $white_color;
   padding: 15% 3% 5% 3%;
   position: relative;
   top: -150px;
   margin-bottom: -200px;
-}
-.faq-split {
-  display: flex;
-  justify-content: space-between;
-}
-.faq-style {
-  width: 40%;
-  ul {
-    list-style: none;
-    li::before {
-      content: '\1F441';
-      font-size: 30px;
-      color: #ff0022;
-      position: relative;
-      top: 48px;
-      left: -50px;
+  font-family: kalam-regular;
+  .faq-split {
+    display: flex;
+    justify-content: space-between;
+    .faq-style {
+      width: 40%;
+      .ul-bullet-style {
+        list-style: none;
+      }
+      ul {
+        .main-list-item {
+          // list-style: none;
+          background-color: $nav_bar_color;
+          padding: 5px 10px;
+          margin-bottom: 30px;
+          // filter: blur(8px);
+          // -webkit-filter: blur(8px);
+          li::before {
+            // content: '\1F441';
+            // font-size: 30px;
+            // color: $logo_color;
+            // position: relative;
+            // top: 48px;
+            // left: -50px;
+          }
+        }
+      }
     }
   }
 }
@@ -31,32 +42,33 @@
     position: unset;
     padding: 100px 5% 50px 5%;
     top: 0;
-    margin: 150px 0 -50px 0;
-  }
-  .faq-style {
-    width: 45%;
+    margin: 100px 0 -50px 0;
+    .faq-style {
+      width: 45%;
+    }
   }
 }
+
 @media screen and (max-width: 700px) {
   .faq {
     padding: 30px;
     margin: 200px 0 -50px 0;
-  }
-  .faq-split {
-    display: block;
-    h3 {
-      text-align: center;
-    }
-  }
-  .faq-style {
-    width: 100%;
-    ul {
-      li {
-        margin-top: 50px;
-        margin-left: -40px;
+    .faq-split {
+      display: block;
+      .faq-style {
+        width: 100%;
+        ul {
+          li {
+            margin-top: 50px;
+            margin-left: -40px;
+          }
+          li::before {
+            content: ' ';
+          }
+        }
       }
-      li::before {
-        content: ' ';
+      h3 {
+        text-align: center;
       }
     }
   }

@@ -31,7 +31,7 @@ const PricesAndServices = () => {
 
               <tr>
                 <td>Antakių korekcija + dažymas</td>
-                <td>12€</td>
+                <td>15€</td>
                 <td>1 val. 30 min.</td>
                 <td>
                   Atliekama korekcija, piešiamas karkasas, parenkama antakių
@@ -41,7 +41,7 @@ const PricesAndServices = () => {
 
               <tr>
                 <td>Antakių laminavimas + korekcija</td>
-                <td>12€</td>
+                <td>15€</td>
                 <td>1 val. 30 min.</td>
                 <td>
                   Tepamos specialios priemonės, po kurios plaukeliai tampa
@@ -73,9 +73,6 @@ const PricesAndServices = () => {
         <Henna />
         <Bronsun />
       </div>
-      {/* <footer className="footer-home-services-contacts">
-        Copyrights © Lorenzia 2022.
-      </footer> */}
     </div>
   );
 };
