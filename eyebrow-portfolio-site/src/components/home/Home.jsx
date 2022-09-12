@@ -1,11 +1,12 @@
 import React from 'react';
 import Carousel from './CarouselComponent.jsx';
-import location from '../../images/locationv1.jpg';
+import Services from '../services/Services';
 
 const Home = () => {
   return (
     <div>
       <div className="home">
+        <Services />
         <article>
           <b>
             <p>SERTIFIKATAI</p>

@@ -34,6 +34,9 @@ const Navi = () => {
 
   return (
     <div>
+      <div class="tech-slideshow">
+        <div class="mover-1"></div>
+      </div>
       <svg
         className="svg-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -130,9 +133,9 @@ const Navi = () => {
               D.U.K
             </NavLink>
           </nav>
-          <div class="tech-slideshow">
+          {/* <div class="tech-slideshow">
             <div class="mover-1"></div>
-          </div>
+          </div> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
