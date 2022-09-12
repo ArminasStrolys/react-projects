@@ -6,7 +6,6 @@ import About from '../about/About';
 import Gallery from '../gallery/Gallery';
 import FAQ from '../faq/FAQ';
 import logo from '../../images/logo.png';
-import ad from '../../images/long-ad-bar.jpg';
 import {
   BrowserRouter as Router,
   Route,
@@ -134,9 +133,6 @@ const Navi = () => {
           <div class="tech-slideshow">
             <div class="mover-1"></div>
           </div>
-          {/* <div class="tech-slideshow-2">
-            <div class="mover-2"></div>
-          </div> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />

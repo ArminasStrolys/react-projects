@@ -7,36 +7,6 @@ const Home = () => {
     <div>
       <div className="home">
         <article>
-          <p>
-            <b>Svarbi informacija</b>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem velit recusandae at eos, quia explicabo quo numquam
-            voluptatem unde incidunt impedit totam reiciendis non illo ex earum.
-            Minus maxime deserunt deleniti vero nostrum doloribus? Cupiditate
-            iusto nulla laborum quaerat veritatis cum reprehenderit. Ipsum atque
-            asperiores, accusantium unde neque saepe quam reprehenderit sapiente
-            non deleniti blanditiis. Commodi qui illo recusandae beatae vel
-            vitae, esse rerum quasi nobis impedit magni ullam optio natus,
-            quisquam eligendi doloribus sapiente itaque distinctio accusantium
-            tempora eum, totam ea vero. Debitis id, error delectus nemo repellat
-            recusandae!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            corporis odit. Ipsam, fugiat maiores. Nisi a illo sunt consectetur,
-            fuga eaque mollitia ad officiis ducimus distinctio. Consequuntur
-            sint dicta aliquid.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            cumque consequuntur deleniti, voluptatem quas et minus eaque
-            laboriosam placeat harum soluta rem impedit nostrum omnis amet, odit
-            natus ipsam. Sit!
-          </p>
-        </article>
-        <article>
           <b>
             <p>SERTIFIKATAI</p>
           </b>
@@ -71,11 +41,6 @@ const Home = () => {
         </article>
         <Carousel />
         <div>
-          <h3>Kokį antakių korekcijos tipą išsirinkti?</h3>
-          <p>
-            Atsižvelgiant į Jūsų odos tipą nustatysime, kuris korekcijos tipas
-            Jums būtų priimtiniausias.
-          </p>
           <h3>Ar man nepakenks dažai?</h3>
           <p>
             Norint įsitikinti ar dažai Jums nepakenks, rekomenduojama atlikti

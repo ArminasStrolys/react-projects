@@ -57,6 +57,16 @@ export default function FAQ() {
                 <h3>Ar galima dažyti antakius su Henna po laminavimo?</h3>
                 <p>Ne, iškart po laminavimo to daryti nerekomenduojama.</p>
               </li>
+              <li className="main-list-item">
+                <h3>Ar man nepakenks dažai?</h3>
+                <p>
+                  Norint įsitikinti ar dažai Jums nepakenks, rekomenduojama
+                  atlikti alergijos testą kiekvienai naudojamai ekspozicijai.
+                  Medžiaga tepama ant nedidelio odos ploto, nuvaloma ir stebima
+                  24-48 val. Tiek laiko užtenka norint įsitikinti, jog Jūs šioms
+                  medžiagoms nesate alergiški.
+                </p>
+              </li>
             </ul>
           </article>
           <article className="faq-style">
@@ -129,6 +139,13 @@ export default function FAQ() {
               <li className="main-list-item">
                 <h3>Ar būtina atlikti antakių dažymą po procedūros?</h3>
                 <p>Nėra būtina.</p>
+              </li>
+              <li className="main-list-item">
+                <h3>Kokį antakių korekcijos tipą išsirinkti?</h3>
+                <p>
+                  Atsižvelgiant į Jūsų odos tipą nustatysime, kuris korekcijos
+                  tipas Jums būtų priimtiniausias.
+                </p>
               </li>
             </ul>
           </article>
