@@ -6,20 +6,38 @@ export default function Henna() {
     <article className="eyebrow-types">
       <img src={henna} alt="Dyed eyebrows with henna before and after" />
       <h3 className="services-title">
-        Antakių dažymas EKKOBEAUTY Eyebrow HENNA
+        Antakių dažymas Nick Mole Ekko Beauty Henna
       </h3>
       <p>
-        Henna yra natūralus augalinis pigmentas, išgaunamas iš Heninės
-        lavsonijos medžio. Labiausiai pamėgta henna dažų savybė yra jų ilgas
-        išsilaikymas - antakių dažymas išlieka net iki 8 savaičių, priklausomai
-        nuo Jūsų odos ir plaukelių gebėjimo išlaikyti pigmentą.
+        Hennos veikimo principas yra stipresnis nei cheminių dažų. Henna dažome
+        tuomet, kai norime nudažyti ne tik antakių plaukelius, tačiau ir odą.
+        Spalva ant odos išlieka nuo 6 iki 14 dienų, o plaukeliuose net iki 4-6
+        savaičių. Priklausomai nuo Jūsų fiziologinių savybių bei priežiūros.
       </p>
       <p>
-        Augaliniai antakių dažai sukurti maksimaliai tausoti odą, pasižymintys
-        ilgai išliekančiomis spalvomis. 🌱 Henna antakių dažai nudažo ne tik
-        plaukelius, bet ir odą. Naudojant EKKOBEAUTY Eyebrow Henna antakių dažus
-        galime lengvai pasiekti ilgalaikio (permanentinio) dažymo efekto. 🌱 🌱
-        Spalva išlieka ant plaukelių iki 8 savaičių, ant odos - iki 14 dienų.
+        <b>Dažymas su Nick Mole Ekko Beauty Henna rekomenduojamas:</b>
+
+        <ul className="henna-list">
+          <li>taupantiems laiką</li>
+          <li>norint ryškesnio ir ilgai išliekančio rezultato</li>
+          <li>esant ploniems, silpniems plaukeliams, trūkstant apimties</li>
+          <li>
+            norint suformuoti taisyklingą antakių formą, ištaisyti asimetriją
+          </li>
+          <li> jautriems cheminiams dažams žmonėms</li>
+          <li>norint atsiauginti plaukelius</li>
+        </ul>
+        <b> Procedūros eiga:</b>
+        <ul className="henna-list">
+          <li>Odos paruošimas (demakiažas / pilingas / nuriebalinimas)</li>
+          <li>Formos parinkimas</li>
+
+          <li>Dažymas</li>
+          <li>Korekcija (pincetas / vaškas)</li>
+
+          <li>Plaukelio suguldymas</li>
+          <li>Antakių zonos makiažas</li>
+        </ul>
       </p>
     </article>
   );

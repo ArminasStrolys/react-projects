@@ -87,7 +87,7 @@ const Contacts = () => {
 
         <div className="location-map">
           <span>
-            Mes randamės: <b>A. Juozapavičiaus pr.</b> 44, Kaunas 45220
+            Mes rasite: <b>A. Juozapavičiaus pr.</b> 44, Kaunas 45220
           </span>
           <iframe
             title="Lokacija"

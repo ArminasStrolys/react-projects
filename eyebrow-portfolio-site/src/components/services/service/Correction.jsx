@@ -1,5 +1,5 @@
 import React from 'react';
-import correction from '../../../images/correction.webp';
+import correction from '../../../images/correction.png';
 
 export default function Correction() {
   return (
@@ -13,6 +13,12 @@ export default function Correction() {
         linkį. Procedūros metu yra apjungiamos dvi skirtingos technikos vaškas
         ir pincetas. Atlikus korekciją naudojamas raminamasis kremas, skirtas
         nuraminti paraudusią odą.
+        <p>
+          Naudojamas braziliškas vaškas
+          <b> Better Waxing Technology. </b>
+          Priemonė idealiai pašalina bet kokio tipo plaukelius. Tinkama naudoti
+          depiliuojant: veido, bikini, pažastų zonas.
+        </p>
       </p>
     </article>
   );

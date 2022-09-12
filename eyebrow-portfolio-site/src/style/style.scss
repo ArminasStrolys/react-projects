@@ -1,15 +1,22 @@
-@import "./var";
-@import "./_navi.scss";
-@import "./_home.scss";
-@import "./_services.scss";
-@import "./_gallery.scss";
-@import "./_about.scss";
-@import "./_contacts.scss";
+@import './var';
+@import './_navi.scss';
+@import './_home.scss';
+@import './_services.scss';
+@import './_gallery.scss';
+@import './_about.scss';
+@import './_contacts.scss';
 @import '_faq.scss';
 
+@font-face {
+  font-family: cannon;
+  src: url(../fonts/IMFellFrenchCanonSC-Regular.ttf);
+}
 
-body{
+body {
   background-color: $body_color;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: cannon;
   margin: 0;
+  line-height: 25px;
+  font-size: 18px;
 }

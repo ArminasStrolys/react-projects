@@ -38,15 +38,19 @@ const Home = () => {
         </article>
         <article>
           <b>
-            <p>Sertifikatai</p>
+            <p>SERTIFIKATAI</p>
           </b>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            incidunt esse. Dicta animi dignissimos ut porro similique
-            reiciendis, deserunt maxime et alias ipsum consequatur molestiae?
-            Consequuntur porro architecto eos corrupti possimus minus dolores
-            suscipit amet, excepturi pariatur voluptatibus odit reiciendis
-            voluptas dicta, culpa dolorum consectetur.
+            <b>Eyebrows design online course “HENNA PROFI”.</b> Teorija. Mokymu
+            metu buvo labiau pagilintos žinios į hennos dažymą, koloristiką,
+            plauko analizę, laminavimą.
+            <br />
+            <br />
+            <b>Antakių korekcija.</b> Teorija ir praktika. Mokymų metu
+            atskleista visa antakių procedūros eiga nuo antakių paruošimo iki
+            pilno jų sutvarkymo, nudažymo. Sužinota daugybė informacijos apie
+            kiekvieną naudojamą produktą. Darbai buvo atlikti su henna ir
+            geliniais dažais, atliktas laminavimas.
           </p>
           <div className="cards">
             <div className="card-1">
@@ -90,39 +94,16 @@ const Home = () => {
         <div>
           <h3>Kokį antakių korekcijos tipą išsirinkti?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            fugiat qui minus veniam assumenda beatae distinctio ipsam odio, quae
-            laudantium saepe possimus consequuntur repellendus explicabo dicta
-            dolor quas vitae nulla. Architecto nesciunt deserunt soluta totam,
-            cupiditate sequi iure officiis repudiandae amet sed, facilis velit
-            ipsa laboriosam maxime ad, aperiam placeat!
+            Atsižvelgiant į Jūsų odos tipą nustatysime, kuris korekcijos tipas
+            Jums būtų priimtiniausias.
           </p>
           <h3>Ar man nepakenks dažai?</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-            magnam in provident quibusdam cumque similique maiores, cum, vero a
-            omnis, natus fugit molestias hic laboriosam eum. Repellat qui soluta
-            odio debitis! Magni repudiandae, dolorum magnam, soluta deleniti a
-            quaerat laudantium, mollitia omnis iste ipsam blanditiis sequi
-            aperiam quas inventore ullam aspernatur perspiciatis. Dignissimos
-            sequi corrupti facilis perferendis fugit, velit vitae.
-          </p>
-          <h3>Alergijos dažams</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-            sapiente laborum at, velit tempore praesentium quia tempora amet
-            autem necessitatibus, reiciendis dicta facere, magni ipsa aperiam
-            rem ipsum neque eaque molestias! Mollitia eos perferendis saepe
-            rerum inventore cupiditate modi adipisci!
-          </p>
-        </div>
-        <div>
-          <h2>Nuolaidos</h2>
-          <b>Nuolaidos</b>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-            neque, hic obcaecati a, eligendi incidunt natus consequuntur placeat
-            deleniti ipsum distinctio facilis maxime quos ea?
+            Norint įsitikinti ar dažai Jums nepakenks, rekomenduojama atlikti
+            alergijos testą kiekvienai naudojamai ekspozicijai. Medžiaga tepama
+            ant nedidelio odos ploto, nuvaloma ir stebima 24-48 val. Tiek laiko
+            užtenka norint įsitikinti, jog Jūs šioms medžiagoms nesate
+            alergiški.
           </p>
         </div>
       </div>

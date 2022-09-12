@@ -2,6 +2,7 @@ import React from 'react';
 import Correction from './service/Correction';
 import Laminate from './service/Laminate';
 import Henna from './service/Henna';
+import Bronsun from './service/Bronsun';
 
 const PricesAndServices = () => {
   return (
@@ -70,6 +71,7 @@ const PricesAndServices = () => {
         <Correction />
         <Laminate />
         <Henna />
+        <Bronsun />
       </div>
       {/* <footer className="footer-home-services-contacts">
         Copyrights © Lorenzia 2022.

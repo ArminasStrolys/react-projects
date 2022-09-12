@@ -1,5 +1,5 @@
 import React from 'react';
-import lamination from '../../../images/lamination.webp';
+import lamination from '../../../images/lamination.png';
 
 export default function Laminate() {
   return (
@@ -14,17 +14,23 @@ export default function Laminate() {
         skirtingas puses ir niekaip nepavyksta jų taisyklingai sušukuoti.
       </p>
       <p>
-        Ši procedūra trunka maždaug apie valandą, tačiau laminavimo efektas
-        išlieka apie 1-1.5 mėn, priklausomai nuo plaukelių storio bei
-        priežiūros. Pirmiausia specialiu geliu padengiami antakių plaukeliai,
-        vėliau jie sušukuojami (taip yra suteikiama jiems taisyklinga kryptis),
-        uždengiama plevele ir laikoma 10 min., kad produktas kuo giliau
-        įsiskverbtų į plaukelius ir būtų pasiektas maksimalus rezultatas. Po
-        laminavimo, jei klientė pageidauja, atliekamas ir antakių dažymas.
-        Tačiau reikėtų turėti omeny, kad po šios procedūros dažų pigmentas labai
+        Ši procedūra trunka maždaug apie valandą, tačiau antakių laminavimo
+        efektas išlieka nuo 6 iki 8 savaičių, kai kurioms net ir iki 12
+        savaičių. Priklauso nuo Jūsų fiziologijos bei antakių priežiūros
+        namuose.
+      </p>
+      <p>
+        Pirmuoju laminavimo komponentu, specialiu geliu, padengiami antakių
+        plaukeliai, uždengiama plevele ir laikoma 10 min., kad produktas kuo
+        giliau įsiskverbtų į plaukelius ir būtų pasiektas maksimalus rezultatas.
+        Antruoju laminavimo komponentu plaukelis užfiksuojamas norimoje
+        pozicijoje, priemonė laikoma taip pat 10 min. Po atliktos laminavimo
+        procedūros, jei klientė pageidauja, atliekamas antakių dažymas. Tačiau
+        reikėtų turėti omeny, kad po šios procedūros dažų pigmentas labai
         greitai įsiskverbia į plaukelius, todėl iš karto antakiai gali atrodyti
-        kiek ryškoki. Antakių laminavimo privalumas yra tas, jog dažai
-        plaukelyje išsilaiko ilgiau.
+        kiek ryškoki. Antakių laminavimo privalumas yra tas, jog plaukelis tampa
+        paklusnus, lengvai formuojamas, taip pat dažai plaukelyje išsilaiko
+        ilgiau.
       </p>
       <p>
         Norint išsiaiškinti ar ši procedūra Jums tinkama tereikia turėti

@@ -8,87 +8,108 @@ export default function FAQ() {
           <article className="faq-style">
             <ul>
               <li>
-                <h3>How long do the results last?</h3>
+                <h3>Kam galima atlikti antakių laminavimą?</h3>
 
-                <p>
-                  Since microblading pigments are not implanted into the skin as
-                  deep as traditional tattoos, the area will naturally fade
-                  overtime. Microblading typically lasts 1-2 years, depending on
-                  your skin type & age. Skincare routine will also affect the
-                  lasting effect of the pigment: patients who tan, use products
-                  with AHA or Glycolic Acid will fade faster, as your skin will
-                  resurface faster. Each individual’s color retention within the
-                  skin will vary. To maintain the brows looking fresh, a touch
-                  up is suggested every 12-18 months.
-                </p>
+                <ol>
+                  <li>Antakiams, kuriuose neišreikštas apeksas</li>
+                  <li>Antakiai labai nepaklusnūs, krenta į apačią</li>
+                  <li>
+                    Antakių plaukeliai auga skirtingai: vertikaliai arba
+                    horizontaliai
+                  </li>
+                  <li>Kietas plaukelis</li>
+                </ol>
+              </li>
+
+              <li>
+                <h3>Kam antakių laminavimo atlikti nerekomenduojama?</h3>
+                <ol>
+                  <li>Alergija medžiagų komponentams</li>
+                  <li>Odos pažeidimai</li>
+                  <li>Labai išretėję antakiai</li>
+                  <li>Hormoniniai pakitimai</li>
+                  <li>4 grupės antakių plaukai</li>
+                </ol>
               </li>
               <li>
-                <h3>How many sessions do I need?</h3>
-                <p>
-                  A touch up session after 4-6 weeks is necessary as everyone
-                  heals differently and outcome will vary. Certain areas may not
-                  pick up during the first session and will need to be refilled.
-                  Pigment color may need to be adjusted, brow thickness and more
-                  strokes can be added. Individuals with oily skin often require
-                  a deeper shade during the touch up session as the oils tend to
-                  lighten the pigment. Most importantly, your touch up session
-                  is when we refine your brows to ensure it looks perfect and
-                  retains the color for the whole year.
-                </p>
-              </li>
-              <li>
-                <h3>What does the procedure entail? </h3>
-                <p>
-                  A typical appointment is around two hours, but the actual
-                  Permanent Makeup/Microblading only happens in the last 30-45
-                  minutes. The drawing is the most tedious part and the huge
-                  majority of the session. It takes around 30 minutes per
-                  patient just to consult on shape and size. We then draw the
-                  brows on before performing the actual procedure.
-                </p>
+                <h3>
+                  Kiek laiko turi praeiti po paskutinės antakių laminavimo
+                  procedūros, kad galėčiau ją kartoti?
+                </h3>
+                <p>Kartojam procedūrą ne anksčiau kaip 2,5-3 mėn.</p>
               </li>
             </ul>
           </article>
           <article className="faq-style">
             <ul>
               <li>
-                <h3>How long do the results last?</h3>
+                <h3>Kokia turėtų būti priežiūra po laminavimo procedūros?</h3>
+                <b>Po procedūros pirmas 24 valandas:</b>
+                <ol>
+                  <li>Antakių nešlapinkite.</li>
+                  <li>
+                    Saugokite nuo garų ar itin didelės drėgmės, ilgai nebūkite
+                    karštoje vonioje ar duše.
+                  </li>
+                  <li>Nesilankykite pirtyje ar soliariume.</li>
+                  <li>
+                    Makiažą akių srityje tepkite ar valykite neliečiant antakių.
+                  </li>
+                </ol>
+                <b>Po 24 valandų:</b> 
+                <ol>
+                  <li>
+                    Būtina išsiplauti antakius su šiltu vandeniu, tam, kad
+                    nuplauti visas priemones.
+                  </li>
+                  <li>
+                    Nuplovus priemones nuo antakių, galima prižiūrėti juos
+                    įprastai.
+                  </li>
+                  <li>
+                    Šukuokite švelniai, netampykite plaukelio, šukuokite pagal
+                    plauko augimo kryptį.
+                  </li>
+                  <li>Henna dažais nedažome mažiausiai mėnesį laiko</li>
+                  <li>
+                    Naudokite aliejus, drėkinamuosius serumus. Po procedūros
+                    būtina tepti aliejus minimaliai 3 savaites, o dar geriau
+                    visada. Rekomenduojami aliejai: avokado, vynuogių kauliukų,
+                    persikų, jojoba, migdolu, argano (tie, kurie drėkina
+                    plaukelį).
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h3>Kiek laiko išlieka antakių laminavimo efektas?</h3>
                 <p>
-                  Since microblading pigments are not implanted into the skin as
-                  deep as traditional tattoos, the area will naturally fade
-                  overtime. Microblading typically lasts 1-2 years, depending on
-                  your skin type & age. Skincare routine will also affect the
-                  lasting effect of the pigment: patients who tan, use products
-                  with AHA or Glycolic Acid will fade faster, as your skin will
-                  resurface faster. Each individual’s color retention within the
-                  skin will vary. To maintain the brows looking fresh, a touch
-                  up is suggested every 12-18 months.
+                  Antakių laminavimo efektas išlieka nuo 6 iki 8 savaičių, kai
+                  kurioms net ir iki 12 savaičių. Priklauso nuo Jūsų
+                  fiziologijos bei antakių priežiūros namuose.
                 </p>
               </li>
               <li>
-                <h3>How many sessions do I need?</h3>
+                <h3>Ar kerpate plaukelius?</h3>
                 <p>
-                  A touch up session after 4-6 weeks is necessary as everyone
-                  heals differently and outcome will vary. Certain areas may not
-                  pick up during the first session and will need to be refilled.
-                  Pigment color may need to be adjusted, brow thickness and more
-                  strokes can be added. Individuals with oily skin often require
-                  a deeper shade during the touch up session as the oils tend to
-                  lighten the pigment. Most importantly, your touch up session
-                  is when we refine your brows to ensure it looks perfect and
-                  retains the color for the whole year.
+                  Antakių plaukelių nekerpu. Kerpant plaukelius pasikeičia jų
+                  struktūra, storis, spalva.
                 </p>
               </li>
               <li>
-                <h3>What does the procedure entail? </h3>
-                <p>
-                  A typical appointment is around two hours, but the actual
-                  Permanent Makeup/Microblading only happens in the last 30-45
-                  minutes. The drawing is the most tedious part and the huge
-                  majority of the session. It takes around 30 minutes per
-                  patient just to consult on shape and size. We then draw the
-                  brows on before performing the actual procedure.
-                </p>
+                <h3>Antakių laminavimas - tai chemija?</h3>
+                <p>Taip, tai cheminiai procesai plaukelio viduje</p>
+              </li>
+              <li>
+                <h3>Ar tai gydomoji, atstatomoji procedūra?</h3>
+                <p>Tikrai NE.</p>
+              </li>
+              <li>
+                <h3>Ar būtina atlikti antakių dažymą po procedūros?</h3>
+                <p>Nėra būtina.</p>
+              </li>
+              <li>
+                <h3>Ar galima dažyti antakius su Henna po laminavimo?</h3>
+                <p>Ne, iškart po laminavimo to daryti nerekomenduojama.</p>
               </li>
             </ul>
           </article>
