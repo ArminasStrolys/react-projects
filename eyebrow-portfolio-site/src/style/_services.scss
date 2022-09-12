@@ -1,9 +1,9 @@
 @import './_var';
 
 .services {
-  margin: 0 0% 0 0%;
+  margin: 200px 0 0 0;
   background-color: $white_color;
-  padding: 5% 3% 5% 3%;
+  padding: 0;
   position: relative;
   top: -150px;
   margin-bottom: -170px;
@@ -35,12 +35,6 @@
     margin: 10px;
     float: left;
     width: 400px;
-  }
-  .henna-list {
-    li {
-      position: relative;
-      left: 50px;
-    }
   }
 }
 .eyebrow-types:nth-of-type(even) {
@@ -76,13 +70,13 @@
 }
 @media screen and (max-width: 850px) {
   .services {
-    margin: 100px 0 -50px 0;
+    margin: 10px 0 -50px 0;
     background-color: $white_color;
     padding: 0 0;
-    padding-top: 50px;
+    // padding-top: 50px;
     position: unset;
-    top: 0;
-    padding: 100px 5% 50px 5%;
+    // top: 0;
+    // padding: 100px 5% 50px 5%;
   }
 }
 
@@ -91,12 +85,34 @@
     img {
       width: 300px;
     }
+    .second-img,
+    .second-img-float {
+      position: relative;
+      width: 300px;
+      height: 254px;
+      left: -340px;
+      margin-right: -400px;
+    }
+    .second-img-float {
+      left: -70px;
+    }
   }
 }
 @media screen and (max-width: 600px) and (min-width: 500px) {
   .eyebrow-types {
     img {
       width: 200px;
+    }
+    .second-img,
+    .second-img-float {
+      position: relative;
+      width: 200px;
+      height: 184px;
+      left: -240px;
+      margin-right: -400px;
+    }
+    .second-img-float {
+      left: -170px;
     }
   }
 }

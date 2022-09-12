@@ -27,7 +27,7 @@ export default function Henna() {
       <p>
         <b>Dažymas su Nick Mole Ekko Beauty Henna rekomenduojamas:</b>
 
-        <ul className="henna-list">
+        <ul>
           <li>taupantiems laiką</li>
           <li>norint ryškesnio ir ilgai išliekančio rezultato</li>
           <li>esant ploniems, silpniems plaukeliams, trūkstant apimties</li>
@@ -38,7 +38,7 @@ export default function Henna() {
           <li>norint atsiauginti plaukelius</li>
         </ul>
         <b> Procedūros eiga:</b>
-        <ul className="henna-list">
+        <ul>
           <li>Odos paruošimas (demakiažas / pilingas / nuriebalinimas)</li>
           <li>Formos parinkimas</li>
 

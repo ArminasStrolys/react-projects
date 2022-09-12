@@ -73,7 +73,7 @@ const Navi = () => {
             >
               Pagrindinis
             </NavLink>
-            <NavLink
+            {/* <NavLink
               onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? purple : 'black',
@@ -86,7 +86,7 @@ const Navi = () => {
               to="/services"
             >
               Paslaugos
-            </NavLink>
+            </NavLink> */}
             <NavLink
               onClick={handleScrollTop}
               style={({ isActive }) => ({
@@ -133,9 +133,6 @@ const Navi = () => {
               D.U.K
             </NavLink>
           </nav>
-          {/* <div class="tech-slideshow">
-            <div class="mover-1"></div>
-          </div> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />

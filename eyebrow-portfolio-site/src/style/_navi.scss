@@ -3,9 +3,10 @@
 .tech-slideshow {
   height: 50px;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   transform: translate3d(0, 0, 0);
   z-index: 2;
+  opacity: 0.5;
 }
 
 .tech-slideshow > div {
@@ -13,7 +14,7 @@
   width: 9000px;
   background: url(../images/long-ad-bar.jpg);
   position: absolute;
-  top: 90px;
+  top: -60px;
   left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
@@ -71,6 +72,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .tech-slideshow > div {
+    top: 60px;
+  }
   .drop-down {
     display: flex;
     font-weight: 600;
@@ -131,6 +135,9 @@
   }
 }
 @media screen and (min-width: 2500px) {
+  .tech-slideshow {
+    top: 150px;
+  }
   .nav-bar {
     gap: 100px;
   }

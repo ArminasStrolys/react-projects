@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     .faq-style {
-      width: 40%;
+      width: 50%;
       .ul-bullet-style {
         list-style: none;
       }
@@ -38,13 +38,15 @@
 
 @media screen and (max-width: 850px) {
   .faq {
-    text-align: justify;
+    text-align: unset;
     position: unset;
-    padding: 100px 5% 50px 5%;
-    top: 0;
+    padding: 200px 5% 50px 5%;
+    // top: 0;
     margin: 100px 0 -50px 0;
-    .faq-style {
-      width: 45%;
+    .faq-split {
+      .faq-style {
+        width: 50%;
+      }
     }
   }
 }
@@ -63,7 +65,9 @@
             margin-left: -40px;
           }
           li::before {
-            content: ' ';
+            position: relative;
+            // top: 48px;
+            left: -150px;
           }
         }
       }

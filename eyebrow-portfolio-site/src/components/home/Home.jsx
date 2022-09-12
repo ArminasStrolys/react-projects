@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <div className="home">
         <Services />
+        <Carousel />
         <article>
           <b>
             <p>SERTIFIKATAI</p>
@@ -40,17 +41,6 @@ const Home = () => {
             </div>
           </div>
         </article>
-        <Carousel />
-        <div>
-          <h3>Ar man nepakenks dažai?</h3>
-          <p>
-            Norint įsitikinti ar dažai Jums nepakenks, rekomenduojama atlikti
-            alergijos testą kiekvienai naudojamai ekspozicijai. Medžiaga tepama
-            ant nedidelio odos ploto, nuvaloma ir stebima 24-48 val. Tiek laiko
-            užtenka norint įsitikinti, jog Jūs šioms medžiagoms nesate
-            alergiški.
-          </p>
-        </div>
       </div>
     </div>
   );

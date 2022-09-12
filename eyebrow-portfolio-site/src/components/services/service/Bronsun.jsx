@@ -31,7 +31,7 @@ export default function Laminate() {
           <li> paslėpti seną permanentą</li>
         </ul>
         <b> Procedūros eiga:</b>
-        <ul className="henna-list">
+        <ul>
           <li>Odos paruošimas (demakiažas / pilingas / nuriebalinimas)</li>
           <li>Formos parinkimas</li>
 
