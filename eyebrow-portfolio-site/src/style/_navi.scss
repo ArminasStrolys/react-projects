@@ -1,5 +1,33 @@
 @import './_var';
 
+.tech-slideshow {
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  z-index: 1;
+}
+
+.tech-slideshow > div {
+  height: 50px;
+  width: 9000px;
+  background: url(../images/long-ad-bar.jpg);
+  position: absolute;
+  top: 180px;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 30s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
 .svg-icon {
   margin-bottom: -200px;
   position: absolute;

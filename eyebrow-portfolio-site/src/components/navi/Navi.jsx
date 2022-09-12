@@ -6,6 +6,7 @@ import About from '../about/About';
 import Gallery from '../gallery/Gallery';
 import FAQ from '../faq/FAQ';
 import logo from '../../images/logo.png';
+import ad from '../../images/long-ad-bar.jpg';
 import {
   BrowserRouter as Router,
   Route,
@@ -45,6 +46,7 @@ const Navi = () => {
           d="M0,128L21.8,144C43.6,160,87,192,131,181.3C174.5,171,218,117,262,117.3C305.5,117,349,171,393,181.3C436.4,192,480,160,524,144C567.3,128,611,128,655,138.7C698.2,149,742,171,785,186.7C829.1,203,873,213,916,192C960,171,1004,117,1047,106.7C1090.9,96,1135,128,1178,133.3C1221.8,139,1265,117,1309,117.3C1352.7,117,1396,139,1418,149.3L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
         ></path>
       </svg>
+
       <div>
         <Router>
           <div onClick={visibility} className="drop-down">
@@ -129,6 +131,12 @@ const Navi = () => {
               D.U.K
             </NavLink>
           </nav>
+          <div class="tech-slideshow">
+            <div class="mover-1"></div>
+          </div>
+          {/* <div class="tech-slideshow-2">
+            <div class="mover-2"></div>
+          </div> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
@@ -139,6 +147,7 @@ const Navi = () => {
           </Routes>
         </Router>
       </div>
+
       <div ref={bottomRef}>
         <Contacts />
       </div>
