@@ -7,6 +7,26 @@
   position: relative;
   top: -150px;
   margin-bottom: -170px;
+  .drop-down-services {
+    h3 {
+      text-align: center;
+    }
+    .service-headline {
+      border: 1px solid red;
+      width: 90%;
+      margin: 15px auto;
+      padding: 15px 0 15px 20px;
+    }
+    .service-option {
+      border: 1px solid coral;
+      width: 90%;
+      margin: 15px auto;
+      padding-left: 20px;
+      p {
+        // display: none;
+      }
+    }
+  }
 }
 .eyebrow-types {
   display: inline-block;

@@ -9,6 +9,79 @@ const PricesAndServices = () => {
     <div>
       <div className="services">
         <div>
+          <div className="drop-down-services">
+            <h3>Teikiamos paslaugos</h3>
+            <div className="service-headline">
+              <b>Antakių korekcija</b>
+            </div>
+            <div className="service-option">
+              <p>Antakių korekcija</p>
+              <p>
+                Karštu vašku, pincetu pašalinami iš formos išeinantys plaukeliai
+              </p>
+              <p>Trukmė: 15 - 30 min.</p>
+              <p>Kaina: 5€</p>
+            </div>
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <b>Antakių korekcija + dažymas</b>
+            </div>
+            <div className="service-option">
+              <p>Antakių korekcija + dažymas</p>
+              <p>
+                Atliekama korekcija, piešiamas karkasas, parenkama antakių dažų
+                spalva pagal klientės norus.
+              </p>
+              <p>Trukmė: 1 val. 30 min.</p>
+              <p>Kaina: 15€€</p>
+            </div>
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <b>Antakių laminavimas + korekcija</b>
+            </div>
+            <div className="service-option">
+              <p>Antakių laminavimas + korekcija</p>
+              <p>
+                Tepamos specialios priemonės, po kurios plaukeliai tampa
+                paslankūs, lengvai formuojami bei atliekama korekcija.
+              </p>
+              <p>Trukmė: 1 val. 30 min.</p>
+              <p>Kaina: 15€</p>
+            </div>
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <b>Antakių laminavimas + dažymas</b>
+            </div>
+            <div className="service-option">
+              <p>Antakių laminavimas + dažymas</p>
+              <p>
+                Tepamos specialios priemonės, po kurios plaukeliai tampa
+                paslankūs, lengvai formuojami, atliekama korekcija bei dažymas.
+              </p>
+              <p>Trukmė: 1 val. 30 min. - 2 val.</p>
+              <p>Kaina: 20€</p>
+            </div>
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <b>Ūsiukų depiliacija</b>
+            </div>
+            <div className="service-option">
+              <p>Ūsiukų depiliacija</p>
+              <p>Atliekama ūsiukų depiliacija vašku ir pincetu.</p>
+              <p>Trukmė: 15 - 30 min.</p>
+              <p>Kaina: 5€</p>
+            </div>
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <b>Express antakių dažymas</b>
+            </div>
+            <div className="service-option">
+              <p>Express antakių dažymas</p>
+              <p>INFO INFO INFO INFO INFO INFO</p>
+              <p>Trukmė: 15 - 30 min.</p>
+              <p>Kaina: 8€</p>
+            </div>
+          </div>
           <table className="customTable">
             <thead>
               <tr>
