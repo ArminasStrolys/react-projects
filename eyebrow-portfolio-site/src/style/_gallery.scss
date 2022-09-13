@@ -20,13 +20,16 @@
 }
 // MEDIA ---------------------------------------
 @media screen and (max-width: 500px) {
-  .image-collection {
-    gap: 70px;
-    width: 90%;
-    margin: 100px auto 50px auto;
-    img {
+  .gallery {
+    top: 0px;
+    .image-collection {
+      gap: 70px;
       width: 100%;
-      margin-top: -50px;
+      margin: 100px auto 50px auto;
+      img {
+        width: 90%;
+        margin-top: -50px;
+      }
     }
   }
 }
@@ -38,7 +41,7 @@
     padding: 0 0;
     position: relative;
     top: 100px;
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 1px;
   }
   .image-collection {
