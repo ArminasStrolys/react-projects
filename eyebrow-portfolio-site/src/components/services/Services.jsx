@@ -1,42 +1,21 @@
-import React, { useState } from 'react';
-import ReactCSSTransitionGroup from 'react-transition-group';
+import React from 'react';
 import Correction from './service/Correction';
 import Laminate from './service/Laminate';
 import Henna from './service/Henna';
 import Bronsun from './service/Bronsun';
 
 const PricesAndServices = () => {
-  const [dropDown, setDropDown] = useState(false);
-  const [addClass, setAddClass] = useState('service-option');
-  const handleHidden = () => {
-    dropDown === false ? setDropDown(true) : setDropDown(false);
-    dropDown === false ? setAddClass('hidden') : setAddClass('service-option');
-  };
-
   return (
     <div>
       <div className="services">
         <div>
           <div className="drop-down-services">
             <h3>Teikiamos paslaugos</h3>
+
             <div className="service-headline">
               <b>Antakių korekcija</b>
             </div>
-            <ReactCSSTransitionGroup transitionName="testing">
-              <div className="service-headline">
-                <p>Antakių korekcija</p>
-                <p>
-                  Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
-                  plaukeliai
-                </p>
-                <p>Trukmė: 15 - 30 min.</p>
-                <p>Kaina: 5€</p>
-              </div>
-            </ReactCSSTransitionGroup>
-            {/* <div onClick={handleHidden} className="service-headline">
-              <b>Antakių korekcija</b>
-            </div>
-            <div className={addClass}>
+            <div>
               <p>Antakių korekcija</p>
               <p>
                 Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
@@ -44,7 +23,7 @@ const PricesAndServices = () => {
               </p>
               <p>Trukmė: 15 - 30 min.</p>
               <p>Kaina: 5€</p>
-            </div> */}
+            </div>
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
             <div className="service-headline">
               <b>Antakių korekcija + dažymas</b>
@@ -60,6 +39,22 @@ const PricesAndServices = () => {
             </div>
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
             <div className="service-headline">
+              <label for="touch1">
+                <span>Antakių laminavimas + korekcija</span>
+              </label>
+              <input type="checkbox" id="touch1" />
+
+              <div className="slide1">
+                <p>
+                  Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
+                  paslankūs, lengvai formuojami bei atliekama korekcija.
+                </p>
+                <p>Trukmė: 1 val. 30 min.</p>
+                <p>Kaina: 15€</p>
+              </div>
+            </div>
+
+            {/* <div className="service-headline">
               <b>Antakių laminavimas + korekcija</b>
             </div>
             <div className="service-option">
@@ -70,39 +65,52 @@ const PricesAndServices = () => {
               </p>
               <p>Trukmė: 1 val. 30 min.</p>
               <p>Kaina: 15€</p>
+            </div> */}
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+
+            <div className="service-headline">
+              <label for="touch2">
+                <span>Antakių laminavimas + dažymas</span>
+              </label>
+              <input type="checkbox" id="touch2" />
+
+              <div className="slide2">
+                <p>
+                  Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
+                  paslankūs, lengvai formuojami, atliekama korekcija bei
+                  dažymas.
+                </p>
+                <p>Trukmė: 1 val. 30 min. - 2 val.</p>
+                <p>Kaina: 20€</p>
+              </div>
             </div>
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
+
             <div className="service-headline">
-              <b>Antakių laminavimas + dažymas</b>
-            </div>
-            <div className="service-option">
-              <p>Antakių laminavimas + dažymas</p>
-              <p>
-                Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
-                paslankūs, lengvai formuojami, atliekama korekcija bei dažymas.
-              </p>
-              <p>Trukmė: 1 val. 30 min. - 2 val.</p>
-              <p>Kaina: 20€</p>
+              <label for="touch3">
+                <span>Ūsiukų depiliacija</span>
+              </label>
+              <input type="checkbox" id="touch3" />
+
+              <div className="slide3">
+                <p>Eiga: atliekama ūsiukų depiliacija vašku ir pincetu.</p>
+                <p>Trukmė: 15 - 30 min.</p>
+                <p>Kaina: 5€</p>
+              </div>
             </div>
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
+
             <div className="service-headline">
-              <b>Ūsiukų depiliacija</b>
-            </div>
-            <div className="service-option">
-              <p>Ūsiukų depiliacija</p>
-              <p>Eiga: atliekama ūsiukų depiliacija vašku ir pincetu.</p>
-              <p>Trukmė: 15 - 30 min.</p>
-              <p>Kaina: 5€</p>
-            </div>
-            {/*----------------------------------------------------------------------------------- PASLAUGA */}
-            <div className="service-headline">
-              <b>Express antakių dažymas</b>
-            </div>
-            <div className="service-option">
-              <p>Express antakių dažymas</p>
-              <p>Eiga: INFO INFO INFO INFO INFO INFO</p>
-              <p>Trukmė: 15 - 30 min.</p>
-              <p>Kaina: 8€</p>
+              <label for="touch6">
+                <span>Express antakių dažymas</span>
+              </label>
+              <input type="checkbox" id="touch6" />
+
+              <div className="slide6">
+                <p>Eiga: INFO INFO INFO INFO INFO INFO</p>
+                <p>Trukmė: 15 - 30 min.</p>
+                <p>Kaina: 8€</p>
+              </div>
             </div>
           </div>
           {/* <table className="customTable">

@@ -21,26 +21,79 @@
       height: auto;
       overflow: hidden;
     }
-    .service-option {
-      border: 1px solid $purple_color;
-      width: 90%;
-      margin: 15px auto;
-      padding-left: 20px;
-      transition: 2s;
-      height: auto;
-      overflow: hidden;
+    // .service-option {
+    //   border: 1px solid $purple_color;
+    //   width: 90%;
+    //   margin: 15px auto;
+    //   padding-left: 20px;
+    //   transition: width 2s, height 2s, transform 2s;
+    // }
+
+    span {
+      border: 1px solid $white_color;
+      margin: -20px -20px;
+      padding: 20px;
+      background-color: $service_table_color_brighter;
+      font-size: 1.2em;
+      font-variant: small-caps;
+      cursor: pointer;
+      display: block;
     }
-    .hidden {
-      border: 1px solid $purple_color;
-      width: 90%;
-      margin: 15px auto;
-      padding-left: 20px;
-      transition: 2s;
-      height: 10px;
-      overflow: hidden;
-      // z-index: -1;
-      // display: none;
+
+    span::after {
+      float: right;
+      font-size: 40px;
+      padding-right: 30px;
+      content: '+';
     }
+
+    .slide1,
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide6 {
+      clear: both;
+      margin-top: 5px;
+      position: relative;
+      top: 30px;
+      width: 100%;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.7s ease;
+    }
+    #touch1,
+    #touch2,
+    #touch3,
+    #touch4,
+    #touch5,
+    #touch6 {
+      position: absolute;
+      opacity: 0;
+      height: 0px;
+    }
+
+    #touch1:checked + .slide1,
+    #touch2:checked + .slide2,
+    #touch1:checked + .slide3,
+    #touch2:checked + .slide4,
+    #touch1:checked + .slide5,
+    #touch2:checked + .slide6 {
+      height: 200px;
+    }
+
+    // .hidden {
+    //   border: none;
+    //   width: 90%;
+    //   margin: 15px auto;
+    //   padding-left: 20px;
+    //   transition: width 2s, height 2s, transform 2s;
+    //   height: 200px;
+    //   overflow: hidden;
+    //   opacity: 0;
+    //   // z-index: -1;
+    //   // display: none;
+    // }
   }
 }
 .eyebrow-types {
