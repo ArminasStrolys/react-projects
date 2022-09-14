@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactCSSTransitionGroup from 'react-transition-group';
 import Correction from './service/Correction';
 import Laminate from './service/Laminate';
 import Henna from './service/Henna';
 import Bronsun from './service/Bronsun';
 
 const PricesAndServices = () => {
+  const [dropDown, setDropDown] = useState(false);
+  const [addClass, setAddClass] = useState('service-option');
+  const handleHidden = () => {
+    dropDown === false ? setDropDown(true) : setDropDown(false);
+    dropDown === false ? setAddClass('hidden') : setAddClass('service-option');
+  };
+
   return (
     <div>
       <div className="services">
@@ -14,14 +22,29 @@ const PricesAndServices = () => {
             <div className="service-headline">
               <b>Antakių korekcija</b>
             </div>
-            <div className="service-option">
+            <ReactCSSTransitionGroup transitionName="testing">
+              <div className="service-headline">
+                <p>Antakių korekcija</p>
+                <p>
+                  Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
+                  plaukeliai
+                </p>
+                <p>Trukmė: 15 - 30 min.</p>
+                <p>Kaina: 5€</p>
+              </div>
+            </ReactCSSTransitionGroup>
+            {/* <div onClick={handleHidden} className="service-headline">
+              <b>Antakių korekcija</b>
+            </div>
+            <div className={addClass}>
               <p>Antakių korekcija</p>
               <p>
-                Karštu vašku, pincetu pašalinami iš formos išeinantys plaukeliai
+                Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
+                plaukeliai
               </p>
               <p>Trukmė: 15 - 30 min.</p>
               <p>Kaina: 5€</p>
-            </div>
+            </div> */}
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
             <div className="service-headline">
               <b>Antakių korekcija + dažymas</b>
@@ -29,11 +52,11 @@ const PricesAndServices = () => {
             <div className="service-option">
               <p>Antakių korekcija + dažymas</p>
               <p>
-                Atliekama korekcija, piešiamas karkasas, parenkama antakių dažų
-                spalva pagal klientės norus.
+                Eiga: atliekama korekcija, piešiamas karkasas, parenkama antakių
+                dažų spalva pagal klientės norus.
               </p>
               <p>Trukmė: 1 val. 30 min.</p>
-              <p>Kaina: 15€€</p>
+              <p>Kaina: 15€</p>
             </div>
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
             <div className="service-headline">
@@ -42,7 +65,7 @@ const PricesAndServices = () => {
             <div className="service-option">
               <p>Antakių laminavimas + korekcija</p>
               <p>
-                Tepamos specialios priemonės, po kurios plaukeliai tampa
+                Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
                 paslankūs, lengvai formuojami bei atliekama korekcija.
               </p>
               <p>Trukmė: 1 val. 30 min.</p>
@@ -55,7 +78,7 @@ const PricesAndServices = () => {
             <div className="service-option">
               <p>Antakių laminavimas + dažymas</p>
               <p>
-                Tepamos specialios priemonės, po kurios plaukeliai tampa
+                Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
                 paslankūs, lengvai formuojami, atliekama korekcija bei dažymas.
               </p>
               <p>Trukmė: 1 val. 30 min. - 2 val.</p>
@@ -67,7 +90,7 @@ const PricesAndServices = () => {
             </div>
             <div className="service-option">
               <p>Ūsiukų depiliacija</p>
-              <p>Atliekama ūsiukų depiliacija vašku ir pincetu.</p>
+              <p>Eiga: atliekama ūsiukų depiliacija vašku ir pincetu.</p>
               <p>Trukmė: 15 - 30 min.</p>
               <p>Kaina: 5€</p>
             </div>
@@ -77,12 +100,12 @@ const PricesAndServices = () => {
             </div>
             <div className="service-option">
               <p>Express antakių dažymas</p>
-              <p>INFO INFO INFO INFO INFO INFO</p>
+              <p>Eiga: INFO INFO INFO INFO INFO INFO</p>
               <p>Trukmė: 15 - 30 min.</p>
               <p>Kaina: 8€</p>
             </div>
           </div>
-          <table className="customTable">
+          {/* <table className="customTable">
             <thead>
               <tr>
                 <th>Procedūra</th>
@@ -138,7 +161,7 @@ const PricesAndServices = () => {
                 <td>Atliekama ūsiukų depiliacija vašku ir pincetu.</td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
         </div>
 
         <Correction />

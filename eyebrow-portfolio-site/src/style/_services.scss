@@ -12,25 +12,43 @@
       text-align: center;
     }
     .service-headline {
-      border: 1px solid red;
+      border: 1px solid $service_table_color_brighter;
+      background-color: $purple_color_opacity;
       width: 90%;
       margin: 15px auto;
       padding: 15px 0 15px 20px;
+      cursor: pointer;
+      height: auto;
+      overflow: hidden;
     }
     .service-option {
-      border: 1px solid coral;
+      border: 1px solid $purple_color;
       width: 90%;
       margin: 15px auto;
       padding-left: 20px;
-      p {
-        // display: none;
-      }
+      transition: 2s;
+      height: auto;
+      overflow: hidden;
+    }
+    .hidden {
+      border: 1px solid $purple_color;
+      width: 90%;
+      margin: 15px auto;
+      padding-left: 20px;
+      transition: 2s;
+      height: 10px;
+      overflow: hidden;
+      // z-index: -1;
+      // display: none;
     }
   }
 }
 .eyebrow-types {
   display: inline-block;
   margin: 50px auto;
+
+  word-wrap: break-word;
+
   .first-img {
     position: relative;
     transition: 0.5s;
@@ -43,7 +61,6 @@
   .second-img-float {
     position: relative;
     width: 400px;
-    height: 334px;
     left: -440px;
     margin-right: -400px;
     z-index: 1;
@@ -55,6 +72,7 @@
     margin: 10px;
     float: left;
     width: 400px;
+    margin-top: 30px;
   }
 }
 .eyebrow-types:nth-of-type(even) {
@@ -62,41 +80,13 @@
     float: right;
   }
 }
-.customTable {
-  margin: 50px auto;
-  width: 100%;
-  background-color: $white_color;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-style: solid;
-  color: $black_color;
-}
-.customTable td,
-.customTable th {
-  border-width: 2px;
-  border-color: $service_table_color_brighter;
-  border-style: solid;
-  padding: 5px;
-}
-.customTable thead {
-  background-color: $service_table_color;
-  text-align: left;
-}
 
-@media screen and (min-width: 1000px) {
-  .customTable {
-    width: 70%;
-  }
-}
 @media screen and (max-width: 850px) {
   .services {
     margin: 10px 0 -50px 0;
     background-color: $white_color;
     padding: 0 0;
-    // padding-top: 50px;
     position: unset;
-    // top: 0;
-    // padding: 100px 5% 50px 5%;
   }
 }
 
@@ -109,7 +99,6 @@
     .second-img-float {
       position: relative;
       width: 300px;
-      height: 254px;
       left: -340px;
       margin-right: -400px;
     }
@@ -127,7 +116,6 @@
     .second-img-float {
       position: relative;
       width: 200px;
-      height: 184px;
       left: -240px;
       margin-right: -400px;
     }
@@ -149,7 +137,6 @@
     .second-img-float {
       position: relative;
       width: 100%;
-      height: 300px;
       left: 0;
       margin-right: 0;
       top: -300px;
@@ -158,7 +145,6 @@
     .second-img-float {
       left: 0;
       width: 100%;
-      height: 300px;
     }
   }
   .eyebrow-types:nth-of-type(2) {

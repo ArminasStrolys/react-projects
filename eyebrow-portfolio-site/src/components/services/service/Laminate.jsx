@@ -1,6 +1,6 @@
 import React from 'react';
 import lamination from '../../../images/lamination.png';
-import logo from '../../../images/logo-white.png';
+import laminate_tools from '../../../images/laminate-tools.jpg';
 
 export default function Laminate() {
   return (
@@ -12,7 +12,7 @@ export default function Laminate() {
       />
       <img
         className="second-img-float"
-        src={logo}
+        src={laminate_tools}
         alt="Eyebrow correction before and after"
       />
       <h3 className="services-title">Antakių laminavimas</h3>

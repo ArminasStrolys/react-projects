@@ -1,6 +1,6 @@
 import React from 'react';
 import henna from '../../../images/henna.jpg';
-import logo from '../../../images/logo-white.png';
+import henna_dye from '../../../images/henna-dyes.jpg';
 
 export default function Henna() {
   return (
@@ -12,7 +12,7 @@ export default function Henna() {
       />
       <img
         className="second-img"
-        src={logo}
+        src={henna_dye}
         alt="Eyebrow correction before and after"
       />
       <h3 className="services-title">

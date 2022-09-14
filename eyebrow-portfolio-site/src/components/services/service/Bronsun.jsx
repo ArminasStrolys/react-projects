@@ -1,6 +1,6 @@
 import React from 'react';
 import bronsun from '../../../images/bronsun.png';
-import logo from '../../../images/logo-white.png';
+import bronsun_dye from '../../../images/bronsun-dyes.jpg';
 
 export default function Laminate() {
   return (
@@ -12,7 +12,7 @@ export default function Laminate() {
       />
       <img
         className="second-img-float"
-        src={logo}
+        src={bronsun_dye}
         alt="Eyebrow correction before and after"
       />
       <h3 className="services-title">Antakių dažymas Bronsun</h3>
