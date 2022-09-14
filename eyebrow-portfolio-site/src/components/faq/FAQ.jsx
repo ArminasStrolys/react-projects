@@ -28,7 +28,6 @@ export default function FAQ() {
                   <li>Odos pažeidimai</li>
                   <li>Labai išretėję antakiai</li>
                   <li>Hormoniniai pakitimai</li>
-                  <li>4 grupės antakių plaukai</li>
                 </ul>
               </li>
               <li className="main-list-item">
@@ -75,7 +74,7 @@ export default function FAQ() {
                 <h3>Kokia turėtų būti priežiūra po laminavimo procedūros?</h3>
 
                 <ol>
-                  <b>Po procedūros pirmas 24 valandas:</b>
+                  <p className="bolder">Po procedūros pirmas 24 valandas:</p>
                   <li>
                     <p>Antakių nešlapinkite.</p>
                   </li>
@@ -94,7 +93,7 @@ export default function FAQ() {
                       antakių.
                     </p>
                   </li>
-                  <b>Po 24 valandų:</b>
+                  <p className="bolder">Po 24 valandų:</p>
                   <li>
                     <p>
                       Būtina išsiplauti antakius su šiltu vandeniu, tam, kad

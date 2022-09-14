@@ -98,7 +98,7 @@ const Contacts = () => {
         </div>
 
         <div className="contact-form">
-          <span>Susisiekime!</span>
+          <span>Registracija procedūroms</span>
           <form
             ref={form}
             className="contact-us-form"

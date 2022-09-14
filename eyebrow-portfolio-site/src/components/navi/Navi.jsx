@@ -34,7 +34,7 @@ const Navi = () => {
 
   return (
     <div>
-      {/* <div class="tech-slideshow">
+      {/* <div class="tech-slideshow"> // Announcement bar
         <div class="mover-1"></div>
       </div> */}
       <svg

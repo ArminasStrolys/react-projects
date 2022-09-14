@@ -11,25 +11,17 @@
     justify-content: space-between;
     .faq-style {
       width: 50%;
+      .bolder {
+        font-family: kalam-bold;
+      }
       .ul-bullet-style {
         list-style: none;
       }
       ul {
         .main-list-item {
-          // list-style: none;
           background-color: $nav_bar_color;
           padding: 5px 10px;
           margin-bottom: 30px;
-          // filter: blur(8px);
-          // -webkit-filter: blur(8px);
-          li::before {
-            // content: '\1F441';
-            // font-size: 30px;
-            // color: $logo_color;
-            // position: relative;
-            // top: 48px;
-            // left: -50px;
-          }
         }
       }
     }
@@ -54,8 +46,8 @@
 @media screen and (max-width: 700px) {
   .faq {
     padding: 30px;
-    padding-top: 250px;
-    margin: 100px 0 -50px 0;
+    padding-top: 200px;
+    margin: 50px 0 -50px 0;
     .faq-split {
       display: block;
       .faq-style {
@@ -63,14 +55,8 @@
         ul {
           list-style-position: inside;
           li {
-            // margin-top: 100px;
             margin-left: -40px;
           }
-          // li::before {
-          //   // position: relative;
-          //   // top: 48px;
-          //   // left: -150px;
-          // }
           ol {
             margin-left: 20px;
           }
@@ -91,14 +77,7 @@
           ol {
             list-style-position: outside;
             li {
-              // position: relative;
-              // top: 20px;
               margin-left: -20px;
-            }
-            li::before {
-              // position: relative;
-              // top: 48px;
-              // left: -50px;
             }
           }
         }

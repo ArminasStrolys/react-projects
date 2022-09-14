@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee1eba40.css",
-    "main.js": "/static/js/main.f866891d.js",
+    "main.css": "/static/css/main.d6fd6911.css",
+    "main.js": "/static/js/main.5491dcfc.js",
+    "static/media/correction.png": "/static/media/correction.af985747ead44cc0bf94.png",
     "static/media/lamination.png": "/static/media/lamination.f3d2d996c5f5012bb7be.png",
     "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
-    "static/media/correction.png": "/static/media/correction.917eea22f4e28ce82779.png",
     "static/media/eyes-wide2.jpg": "/static/media/eyes-wide2.58e959b6e26a4f9bdc2e.jpg",
     "static/media/eyes-wide6.jpg": "/static/media/eyes-wide6.2dd9dac4eaef201cc6dd.jpg",
     "static/media/bronsun.png": "/static/media/bronsun.0485b6f2f3ff40de40c3.png",
@@ -18,20 +18,22 @@
     "static/media/eyebrows5.jpg": "/static/media/eyebrows5.e30f7dd062b7ea4bfaee.jpg",
     "static/media/eyebrows6.jpg": "/static/media/eyebrows6.0adc16a32bed15639f93.jpg",
     "static/media/eyebrows4.jpg": "/static/media/eyebrows4.a9a51c925cd44739f799.jpg",
+    "static/media/henna-dyes.jpg": "/static/media/henna-dyes.46f0557bffbd00be02bd.jpg",
     "static/media/eyebrows1.jpg": "/static/media/eyebrows1.c5392f20f42cf37f2b35.jpg",
+    "static/media/laminate-tools.jpg": "/static/media/laminate-tools.1e20c7204695b181ef37.jpg",
+    "static/media/bronsun-dyes.jpg": "/static/media/bronsun-dyes.8724680163a902c67021.jpg",
     "static/media/Kalam-Bold.ttf": "/static/media/Kalam-Bold.c4671477e81c3c51ffc0.ttf",
     "static/media/Kalam-Light.ttf": "/static/media/Kalam-Light.26d8dba039c5c77b1ac3.ttf",
     "static/media/Kalam-Regular.ttf": "/static/media/Kalam-Regular.831aaad03890ba2d7417.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
-    "static/media/long-ad-bar.jpg": "/static/media/long-ad-bar.13cedfeb7255391513bd.jpg",
     "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
     "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
     "index.html": "/index.html",
-    "main.ee1eba40.css.map": "/static/css/main.ee1eba40.css.map",
-    "main.f866891d.js.map": "/static/js/main.f866891d.js.map"
+    "main.d6fd6911.css.map": "/static/css/main.d6fd6911.css.map",
+    "main.5491dcfc.js.map": "/static/js/main.5491dcfc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee1eba40.css",
-    "static/js/main.f866891d.js"
+    "static/css/main.d6fd6911.css",
+    "static/js/main.5491dcfc.js"
   ]
 }

@@ -21,16 +21,8 @@
       height: auto;
       overflow: hidden;
     }
-    // .service-option {
-    //   border: 1px solid $purple_color;
-    //   width: 90%;
-    //   margin: 15px auto;
-    //   padding-left: 20px;
-    //   transition: width 2s, height 2s, transform 2s;
-    // }
-
     span {
-      border: 1px solid $white_color;
+      border: 1px solid $service_table_color_brighter;
       margin: -20px -20px;
       padding: 20px;
       background-color: $service_table_color_brighter;
@@ -138,6 +130,30 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .services {
+    .drop-down-services {
+      .service-headline {
+        padding: 15px 15px 15px 15px;
+        span {
+          text-align: center;
+        }
+        span::after {
+          float: right;
+          font-size: 0;
+          padding-right: 0;
+          content: '';
+        }
+        #touch6:checked + .slide {
+          height: 200px;
+        }
+        #touch3:checked + .slide {
+          height: 260px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 700px) and (min-width: 600px) {
   .eyebrow-types {
     img {
