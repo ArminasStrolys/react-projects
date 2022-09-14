@@ -13,38 +13,47 @@ const PricesAndServices = () => {
             <h3>Teikiamos paslaugos</h3>
 
             <div className="service-headline">
-              <b>Antakių korekcija</b>
-            </div>
-            <div>
-              <p>Antakių korekcija</p>
-              <p>
-                Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
-                plaukeliai
-              </p>
-              <p>Trukmė: 15 - 30 min.</p>
-              <p>Kaina: 5€</p>
-            </div>
-            {/*----------------------------------------------------------------------------------- PASLAUGA */}
-            <div className="service-headline">
-              <b>Antakių korekcija + dažymas</b>
-            </div>
-            <div className="service-option">
-              <p>Antakių korekcija + dažymas</p>
-              <p>
-                Eiga: atliekama korekcija, piešiamas karkasas, parenkama antakių
-                dažų spalva pagal klientės norus.
-              </p>
-              <p>Trukmė: 1 val. 30 min.</p>
-              <p>Kaina: 15€</p>
-            </div>
-            {/*----------------------------------------------------------------------------------- PASLAUGA */}
-            <div className="service-headline">
               <label for="touch1">
-                <span>Antakių laminavimas + korekcija</span>
+                <span>Antakių korekcija</span>
               </label>
               <input type="checkbox" id="touch1" />
 
-              <div className="slide1">
+              <div className="slide">
+                <p>
+                  Eiga: karštu vašku, pincetu pašalinami iš formos išeinantys
+                  plaukeliai
+                </p>
+                <p>Trukmė: 15 - 30 min.</p>
+                <p>Kaina: 5€</p>
+              </div>
+            </div>
+
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+
+            <div className="service-headline">
+              <label for="touch2">
+                <span>Antakių korekcija + dažymas</span>
+              </label>
+              <input type="checkbox" id="touch2" />
+
+              <div className="slide">
+                <p>
+                  Eiga: atliekama korekcija, piešiamas karkasas, parenkama
+                  antakių dažų spalva pagal klientės norus.
+                </p>
+                <p>Trukmė: 1 val. 30 min.</p>
+                <p>Kaina: 15€</p>
+              </div>
+            </div>
+
+            {/*----------------------------------------------------------------------------------- PASLAUGA */}
+            <div className="service-headline">
+              <label for="touch3">
+                <span>Antakių laminavimas + korekcija</span>
+              </label>
+              <input type="checkbox" id="touch3" />
+
+              <div className="slide">
                 <p>
                   Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
                   paslankūs, lengvai formuojami bei atliekama korekcija.
@@ -54,27 +63,15 @@ const PricesAndServices = () => {
               </div>
             </div>
 
-            {/* <div className="service-headline">
-              <b>Antakių laminavimas + korekcija</b>
-            </div>
-            <div className="service-option">
-              <p>Antakių laminavimas + korekcija</p>
-              <p>
-                Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
-                paslankūs, lengvai formuojami bei atliekama korekcija.
-              </p>
-              <p>Trukmė: 1 val. 30 min.</p>
-              <p>Kaina: 15€</p>
-            </div> */}
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
 
             <div className="service-headline">
-              <label for="touch2">
+              <label for="touch4">
                 <span>Antakių laminavimas + dažymas</span>
               </label>
-              <input type="checkbox" id="touch2" />
+              <input type="checkbox" id="touch4" />
 
-              <div className="slide2">
+              <div className="slide">
                 <p>
                   Eiga: tepamos specialios priemonės, po kurios plaukeliai tampa
                   paslankūs, lengvai formuojami, atliekama korekcija bei
@@ -87,12 +84,12 @@ const PricesAndServices = () => {
             {/*----------------------------------------------------------------------------------- PASLAUGA */}
 
             <div className="service-headline">
-              <label for="touch3">
+              <label for="touch5">
                 <span>Ūsiukų depiliacija</span>
               </label>
-              <input type="checkbox" id="touch3" />
+              <input type="checkbox" id="touch5" />
 
-              <div className="slide3">
+              <div className="slide">
                 <p>Eiga: atliekama ūsiukų depiliacija vašku ir pincetu.</p>
                 <p>Trukmė: 15 - 30 min.</p>
                 <p>Kaina: 5€</p>
@@ -106,7 +103,7 @@ const PricesAndServices = () => {
               </label>
               <input type="checkbox" id="touch6" />
 
-              <div className="slide6">
+              <div className="slide">
                 <p>Eiga: INFO INFO INFO INFO INFO INFO</p>
                 <p>Trukmė: 15 - 30 min.</p>
                 <p>Kaina: 8€</p>
