@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6fd6911.css",
-    "main.js": "/static/js/main.5491dcfc.js",
+    "main.css": "/static/css/main.8de11c9f.css",
+    "main.js": "/static/js/main.93309748.js",
     "static/media/correction.png": "/static/media/correction.af985747ead44cc0bf94.png",
     "static/media/lamination.png": "/static/media/lamination.f3d2d996c5f5012bb7be.png",
     "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
@@ -19,21 +19,24 @@
     "static/media/eyebrows6.jpg": "/static/media/eyebrows6.0adc16a32bed15639f93.jpg",
     "static/media/eyebrows4.jpg": "/static/media/eyebrows4.a9a51c925cd44739f799.jpg",
     "static/media/henna-dyes.jpg": "/static/media/henna-dyes.46f0557bffbd00be02bd.jpg",
+    "static/media/certificate1.png": "/static/media/certificate1.ff9194bcd18118c61ef5.png",
     "static/media/eyebrows1.jpg": "/static/media/eyebrows1.c5392f20f42cf37f2b35.jpg",
+    "static/media/correction-tools.jpg": "/static/media/correction-tools.e02d142cc8aba24bb3cf.jpg",
     "static/media/laminate-tools.jpg": "/static/media/laminate-tools.1e20c7204695b181ef37.jpg",
     "static/media/bronsun-dyes.jpg": "/static/media/bronsun-dyes.8724680163a902c67021.jpg",
     "static/media/Kalam-Bold.ttf": "/static/media/Kalam-Bold.c4671477e81c3c51ffc0.ttf",
+    "static/media/certificate2.jpg": "/static/media/certificate2.b4798c45b33761d5b34f.jpg",
     "static/media/Kalam-Light.ttf": "/static/media/Kalam-Light.26d8dba039c5c77b1ac3.ttf",
     "static/media/Kalam-Regular.ttf": "/static/media/Kalam-Regular.831aaad03890ba2d7417.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
     "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
     "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
     "index.html": "/index.html",
-    "main.d6fd6911.css.map": "/static/css/main.d6fd6911.css.map",
-    "main.5491dcfc.js.map": "/static/js/main.5491dcfc.js.map"
+    "main.8de11c9f.css.map": "/static/css/main.8de11c9f.css.map",
+    "main.93309748.js.map": "/static/js/main.93309748.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6fd6911.css",
-    "static/js/main.5491dcfc.js"
+    "static/css/main.8de11c9f.css",
+    "static/js/main.93309748.js"
   ]
 }

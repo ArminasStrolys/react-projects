@@ -88,6 +88,7 @@ const Navi = () => {
               Paslaugos
             </NavLink> */}
             <NavLink
+              path={'/gallery'}
               onClick={handleScrollTop}
               style={({ isActive }) => ({
                 color: isActive ? purple : 'black',
