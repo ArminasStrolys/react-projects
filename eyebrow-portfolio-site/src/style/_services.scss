@@ -202,30 +202,25 @@
       background-position: center;
       background-size: cover;
       position: relative;
-      transition: 0.5s;
       &:hover {
-        opacity: 0.8;
         background-image: url('../images/correction-tools.jpg');
       }
     }
     .hidden-img-4 {
       background-image: url('../images/lamination.png');
       &:hover {
-        opacity: 0.8;
         background-image: url('../images/laminate-tools.jpg');
       }
     }
     .hidden-img-2 {
       background-image: url('../images/henna.jpg');
       &:hover {
-        opacity: 0.8;
         background-image: url('../images/henna-dyes.jpg');
       }
     }
     .hidden-img-3 {
       background-image: url('../images/bronsun.png');
       &:hover {
-        opacity: 0.8;
         background-image: url('../images/bronsun-dyes.jpg');
       }
     }
