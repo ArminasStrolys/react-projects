@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Contacts from '../contacts/Contacts';
-import Services from '../services/Services';
+// import Services from '../services/Services';
 import Home from '../home/Home';
 import About from '../about/About';
 import Gallery from '../gallery/Gallery';
@@ -135,7 +135,7 @@ const Navi = () => {
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
+            {/* <Route path="/services" element={<Services />} /> */}
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/about" element={<About />} />
