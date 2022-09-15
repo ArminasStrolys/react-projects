@@ -49,6 +49,22 @@
     gap: 20px;
   }
 }
+@media screen and (max-width: 500px) {
+  .home {
+    .clients {
+      text-align: center;
+      padding-top: 100px;
+      margin-bottom: -30px;
+    }
+    article {
+      b {
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 2500px) {
   .home {
     margin: -100px 15% -200px 15%;

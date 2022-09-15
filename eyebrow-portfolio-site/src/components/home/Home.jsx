@@ -12,7 +12,7 @@ const Home = () => {
         <Carousel />
         <article>
           <b>
-            <p>SERTIFIKATAI</p>
+            <h3>SERTIFIKATAI</h3>
           </b>
           <p>
             <b>Eyebrows design online course “HENNA PROFI”.</b> Teorija. Mokymu

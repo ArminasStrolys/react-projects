@@ -216,10 +216,10 @@
       }
     }
     .hidden-img-2 {
-      background-image: url('../images/lamination.png');
+      background-image: url('../images/henna.jpg');
       &:hover {
         opacity: 0.8;
-        background-image: url('../images/laminate-tools.jpg');
+        background-image: url('../images/henna-dyes.jpg');
       }
     }
     .hidden-img-3 {
@@ -255,6 +255,29 @@
   }
   .services-title {
     text-align: center;
+  }
+}
+@media screen and (max-width: 432px) {
+  .services {
+    .drop-down-services {
+      .service-headline {
+        #touch1:checked + .slide {
+          height: 260px;
+        }
+        #touch2:checked + .slide {
+          height: 290px;
+        }
+        #touch3:checked + .slide {
+          height: 320px;
+        }
+        #touch4:checked + .slide {
+          height: 380px;
+        }
+        #touch5:checked + .slide {
+          height: 230px;
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: 2500px) {
