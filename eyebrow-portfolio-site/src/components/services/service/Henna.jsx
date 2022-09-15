@@ -49,6 +49,7 @@ export default function Henna() {
           <li>Antakių zonos makiažas</li>
         </ul>
       </p>
+      <div className="hidden-img-2"></div>
     </article>
   );
 }

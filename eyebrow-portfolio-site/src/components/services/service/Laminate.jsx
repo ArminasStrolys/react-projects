@@ -49,6 +49,7 @@ export default function Laminate() {
         ir po laminavimo procedūros, skirtumas tas, jog šis efektas yra labai
         laikinas, t.y. iki pirmojo plovimo.
       </p>
+      <div className="hidden-img-4"></div>
     </article>
   );
 }

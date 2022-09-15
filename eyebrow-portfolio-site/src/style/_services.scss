@@ -191,20 +191,57 @@
 
 @media screen and (max-width: 500px) {
   .eyebrow-types {
-    img {
+    .hidden-img-1,
+    .hidden-img-2,
+    .hidden-img-3,
+    .hidden-img-4 {
       width: 100%;
-      margin: auto;
-      float: none;
-      box-sizing: border-box;
+      height: 300px;
+      background-color: antiquewhite;
+      background-image: url('../images/correction.png');
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.8;
+        background-image: url('../images/correction-tools.jpg');
+      }
+    }
+    .hidden-img-4 {
+      background-image: url('../images/lamination.png');
+      &:hover {
+        opacity: 0.8;
+        background-image: url('../images/laminate-tools.jpg');
+      }
+    }
+    .hidden-img-2 {
+      background-image: url('../images/lamination.png');
+      &:hover {
+        opacity: 0.8;
+        background-image: url('../images/laminate-tools.jpg');
+      }
+    }
+    .hidden-img-3 {
+      background-image: url('../images/bronsun.png');
+      &:hover {
+        opacity: 0.8;
+        background-image: url('../images/bronsun-dyes.jpg');
+      }
+    }
+
+    img {
+      display: none;
     }
     .second-img,
     .second-img-float {
-      position: relative;
+      position: static;
+      // width: 100%;
       width: 100%;
       left: 0;
       margin-right: 0;
-      top: -300px;
-      margin-bottom: -250px;
+      top: 300px;
+      margin-bottom: 0;
     }
     .second-img-float {
       left: 0;

@@ -22,12 +22,15 @@
   text-align: center;
   border-radius: 10px;
   margin: 50px 0;
+  img {
+    width: 100%;
+  }
   .card-1,
   .card-2,
   .card-3 {
-    width: 200px;
-    height: 300px;
-    border: 1px solid $purple_color;
+    width: 300px;
+    height: auto;
+    // border: 1px solid $purple_color;
     border-radius: 10px;
     padding: 20px;
   }

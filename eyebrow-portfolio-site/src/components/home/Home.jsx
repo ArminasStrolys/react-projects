@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from './CarouselComponent.jsx';
 import Services from '../services/Services';
+import certificate1 from '../../images/certificate1.png';
+import certificate2 from '../../images/certificate2.jpg';
 
 const Home = () => {
   return (
@@ -26,18 +28,17 @@ const Home = () => {
           </p>
           <div className="cards">
             <div className="card-1">
-              <h3>Sertifikatas 1</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Asperiores voluptatem in cumque eligendi debitis!
-              </p>
+              {/* <h3>Sertifikatas 1</h3> */}
+              <img
+                src={certificate1}
+                alt="certificate num. 1 - 'Eyebrows design online course 'Henna profi''"
+              />
             </div>
             <div className="card-2">
-              <h3>Sertifikatas 2</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Cupiditate mollitia velit debitis. Harum, blanditiis deserunt.
-              </p>
+              <img
+                src={certificate2}
+                alt="certificate num. 2 - 'Eyebrow correction at Mingailė Baltrušytė'"
+              />
             </div>
           </div>
         </article>

@@ -42,6 +42,7 @@ export default function Laminate() {
           <li>Antakių zonos makiažas</li>
         </ul>
       </p>
+      <div className="hidden-img-3"></div>
     </article>
   );
 }

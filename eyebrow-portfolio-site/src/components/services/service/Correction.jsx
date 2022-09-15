@@ -30,6 +30,7 @@ export default function Correction() {
           depiliuojant: veido, bikini, pažastų zonas.
         </p>
       </p>
+      <div className="hidden-img-1"></div>
     </article>
   );
 }
