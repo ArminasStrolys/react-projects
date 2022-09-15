@@ -160,6 +160,50 @@
 
 //---------------------------------------- MEDIA -------------------------------------
 
+@media screen and (max-width: 500px) {
+  .contacts {
+    .social-links {
+      width: 100% !important;
+      border: none !important;
+
+      .links {
+        margin-left: 0;
+        a {
+          width: auto;
+          text-align: center;
+          .icons {
+            padding-bottom: 20px;
+
+            .fb-icon {
+              position: relative;
+              top: -25px;
+              left: 66%;
+              margin-left: -35px;
+            }
+            .ig-icon {
+              position: relative;
+              top: -25px;
+              left: 66%;
+              margin-left: -35px;
+            }
+            .phone-icon {
+              position: relative;
+              top: -25px;
+              left: 66%;
+              margin-left: -35px;
+            }
+            .email-icon {
+              position: relative;
+              top: -25px;
+              left: 59%;
+              margin-left: -35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 800px) {
   .contacts {
     flex-wrap: wrap;
