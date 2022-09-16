@@ -197,23 +197,14 @@
     .hidden-img-4 {
       width: 100%;
       height: 300px;
-      background-color: antiquewhite;
       background-image: url('../images/correction.png');
       background-position: center;
       background-size: cover;
       position: relative;
-
-      // &:hover {
-      //   background-image: url('../images/correction-tools.jpg');
-      // }
     }
     .hidden-img-4 {
       background-image: url('../images/lamination.png');
       animation: miniCarousel4 10s ease-in-out infinite;
-      // &:hover {
-      //   background-image: url('../images/laminate-tools.jpg');
-      // }
-      // transition: 0.8s;
 
       @keyframes miniCarousel4 {
         0% {
@@ -236,7 +227,6 @@
           background-image: url('../images/laminate-tools.jpg');
           opacity: 1;
         }
-
         92% {
           background-image: url('../images/laminate-tools.jpg');
           opacity: 1;
@@ -261,15 +251,141 @@
     }
     .hidden-img-2 {
       background-image: url('../images/henna.jpg');
-      // &:hover {
-      //   background-image: url('../images/henna-dyes.jpg');
-      // }
+      animation: miniCarousel2 10s ease-in-out infinite;
+      @keyframes miniCarousel2 {
+        0% {
+          background-image: url('../images/henna.jpg');
+          opacity: 1;
+        }
+        38% {
+          background-image: url('../images/henna.jpg');
+          opacity: 1;
+        }
+        40% {
+          background-image: url('../images/henna.jpg');
+          opacity: 0;
+        }
+        43% {
+          background-image: url('../images/henna-dyes.jpg');
+          opacity: 0;
+        }
+        46% {
+          background-image: url('../images/henna-dyes.jpg');
+          opacity: 1;
+        }
+        92% {
+          background-image: url('../images/henna-dyes.jpg');
+          opacity: 1;
+        }
+        94% {
+          background-image: url('../images/henna-dyes.jpg');
+          opacity: 0;
+        }
+        95% {
+          background-image: url('../images/henna.jpg');
+          opacity: 0;
+        }
+        97% {
+          background-image: url('../images/henna.jpg');
+          opacity: 0;
+        }
+        100% {
+          background-image: url('../images/henna.jpg');
+          opacity: 1;
+        }
+      }
     }
     .hidden-img-3 {
       background-image: url('../images/bronsun.png');
-      // &:hover {
-      //   background-image: url('../images/bronsun-dyes.jpg');
-      // }
+      animation: miniCarousel3 10s ease-in-out infinite;
+      @keyframes miniCarousel3 {
+        0% {
+          background-image: url('../images/bronsun.png');
+          opacity: 1;
+        }
+        38% {
+          background-image: url('../images/bronsun.png');
+          opacity: 1;
+        }
+        40% {
+          background-image: url('../images/bronsun.png');
+          opacity: 0;
+        }
+        43% {
+          background-image: url('../images/bronsun-dyes.jpg');
+          opacity: 0;
+        }
+        46% {
+          background-image: url('../images/bronsun-dyes.jpg');
+          opacity: 1;
+        }
+        92% {
+          background-image: url('../images/bronsun-dyes.jpg');
+          opacity: 1;
+        }
+        94% {
+          background-image: url('../images/bronsun-dyes.jpg');
+          opacity: 0;
+        }
+        95% {
+          background-image: url('../images/bronsun.png');
+          opacity: 0;
+        }
+        97% {
+          background-image: url('../images/bronsun.png');
+          opacity: 0;
+        }
+        100% {
+          background-image: url('../images/bronsun.png');
+          opacity: 1;
+        }
+      }
+    }
+    .hidden-img-1 {
+      background-image: url('../images/correction.png');
+      animation: miniCarousel1 10s ease-in-out infinite;
+      @keyframes miniCarousel1 {
+        0% {
+          background-image: url('../images/correction.png');
+          opacity: 1;
+        }
+        38% {
+          background-image: url('../images/correction.png');
+          opacity: 1;
+        }
+        40% {
+          background-image: url('../images/correction.png');
+          opacity: 0;
+        }
+        43% {
+          background-image: url('../images/correction-tools.jpg');
+          opacity: 0;
+        }
+        46% {
+          background-image: url('../images/correction-tools.jpg');
+          opacity: 1;
+        }
+        92% {
+          background-image: url('../images/correction-tools.jpg');
+          opacity: 1;
+        }
+        94% {
+          background-image: url('../images/correction-tools.jpg');
+          opacity: 0;
+        }
+        95% {
+          background-image: url('../images/correction.png');
+          opacity: 0;
+        }
+        97% {
+          background-image: url('../images/correction.png');
+          opacity: 0;
+        }
+        100% {
+          background-image: url('../images/correction.png');
+          opacity: 1;
+        }
+      }
     }
 
     img {
