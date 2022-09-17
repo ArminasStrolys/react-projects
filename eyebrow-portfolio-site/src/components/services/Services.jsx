@@ -10,7 +10,7 @@ const PricesAndServices = () => {
       <div className="services">
         <div>
           <div className="drop-down-services">
-            <h3>Teikiamos paslaugos</h3>
+            <h3>Teikiamos paslaugos / kainoraštis</h3>
 
             <div className="service-headline">
               <label for="touch1">

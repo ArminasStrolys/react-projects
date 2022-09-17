@@ -59,6 +59,9 @@
       opacity: 0;
       height: 0px;
     }
+    #touch1 + .slide {
+      height: 230px;
+    }
 
     #touch1:checked + .slide,
     #touch2:checked + .slide,
@@ -69,6 +72,9 @@
       height: 200px;
     }
 
+    #touch1:checked + .slide {
+      height: 0;
+    }
     #touch2:checked + .slide {
       height: 230px;
     }
