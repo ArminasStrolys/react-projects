@@ -100,9 +100,6 @@
     transition: 0.5s;
     z-index: 2;
     opacity: 1;
-    // &:hover {
-    //   opacity: 0;
-    // }
     animation: miniCarouselMain 10s ease-in-out infinite;
   }
   @keyframes miniCarouselMain {
