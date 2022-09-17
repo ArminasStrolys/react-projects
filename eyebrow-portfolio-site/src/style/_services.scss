@@ -442,7 +442,7 @@
     .drop-down-services {
       .service-headline {
         #touch1:checked + .slide {
-          height: 260px;
+          height: 0;
         }
         #touch2:checked + .slide {
           height: 290px;
