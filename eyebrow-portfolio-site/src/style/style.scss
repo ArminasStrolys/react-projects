@@ -7,23 +7,6 @@
 @import './_contacts.scss';
 @import '_faq.scss';
 
-@font-face {
-  font-family: kalam-regular;
-  src: url(../fonts/Kalam-Regular.ttf);
-}
-@font-face {
-  font-family: kalam-light;
-  src: url(../fonts/Kalam-Light.ttf);
-}
-@font-face {
-  font-family: kalam-bold;
-  src: url(../fonts/Kalam-Bold.ttf);
-}
-@font-face {
-  font-family: monste;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
-}
-
 body {
   background-color: $body_color;
   font-family: monste;

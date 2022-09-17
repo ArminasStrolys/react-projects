@@ -51,6 +51,7 @@
   top: 0;
   z-index: 3;
   font-family: kalam-regular;
+  letter-spacing: 2px;
   font-size: 25px;
   span,
   a {
@@ -84,7 +85,7 @@
     background-color: $nav_bar_color;
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     transition: 0.5s;
     &:hover {
       background-color: $service_table_color_brighter;
@@ -102,6 +103,7 @@
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 18px;
+    font-family: monste;
   }
   .logo {
     display: none;
