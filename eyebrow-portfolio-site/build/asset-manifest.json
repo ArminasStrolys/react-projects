@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8de11c9f.css",
-    "main.js": "/static/js/main.8e0d5eec.js",
+    "main.css": "/static/css/main.e9fa7329.css",
+    "main.js": "/static/js/main.33dff299.js",
     "static/media/correction.png": "/static/media/correction.af985747ead44cc0bf94.png",
     "static/media/lamination.png": "/static/media/lamination.f3d2d996c5f5012bb7be.png",
     "static/media/eyes-wide1.jpg": "/static/media/eyes-wide1.42170d3db3b7ac5412b7.jpg",
@@ -29,14 +29,20 @@
     "static/media/Kalam-Light.ttf": "/static/media/Kalam-Light.26d8dba039c5c77b1ac3.ttf",
     "static/media/Kalam-Regular.ttf": "/static/media/Kalam-Regular.831aaad03890ba2d7417.ttf",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
+    "static/media/loreSHD.jpg": "/static/media/loreSHD.331937cc53286d1cd3bd.jpg",
+    "static/media/GerSHD.jpg": "/static/media/GerSHD.29198185ee7f54c81706.jpg",
+    "static/media/JustSHD.jpg": "/static/media/JustSHD.fa9790ee9947ad8850a1.jpg",
+    "static/media/DeiSHD.jpg": "/static/media/DeiSHD.c52768bf188aba227781.jpg",
+    "static/media/MileSHD.jpg": "/static/media/MileSHD.0788318e13607c352b71.jpg",
+    "static/media/RameSHD.jpg": "/static/media/RameSHD.04189527e8412aefb204.jpg",
     "static/media/logo.png": "/static/media/logo.41ecf13efad4496dcaf7.png",
     "static/media/logo-white.png": "/static/media/logo-white.ce5da4b434278b56452d.png",
     "index.html": "/index.html",
-    "main.8de11c9f.css.map": "/static/css/main.8de11c9f.css.map",
-    "main.8e0d5eec.js.map": "/static/js/main.8e0d5eec.js.map"
+    "main.e9fa7329.css.map": "/static/css/main.e9fa7329.css.map",
+    "main.33dff299.js.map": "/static/js/main.33dff299.js.map"
   },
   "entrypoints": [
-    "static/css/main.8de11c9f.css",
-    "static/js/main.8e0d5eec.js"
+    "static/css/main.e9fa7329.css",
+    "static/js/main.33dff299.js"
   ]
 }

@@ -19,7 +19,6 @@ const CarouselComponent = () => {
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
-      console.log(windowSize.innerWidth);
     }
     windowSize.innerWidth < 750 ? setPhotoLib(data2) : setPhotoLib(data1);
     window.addEventListener('resize', handleWindowResize);
