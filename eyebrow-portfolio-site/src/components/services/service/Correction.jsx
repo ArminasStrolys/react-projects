@@ -1,6 +1,6 @@
 import React from 'react';
 import correction from '../../../images/correction.png';
-import logo from '../../../images/logo-white.png';
+import correction_tools from '../../../images/correction-tools.jpg';
 
 export default function Correction() {
   return (
@@ -12,7 +12,7 @@ export default function Correction() {
       />
       <img
         className="second-img"
-        src={logo}
+        src={correction_tools}
         alt="Eyebrow correction before and after"
       />
       <h3 className="services-title">Antakių korekcija</h3>
