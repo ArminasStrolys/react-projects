@@ -1,16 +1,22 @@
 import { useEffect, useState } from 'react';
-import Image1 from '../../images/eyes-wide1.jpg';
+// import Image1 from '../../images/eyes-wide1.jpg';
 import Image2 from '../../images/eyes-wide2.jpg';
 import Image3 from '../../images/eyes-wide3.jpg';
 import Image4 from '../../images/eyes-wide4.jpg';
 import Image5 from '../../images/eyes-wide5.jpg';
 import Image6 from '../../images/eyes-wide6.jpg';
+// import Image7 from '../../images/eyes-wide7.jpg';
+// import Image8 from '../../images/eyes-wide8.jpg';
+// import Image9 from '../../images/eyes-wide9.jpg';
 import imgSM1 from '../../images/DeiSHD.jpg';
 import imgSM2 from '../../images/GerSHD.jpg';
 import imgSM3 from '../../images/JustSHD.jpg';
 import imgSM4 from '../../images/RameSHD.jpg';
 import imgSM5 from '../../images/MileSHD.jpg';
 import imgSM6 from '../../images/loreSHD.jpg';
+import imgSM7 from '../../images/p1SHD.jpg';
+import imgSM8 from '../../images/p2SHD.jpg';
+import imgSM9 from '../../images/p3SHD.jpg';
 import { Carousel } from 'react-carousel-minimal';
 
 const CarouselComponent = () => {
@@ -28,9 +34,9 @@ const CarouselComponent = () => {
     };
   }, [windowSize.innerWidth]);
   const data1 = [
-    {
-      image: Image1,
-    },
+    // {
+    //   image: Image1,
+    // },
     {
       image: Image2,
     },
@@ -46,6 +52,15 @@ const CarouselComponent = () => {
     {
       image: Image6,
     },
+    // {
+    //   image: Image7,
+    // },
+    // {
+    //   image: Image8,
+    // },
+    // {
+    //   image: Image9,
+    // },
   ];
   const data2 = [
     {
@@ -65,6 +80,15 @@ const CarouselComponent = () => {
     },
     {
       image: imgSM6,
+    },
+    {
+      image: imgSM7,
+    },
+    {
+      image: imgSM8,
+    },
+    {
+      image: imgSM9,
     },
   ];
   const [photoLib, setPhotoLib] = useState(data1);

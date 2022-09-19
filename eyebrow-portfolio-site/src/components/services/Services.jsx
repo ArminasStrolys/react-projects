@@ -104,8 +104,11 @@ const PricesAndServices = () => {
               <input type="checkbox" id="touch6" />
 
               <div className="slide">
-                <p>Eiga: INFO INFO INFO INFO INFO INFO</p>
-                <p>Trukmė: 15 - 30 min.</p>
+                <p>
+                  Eiga: antakiai nuvalomi drėgnu vatos tamponėliu, parenkami
+                  dažai ir atliekama korekcija vašku ir pincetu.
+                </p>
+                <p>Trukmė: 30 min.</p>
                 <p>Kaina: 8€</p>
               </div>
             </div>

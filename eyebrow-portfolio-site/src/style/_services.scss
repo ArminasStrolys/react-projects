@@ -76,29 +76,32 @@
       }
     }
 
-    #touch1:checked + .slide,
-    #touch2:checked + .slide,
-    #touch3:checked + .slide,
-    #touch4:checked + .slide,
-    #touch5:checked + .slide,
-    #touch6:checked + .slide {
-      height: 200px;
-    }
+    // #touch1:checked + .slide,
+    // #touch2:checked + .slide,
+    // #touch3:checked + .slide,
+    // #touch4:checked + .slide,
+    // #touch5:checked + .slide,
+    // #touch6:checked + .slide {
+
+    // }
 
     #touch1:checked + .slide {
-      height: 230px;
+      height: 180px;
     }
     #touch2:checked + .slide {
-      height: 230px;
+      height: 200px;
     }
     #touch3:checked + .slide {
       height: 210px;
     }
     #touch4:checked + .slide {
-      height: 260px;
+      height: 210px;
+    }
+    #touch5:checked + .slide {
+      height: 180px;
     }
     #touch6:checked + .slide {
-      height: 170px;
+      height: 200px;
     }
   }
 }
@@ -162,6 +165,28 @@
     background-color: $white_color;
     padding: 0 0;
     position: unset;
+    .drop-down-services {
+      .service-headline {
+        #touch1:checked + .slide {
+          height: 210px;
+        }
+        #touch2:checked + .slide {
+          height: 220px;
+        }
+        #touch3:checked + .slide {
+          height: 240px;
+        }
+        #touch4:checked + .slide {
+          height: 240px;
+        }
+        #touch5:checked + .slide {
+          height: 190px;
+        }
+        #touch6:checked + .slide {
+          height: 220px;
+        }
+      }
+    }
   }
 }
 
@@ -179,11 +204,23 @@
           padding-right: 0;
           content: '';
         }
-        #touch6:checked + .slide {
-          height: 200px;
+        #touch1:checked + .slide {
+          height: 220px;
+        }
+        #touch2:checked + .slide {
+          height: 240px;
         }
         #touch3:checked + .slide {
           height: 260px;
+        }
+        #touch4:checked + .slide {
+          height: 260px;
+        }
+        #touch5:checked + .slide {
+          height: 210px;
+        }
+        #touch6:checked + .slide {
+          height: 240px;
         }
       }
     }
@@ -455,19 +492,22 @@
     .drop-down-services {
       .service-headline {
         #touch1:checked + .slide {
-          height: 230px;
+          height: 250px;
         }
         #touch2:checked + .slide {
-          height: 290px;
+          height: 280px;
         }
         #touch3:checked + .slide {
-          height: 320px;
+          height: 310px;
         }
         #touch4:checked + .slide {
-          height: 380px;
+          height: 340px;
         }
         #touch5:checked + .slide {
-          height: 230px;
+          height: 220px;
+        }
+        #touch6:checked + .slide {
+          height: 310px;
         }
       }
     }

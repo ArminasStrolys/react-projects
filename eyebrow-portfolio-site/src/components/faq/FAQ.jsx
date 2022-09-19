@@ -74,7 +74,7 @@ export default function FAQ() {
                 <h3>Kokia turėtų būti priežiūra po laminavimo procedūros?</h3>
 
                 <ol>
-                  <p className="bolder">Po procedūros pirmas 24 valandas:</p>
+                  <p className="bolder">Po procedūros pirmas 12 valandų:</p>
                   <li>
                     <p>Antakių nešlapinkite.</p>
                   </li>
@@ -93,7 +93,7 @@ export default function FAQ() {
                       antakių.
                     </p>
                   </li>
-                  <p className="bolder">Po 24 valandų:</p>
+                  <p className="bolder">Po 12 valandų:</p>
                   <li>
                     <p>
                       Būtina išsiplauti antakius su šiltu vandeniu, tam, kad
