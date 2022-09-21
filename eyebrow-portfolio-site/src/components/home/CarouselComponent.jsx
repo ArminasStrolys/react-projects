@@ -103,7 +103,7 @@ const CarouselComponent = () => {
       <div className="carousel-section">
         <Carousel
           data={photoLib}
-          time={4000}
+          time={3000}
           width="100%"
           // height="500px"
           // captionStyle={captionStyle}
