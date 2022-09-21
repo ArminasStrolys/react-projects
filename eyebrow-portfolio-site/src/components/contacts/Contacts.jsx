@@ -79,7 +79,7 @@ const Contacts = () => {
                   <i className="email-icon">
                     <HiOutlineMail />
                   </i>
-                  <p className="email">info.lorbeautystudio@gmail.com</p>
+                  <p>info.lorbeautystudio@gmail.com</p>
                 </div>
               </span>
             </a>
