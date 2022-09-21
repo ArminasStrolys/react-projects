@@ -33,7 +33,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, 110%);
-      margin: -45px 0 0 10px;
+      margin: 0px 0 0 10px;
       p {
         font-size: 15px;
       }
@@ -52,6 +52,18 @@
 .icons {
   display: inline-block;
   margin: 5px auto;
+  .email-section {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 240px;
+    position: relative;
+    &:hover {
+      text-overflow: unset;
+      width: 300px;
+      background-color: $footer_bg_color;
+    }
+  }
   p,
   a {
     text-decoration: none;
@@ -172,8 +184,17 @@
           width: auto;
           text-align: center;
           .icons {
-            padding-bottom: 20px;
-
+            border: 1px solid $logo_color;
+            padding: 10% 5%;
+            border-radius: 15px;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            .email-section {
+              overflow: unset;
+              white-space: unset;
+              text-overflow: unset;
+              width: 100%;
+            }
             .fb-icon {
               position: relative;
               top: -25px;
@@ -250,7 +271,7 @@
     flex-wrap: wrap;
     .social-links,
     .contact-form {
-      width: 60%;
+      width: 50%;
       position: unset;
     }
     .social-links {
@@ -259,6 +280,14 @@
       }
       .links {
         margin-left: 210px;
+        .icons {
+          .email-section {
+            overflow: unset;
+            white-space: unset;
+            text-overflow: unset;
+            width: 281px;
+          }
+        }
       }
     }
     .location-map {
@@ -283,6 +312,27 @@
     }
     .social-links {
       width: 60%;
+      .icons {
+        .email-section {
+          // overflow: unset;
+          // white-space: unset;
+          // text-overflow: unset;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .contacts {
+    .social-links {
+      .icons {
+        .email-section {
+          overflow: unset;
+          white-space: unset;
+          text-overflow: unset;
+          width: 290px;
+        }
+      }
     }
   }
 }

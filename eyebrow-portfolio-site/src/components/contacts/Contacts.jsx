@@ -75,10 +75,12 @@ const Contacts = () => {
             {/* ------------------- MA -------------------*/}
             <a href="mailto:info.lorbeautystudio@gmail.com">
               <span className="icons">
-                <i className="email-icon">
-                  <HiOutlineMail />
-                </i>
-                <p className="email">info.lorbeautystudio@gmail.com</p>
+                <div className="email-section">
+                  <i className="email-icon">
+                    <HiOutlineMail />
+                  </i>
+                  <p className="email">info.lorbeautystudio@gmail.com</p>
+                </div>
               </span>
             </a>
           </div>
